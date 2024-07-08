@@ -1,0 +1,30 @@
+---
+indexpage:
+  title: Documentation de Workload Factory pour VMware
+  summary: Rationalisez les migrations des environnements vSphere sur site vers VMware
+    Cloud sur AWS et implémentez des systèmes de fichiers FSX pour ONTAP personnalisés
+    en tant que datastores externes.
+  keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
+  lead: Rationalisez les migrations des environnements vSphere sur site vers VMware
+    Cloud sur AWS et implémentez des systèmes de fichiers FSX pour ONTAP personnalisés
+    en tant que datastores externes.
+  tiles:
+  - title: Commencez
+    links:
+    - title: Découvrez Workload Factory pour VMware
+      url: learn-about-vmware-workloads.html
+    - title: Démarrage rapide
+      url: quick-start.html
+  - title: Utilisez VMware migration Advisor
+    links:
+    - title: Capturez vos configurations VM actuelles
+      url: capture-vm-configurations.html
+    - title: Créez un plan de déploiement à l'aide du conseiller de migration
+      url: launch-onboarding-advisor.html
+    - title: Déployez le système de fichiers FSX pour ONTAP recommandé
+      url: deploy-fsx-file-system.html
+    - title: Connectez les systèmes de fichiers FSX pour ONTAP à VMware Cloud sur
+        AWS
+      url: connect-sddc-to-fsx.html
+    - title: Migrez vos données vers la nouvelle infrastructure
+      url: migrate-data.html

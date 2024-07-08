@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: connect-sddc-to-fsx.html 
+keywords: vm workloads, fsx for ontap, sddc, vmware cloud on aws 
+summary: Une fois que vous avez déployé un système de fichiers FSX pour ONTAP, vous devez le connecter à votre infrastructure VMware Cloud on AWS. Le SDDC offre des options réseau pour la connexion au système de fichiers FSX for ONTAP en utilisant la fonctionnalité de peering VPC pour étendre la connectivité réseau aux volumes de stockage NFS externes. 
+---
+= Connectez vos systèmes de fichiers FSX pour ONTAP à VMware Cloud sur AWS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Une fois que vous avez déployé FSX pour ONTAP, vous devez connecter ce système à votre infrastructure VMware Cloud on AWS. Votre Software-Defined Data Center (SDDC) offre des options réseau pour la connexion au système de fichiers FSX for ONTAP en utilisant la fonctionnalité de peering VPC pour étendre la connectivité réseau aux volumes de stockage NFS externes.
+
+https://vmc.techzone.vmware.com/fsx-guide?check_logged_in=1#amazon-vpc-peering["Consultez la documentation de peering de VPC Amazon pour plus de détails"^]
+
+Le schéma suivant montre comment utiliser le peering VPC pour connecter les clusters SDDC à zone de disponibilité unique (AZ) à FSX pour les déploiements ONTAP à zone unique.
+
+image:diagram-vpc-connect-vmware-fsx.png["Schéma illustrant l'utilisation de VPC peering pour la connexion de clusters SDDC mono-AZ à FSX pour les déploiements ONTAP à AZ unique."]

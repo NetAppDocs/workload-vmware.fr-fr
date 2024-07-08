@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: learn-about-vmware-workloads.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: 'Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers VMware Cloud on AWS. VMware migration Advisor vous permet d"analyser les configurations actuelles de vos machines virtuelles dans les environnements vSphere sur site et de générer un plan de déploiement des infrastructures de machines virtuelles recommandées dans les clusters VMware Cloud on AWS vSphere et d"utiliser des systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.' 
+---
+= Découvrez Workload Factory pour VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers VMware Cloud on AWS (VMC). VMware migration Advisor vous permet d'analyser les configurations actuelles de vos machines virtuelles dans les environnements vSphere sur site et de générer un plan de déploiement des infrastructures de machines virtuelles recommandées dans les clusters VMware Cloud on AWS vSphere et d'utiliser des systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.
+
+Amazon FSX for NetApp ONTAP est un datastore NFS externe basé sur le système de fichiers ONTAP de NetApp qui peut être connecté aux clusters VMware Cloud on AWS vSphere. Inutile d'ajouter des hôtes pour augmenter la disponibilité du stockage ; utilisez plutôt FSX pour les volumes ONTAP en tant que datastores externes pour compléter les datastores VSAN. Vous disposez ainsi d'une infrastructure de stockage virtualisée, haute performance et flexible, capable d'évoluer indépendamment des ressources de calcul.
+
+image:diagram-vmware-fsx-overview.png["Diagramme illustrant l'architecture."]
+
+
+
+== Fonctionnement de VMware migration Advisor
+
+L'assistant de migration peut vous aider à déplacer des machines virtuelles sur site et leurs données, s'exécutant sur tous les datastores VMware pris en charge, vers des datastores VMware Cloud, qui incluent des datastores NFS supplémentaires sur un système de fichiers FSX pour ONTAP.
+
+image:diagram-vmware-fsx-old-new.png["Un diagramme illustrant un exemple d'architecture ancienne et nouvelle architecture après la migration."]
+
+Notez que vous pouvez connecter jusqu'à quatre (4) volumes FSX pour ONTAP à un seul cluster vSphere sur VMware Cloud on AWS.
+
+
+
+== Ce que vous pouvez faire avec le conseiller en migration
+
+L'assistant de migration offre les fonctionnalités suivantes :
+
+* Analysez les configurations de VM sur site
+* Déterminez les machines virtuelles à migrer vers VMware Cloud on AWS
+* Identifiez l'espace requis sur les volumes FSX pour ONTAP à utiliser en tant que datastores externes de VM
+* Examinez le rapport résultant pour comprendre les étapes de déploiement
+* Effectuer le déploiement réel
+
+
+Le conseiller en migration prend en charge la planification de la configuration d'un cluster VMware Cloud on AWS connecté à un seul système de fichiers FSX for ONTAP.
+
+
+
+== Avantages de l'utilisation de migration Advisor
+
+La transition d'une partie de votre infrastructure actuelle vers VMware Cloud on AWS à l'aide d'Amazon FSX for ONTAP en tant que datastores NFS externes offre les avantages suivants :
+
+* Optimisation des coûts grâce au découplage de l'hôte et du stockage et à une efficacité avancée des données
+* Possibilité de développer la capacité de stockage en fonction des besoins sans avoir à acheter d'instances hôtes supplémentaires
+* Les fonctionnalités de gestion des données NetApp ONTAP dans le cloud, comme les copies Snapshot compactes, le clonage, la compression, la déduplication, la compaction et la réplication
+* Réduction de la gestion des mises à jour matérielles
+* Possibilité de modifier le débit des données, les IOPS et la taille du système de fichiers en plus d'augmenter ou de réduire la taille des volumes
+* Haute disponibilité prenant en charge les déploiements dans plusieurs zones de disponibilité (AZ)
+* Réduction des coûts et de la latence grâce à des configurations AZ uniques qui utilisent le peering VPC sans nécessiter de passerelle de transit
+
+
+
+
+== Le coût
+
+L'utilisation de VMware migration Advisor est gratuit.
+
+Vous devrez payer les ressources AWS que vous déployez en fonction des recommandations de l'assistant de migration.
+
+
+
+== Licences
+
+NetApp n'a pas besoin de licences spéciales pour utiliser migration Advisor.

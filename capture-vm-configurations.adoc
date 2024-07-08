@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: capture-vm-configurations.html 
+keywords: vm workloads, capture vm details 
+summary: 'Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools pour capturer vos configurations VM actuelles. Nous vous recommandons d"utiliser le script du collecteur de VM de migration Advisor, car il collecte les données de configuration et de performances des ordinateurs virtuels pour un plan extrêmement précis.' 
+---
+= Capturez vos configurations VM actuelles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools pour capturer vos configurations VM actuelles. Nous vous recommandons d'utiliser le script du collecteur de VM de migration Advisor, car il collecte les données de configuration et de performances des ordinateurs virtuels pour un plan extrêmement précis.
+
+Si vous prévoyez de déployer un nouveau système en fonction d'un plan de déploiement existant que vous avez précédemment enregistré localement, vous pouvez ignorer cette étape et sélectionner le plan de déploiement existant. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Apprenez à utiliser un plan existant pour élaborer un nouveau plan"].
+
+[role="tabbed-block"]
+====
+.Utilisez le script du collecteur VM de migration Advisor
+--
+Le script du collecteur de VM de NetApp migration Advisor collecte les informations de configuration de VM à partir de votre vCenter, comme RVTools collecte. Cependant, il capture les données de performances de VM actuelles pour fournir des statistiques réelles d'IOPS et de débit en lecture et écriture.
+
+Vous devez démarrer le conseiller migration pour copier le script du collecteur VM du conseiller migration à partir de la fenêtre Codebox.
+
+.Avant de commencer
+Le système sur lequel vous exécuterez le script Collector doit répondre aux exigences suivantes :
+
+* Microsoft PowerShell 7.0 ou version ultérieure doit être installé. Reportez-vous à la https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4["Documentation Microsoft PowerShell"^] section si vous devez installer PowerShell.
+* VMware PowerCLI doit être installé. Voir https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html["Documentation VMware PowerCLI"^] si vous devez installer PowerCLI.
+* La vérification du certificat SSL doit être désactivée.
+* PowerShell doit autoriser l'exécution de scripts non signés.
+
+
+Notez que si vous prévoyez de capturer des statistiques à long terme à partir de vos machines virtuelles (statistiques quotidiennes), vous devez avoir activé le niveau de statistiques 3 ou supérieur dans la console de gestion vSphere (environnement de gestion VMware).
+
+.Étapes
+. Connectez-vous à Workload Factory.
+. Dans la mosaïque VMware, sélectionnez *planifier et déployer*.
++
+image:screenshot-choose-method.png["Une capture d'écran des différentes méthodes permettant de collecter les informations de configuration actuelles de votre machine virtuelle."]
+
+. Sélectionnez *Créer un nouveau plan de déploiement*, sélectionnez l'option *utiliser le conseiller de migration VMware Data Collector*, puis sélectionnez *Suivant*.
++
+La page *Prepare for VMware Cloud on AWS migration* s'affiche.
+
+. Dans la fenêtre Codebox, sélectionnez soit image:button-download-codebox.png["le bouton de téléchargement"] pour enregistrer le script du collecteur VM de migration Advisor (nommé « list-vm.ps1 ») sur le système cible, soit image:button-copy-codebox.png["le bouton copier"] pour copier le script afin de pouvoir le coller sur le système approprié.
+. Pour capturer les configurations de vos machines virtuelles actuelles, procédez comme suit :
++
+.. Connectez-vous au système sur lequel vous avez téléchargé le collecteur de données, sur lequel PowerShell et PowerCLI sont installés.
+.. Connectez-vous à votre serveur VMware vCenter en exécutant la commande suivante :
++
+ Connect-VIServer -server <server_IP>
++
+Remplacez <server_IP> par l'adresse IP ou le nom d'hôte de votre serveur VMware.
+
+.. Exécutez le script du collecteur de données que vous avez téléchargé et spécifiez l'option de collecte de données pour les statistiques des machines virtuelles « quotidiennes » ou « horaires ».
++
+ .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
++
+où ?
+
++
+*** *True* collecte les données d’IOPS et de débit des 24 dernières heures par intervalles de 5 minutes
+*** *FALSE* collecte les données d'IOPS et de débit de la dernière heure par intervalles de 20 secondes.
+
+
+
+
+
+
+.Résultat
+Le script génère un fichier CSV nommé `list-vms-yyyy-MM-dd-HH-mm-ss.csv` dans le répertoire de travail actuel. Le fichier CSV contient une liste de toutes les machines virtuelles et leurs propriétés, ainsi que leurs données d'IOPS et de débit.
+
+--
+.Utiliser le logiciel RVTools
+--
+RVTools est une application Windows qui interagit avec vCenter et le serveur ESX (5.x à 8.0) pour capturer des informations sur vos environnements virtuels VMware. Il collecte des informations sur les VM, le processeur, la mémoire, les disques, les clusters, hôtes ESX, datastores, etc. Vous pouvez exporter ces informations dans un fichier xlsx à utiliser avec le conseiller de migration.
+
+https://www.robware.net/home["En savoir plus sur RVTools"^]
+
+.Étapes
+. Téléchargez et installez RVTools 4.4.2 ou version ultérieure à partir de https://www.robware.net/download["Site Web RVTools"^]
+. Lancez RVTools et connectez-vous au serveur vCenter cible.
++
+Les informations relatives à vCenter Server seront ainsi capturées.
+
+. Exportez vos informations VMware dans un fichier xlsx ou xls.
++
+Pour plus de détails, reportez-vous au chapitre “Paramètres de ligne de commande” dans le https://resources.robware.net/resources/prod/RVTools.pdf["Documentation RVTools"^] .
+
+
+
+.Résultat
+Le fichier xlsx ou xls contenant vos résultats est enregistré dans votre répertoire de travail.
+
+--
+====
+.Et la suite ?
+link:launch-onboarding-advisor.html["Créez un plan de déploiement à l'aide du conseiller de migration"].

@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: get-help.html 
+keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
+summary: 'NetApp prend en charge Workload Factory de différentes manières. De nombreuses options d"auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.' 
+---
+= Obtenez de l'aide
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp prend en charge Workload Factory et ses services cloud de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.
+
+
+
+== Bénéficiez du support de FSX pour ONTAP
+
+Pour obtenir un support technique concernant FSX for ONTAP, son infrastructure ou toute solution utilisant le service, reportez-vous à la section « obtention d'aide » de la documentation Workload Factory de ce produit.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX pour ONTAP"^]
+
+Pour bénéficier du support technique spécifique à Workload Factory et à ses solutions et services de stockage, utilisez les options de support décrites ci-dessous.
+
+
+
+== Utilisation d'options de support en libre-service
+
+Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :
+
+* Documentation
++
+La documentation Workload Factory que vous consultez actuellement.
+
+* https://kb.netapp.com["Base de connaissances"^]
++
+Recherchez dans la base de connaissances de Workload Factory des articles utiles pour résoudre les problèmes.
+
+* http://community.netapp.com/["Communautés"^]
++
+Rejoignez la communauté Workload Factory pour suivre les discussions en cours ou en créer de nouvelles.
+
+
+
+
+
+== Créez un dossier de demande de support auprès du support NetApp
+
+Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.
+
+.Avant de commencer
+Pour utiliser la fonction *Créer un cas*, vous devez d'abord vous inscrire au support. Associez vos informations d'identification du site de support NetApp à votre identifiant Workload Factory. link:support-registration.html["Découvrez comment vous inscrire à de l'aide"].
+
+.Étapes
+. Dans le coin supérieur droit de la console Workload Factory, sélectionnez *aide > support*.
++
+La sélection de cette option ouvre un nouvel onglet de navigateur sur la console BlueXP et charge le tableau de bord de support.
+
+. Sur la page *Ressources*, choisissez l'une des options disponibles sous support technique :
++
+.. Sélectionnez *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.
+.. Sélectionnez *Créer un cas* pour ouvrir un ticket avec un spécialiste du support NetApp :
++
+*** *Service* : sélectionnez *Workload Factory*.
+*** *Priorité du cas* : choisissez la priorité du cas, qui peut être faible, Moyen, élevé ou critique.
++
+Pour en savoir plus sur ces priorités, passez votre souris sur l'icône d'information située à côté du nom du champ.
+
+*** *Description du problème* : fournir une description détaillée de votre problème, y compris les messages d'erreur ou les étapes de dépannage applicables que vous avez effectués.
+*** *Adresses e-mail supplémentaires*: Entrez des adresses e-mail supplémentaires si vous souhaitez informer quelqu'un d'autre de ce problème.
+*** *Pièce jointe (facultatif)* : téléchargez jusqu'à cinq pièces jointes, une à la fois.
++
+Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.
+
+
+
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-create-case.png["Capture d'écran du formulaire Créer un dossier qui vous permet de créer un dossier auprès du support NetApp."]
+
+
+
+.Une fois que vous avez terminé
+Une fenêtre contextuelle contenant votre numéro de dossier de support s'affiche. Un spécialiste du support NetApp va étudier votre dossier et vous recontacterons très rapidement.
+
+Pour un historique de vos dossiers de support, vous pouvez sélectionner *Paramètres > Chronologie* et rechercher les actions nommées "Créer un dossier de support". Un bouton situé à l'extrême droite vous permet de développer l'action pour afficher les détails.
+
+Il est possible que vous rencontriez le message d'erreur suivant lors de la création d'un dossier :
+
+« Vous n'êtes pas autorisé à créer un dossier pour le service sélectionné »
+
+Cette erreur peut signifier que le compte NSS et la société d'enregistrement auquel il est associé n'est pas la même société d'enregistrement pour le numéro de série du compte BlueXP (par exemple 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez demander de l'aide en utilisant l'une des options suivantes :
+
+* Utilisez le chat du produit
+* Pour soumettre un dossier non technique, rendez-vous sur https://mysupport.netapp.com/site/help[]
+
+
+
+
+== Gestion de vos dossiers de demande de support (aperçu)
+
+Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.
+
+La gestion des dossiers est disponible en tant qu'aperçu. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.
+
+Notez ce qui suit :
+
+* Le tableau de bord de gestion des dossiers en haut de la page propose deux vues :
++
+** La vue de gauche affiche le nombre total de dossiers ouverts au cours des 3 derniers mois par le compte NSS utilisateur que vous avez fourni.
+** La vue de droite affiche le nombre total de dossiers ouverts au cours des 3 derniers mois au niveau de votre entreprise en fonction de votre compte NSS utilisateur.
+
+
++
+Les résultats du tableau reflètent les cas liés à la vue que vous avez sélectionnée.
+
+* Vous pouvez ajouter ou supprimer des colonnes d'intérêt et filtrer le contenu des colonnes telles que priorité et Statut. D'autres colonnes offrent uniquement des fonctions de tri.
++
+Pour plus d'informations, consultez les étapes ci-dessous.
+
+* Au niveau de chaque dossier, nous offrons la possibilité de mettre à jour les notes de dossier ou de fermer un dossier qui n'est pas déjà à l'état fermé ou en attente fermée.
+
+
+.Étapes
+. Dans le coin supérieur droit de la console Workload Factory, sélectionnez *aide > support*.
++
+La sélection de cette option ouvre un nouvel onglet de navigateur sur la console BlueXP et charge le tableau de bord de support.
+
+. Sélectionnez *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.
++
+La page *gestion des cas* affiche les cas ouverts associés au compte NSS associé à votre compte utilisateur BlueXP. Il s'agit du même compte NSS qui apparaît en haut de la page *gestion NSS*.
+
+. Modifiez éventuellement les informations qui s'affichent dans le tableau :
++
+** Sous *cas de l'organisation*, sélectionnez *Afficher* pour afficher tous les cas associés à votre société.
+** Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une autre période.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-date-range.png["Capture d'écran de l'option au-dessus du tableau de la page gestion des cas qui vous permet de choisir une plage de dates exacte ou les 7 derniers jours, 30 derniers jours ou 3 derniers mois."]
+
+** Filtrez le contenu des colonnes.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-filter.png["Capture d'écran de l'option de filtre dans la colonne État qui vous permet de filtrer les dossiers correspondant à un état spécifique, comme actif ou fermé."]
+
+** Modifiez les colonnes qui apparaissent dans le tableau en sélectionnant, puis en image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-columns.png["Icône plus qui apparaît dans le tableau"] choisissant les colonnes que vous souhaitez afficher.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-columns.png["Capture d'écran affichant les colonnes que vous pouvez afficher dans le tableau."]
+
+
+
+. Gérer un dossier existant en sélectionnant et en image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-action.png["Icône avec trois points qui apparaît dans la dernière colonne du tableau"] sélectionnant l'une des options disponibles :
++
+** *Voir cas*: Afficher tous les détails sur un cas spécifique.
+** *Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.
++
+Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.
+
+** *Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et sélectionnez *Fermer le cas*.
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-actions.png["Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau."]
+
+

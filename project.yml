@@ -1,0 +1,48 @@
+---
+settings:
+  name: VMware workloads
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,it-it
+sidebar:
+  entries:
+  - title: Documentation sur les workloads VMware
+    url: "/index.html"
+  - title: Notes de mise à jour
+    entries:
+    - title: Quoi de neuf
+      url: "/whats-new.html"
+  - title: Commencez
+    entries:
+    - title: Découvrez Workload Factory pour VMware
+      url: "/learn-about-vmware-workloads.html"
+    - title: Démarrage rapide
+      url: "/quick-start.html"
+  - title: Utilisez VMware migration Advisor
+    entries:
+    - title: Capturez vos configurations VM actuelles
+      url: "/capture-vm-configurations.html"
+    - title: Créez un plan de déploiement à l'aide du conseiller de migration
+      url: "/launch-onboarding-advisor.html"
+    - title: Déployez le système de fichiers FSX pour ONTAP recommandé
+      url: "/deploy-fsx-file-system.html"
+    - title: Connectez FSX pour ONTAP à VMware Cloud sur AWS
+      url: "/connect-sddc-to-fsx.html"
+    - title: Migrez vos données vers la nouvelle infrastructure
+      url: "/migrate-data.html"
+  - title: Connaissances et support
+    entries:
+    - title: S'inscrire pour obtenir de l'aide
+      url: "/support-registration.html"
+    - title: Obtenez de l'aide
+      url: "/get-help.html"
+  - title: Mentions légales
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

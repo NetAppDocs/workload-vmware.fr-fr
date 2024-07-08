@@ -1,0 +1,54 @@
+---
+permalink: legal-notices.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Mentions légales
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les mentions légales donnent accès aux déclarations de copyright, aux marques, aux brevets, etc.
+
+
+
+== Droits d'auteur
+
+link:https://www.netapp.com/company/legal/copyright/["https://www.netapp.com/company/legal/copyright/"^]
+
+
+
+== Marques déposées
+
+NetApp, le logo NETAPP et les marques mentionnées sur la page des marques commerciales NetApp sont des marques commerciales de NetApp, Inc. Les autres noms de sociétés et de produits peuvent être des marques commerciales de leurs propriétaires respectifs.
+
+link:https://www.netapp.com/company/legal/trademarks/["https://www.netapp.com/company/legal/trademarks/"^]
+
+
+
+== Brevets
+
+Vous trouverez une liste actuelle des brevets appartenant à NetApp à l'adresse suivante :
+
+link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf"^]
+
+
+
+== Politique de confidentialité
+
+link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
+
+
+
+== Source ouverte
+
+Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.
+
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["Usine de charges de travail"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-databases-notice.pdf["Workload Factory pour bases de données"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-genai-notice.pdf["Workload Factory pour GenAI"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-vmware-notice.pdf["Workload Factory pour VMware"^]
+
