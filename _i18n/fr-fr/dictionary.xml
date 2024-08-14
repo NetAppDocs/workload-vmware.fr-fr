@@ -193,7 +193,6 @@
   <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">Notez que vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à Workload Factory. Si vous n'y avez pas accès, créez un compte maintenant. Voir les instructions<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>.</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">Création d'un plan de déploiement basé sur un environnement vSphere sur site</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les environnements vSphere sur site vers des machines virtuelles dans VMware Cloud on AWS et utiliser les systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.</block>
-  <block id="56a6fbe00ab3546c5044f6b0c6eca438" category="list-text">Vous devez avoir créé le fichier d'inventaire à partir de vos systèmes existants en utilisant le collecteur VM de migration Advisor (fichier .csv) ou en utilisant RVTools (fichier.xlsx).</block>
   <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Vous devez avoir accès au fichier d'inventaire à partir du système sur lequel vous vous connectez à Workload Factory.</block>
   <block id="2627024352d67ddaed97566f9597199d" category="list-text">Dans la mosaïque des charges de travail VMware, sélectionnez *planifier et déployer* et la page principale de VMware migration Advisor s'affiche.</block>
   <block id="cff0ff09fa5d46af3e6c32d9a5e2d408" category="inline-image-macro">Une capture d'écran des différentes méthodes que vous pouvez utiliser pour charger les informations de configuration actuelles de votre machine virtuelle.</block>
@@ -426,4 +425,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
   <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">Connectez FSX pour ONTAP à VMware Cloud sur AWS</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et support</block>
+  <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">Vous devez avoir créé le fichier d'inventaire à partir de vos systèmes existants en utilisant le collecteur VM de migration Advisor (fichier .csv) ou en utilisant RVTools (fichier.xlsx).</block>
+  <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*. La page principale de VMware migration Advisor s'affiche.</block>
 </blocks>

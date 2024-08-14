@@ -33,7 +33,7 @@ Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les en
 
 
 .Étapes
-. Dans la mosaïque des charges de travail VMware, sélectionnez *planifier et déployer* et la page principale de VMware migration Advisor s'affiche.
+. Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*. La page principale de VMware migration Advisor s'affiche.
 +
 image:screenshot-choose-method-create.png["Une capture d'écran des différentes méthodes que vous pouvez utiliser pour charger les informations de configuration actuelles de votre machine virtuelle."]
 
