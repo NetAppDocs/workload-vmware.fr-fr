@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: launch-onboarding-advisor-native.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: 'Connectez-vous à NetApp Workload Factory pour accéder à VMware migration Advisor. Suivez les étapes de l"assistant pour créer un plan de déploiement ou de migration personnalisé en fonction de vos besoins.' 
+---
+= Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Connectez-vous à NetApp Workload Factory pour accéder à VMware migration Advisor. Suivez les étapes de l'assistant pour créer un plan de déploiement ou de migration personnalisé en fonction de vos besoins.
+
+Notez que vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à Workload Factory. Si vous n'y avez pas accès, créez un compte maintenant. Voir les instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ici"].
+
+
+
+== Création d'un plan de déploiement basé sur un environnement vSphere sur site
+
+Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les environnements vSphere sur site vers des serveurs virtuels dans Amazon EC2 et utiliser des systèmes de fichiers Amazon FSX pour NetApp ONTAP personnalisés en tant que datastores externes.
+
+.De formation
+* Vous devez avoir créé le fichier d'inventaire à partir de vos systèmes existants en utilisant le collecteur VM de migration Advisor (fichier .zip) ou en utilisant RVTools (fichier.xlsx).
+* Vous devez avoir accès au fichier d'inventaire à partir du système sur lequel vous vous connectez à Workload Factory.
+
+
+.Étapes
+. Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*. La page principale de VMware migration Advisor s'affiche.
+. Sélectionnez *Créer un nouveau plan de déploiement*.
+. Sélectionnez le type de fichier d'inventaire que vous utiliserez pour remplir Workload Factory avec votre configuration VM actuelle et sélectionnez *Suivant*.
++
+** Sélectionnez *utiliser le conseiller de migration VMware Data Collector* pour utiliser le fichier que vous avez créé à l'aide du collecteur de données VMware.
+** Sélectionnez *utiliser RVTools* pour utiliser le fichier .xlsx que vous avez créé à l'aide de RVTools.
+
+
++
+La page « Prepare for AWS Cloud Onboarding » s'affiche.
+
+. Dans la section _Upload VM configuration_, sélectionnez image:button-upload-file.png["le bouton de téléchargement"] et sélectionnez le fichier d'inventaire que vous souhaitez utiliser.
++
+** Sélectionnez le fichier .zip lorsque vous utilisez le collecteur VM de migration Advisor.
+** Sélectionnez le fichier .xlsx lorsque vous utilisez RVTools.
+
+
++
+La section *VM summary* est remplie à partir du fichier d'inventaire pour refléter le nombre de machines virtuelles et la capacité de stockage totale.
+
+. Dans la section _considérations d'inventaire de VM_, sélectionnez les options pour filtrer la liste des VM que vous souhaitez migrer.
++
+.. *Prendre en compte les machines virtuelles* : indiquer les machines virtuelles qui seront extraites du fichier d'inventaire en fonction de leur état d'alimentation de fonctionnement. Vous pouvez importer toutes les machines virtuelles ou uniquement celles qui sont activées, désactivées ou suspendues.
+.. *Stockage de VM à prendre en compte* : indiquez si les datastores créés pour chaque VM intégrée sont dimensionnés en fonction de leur taille actuelle utilisée (recommandée) ou de leur taille provisionnée.
++
+Les datastores externes seront implémentés à l'aide des volumes du système de fichiers Amazon FSX pour NetApp ONTAP.
+
+
+
+. Dans la section _Configuration du déploiement du Cloud_, entrez les détails de la configuration Amazon EC2 requise.
++
+.. *Région* : sélectionnez la région dans laquelle les systèmes de fichiers Amazon FSX pour NetApp ONTAP seront déployés.
++
+Pour optimiser les performances et la rentabilité, il s'agit généralement de la même région que celle où votre SDDC Amazon EC2 existant est déployé.
+
+.. *Exigences de performances estimées pour les machines virtuelles* : cette option est disponible uniquement lors de l'utilisation de RVTools. Le collecteur de VM de migration Advisor capture ces informations dans votre environnement. Fournissez les paramètres de performances moyennes par machine virtuelle suivants que vous souhaitez appliquer à vos nouvelles machines virtuelles qui seront déployées :
++
+*** *IOPS moyennes par machine virtuelle* : saisissez le nombre d'IOPS requis pour vos systèmes de fichiers. Si vous n'êtes pas sûr, vous pouvez utiliser la valeur par défaut de 3 IOPS par Gio de stockage SSD pour les systèmes de fichiers Amazon FSX pour ONTAP. Par exemple, si vous déployez une capacité de 2,000 Gio, cela sera traduit en 6,000 IOPS. Nous vous recommandons de commencer par un paramètre d'IOPS plus petit. Une fois le système de fichiers créé, vous pouvez augmenter les IOPS SSD provisionnées au fur et à mesure que les charges de travail sont migrées ou déployées.
+*** *Taille moyenne des blocs d'E/S* : taille de chaque bloc contenant des opérations de lecture ou d'écriture. La taille par défaut est de 4 Ko. Il est préférable d'utiliser une taille de bloc supérieure pour les charges de travail volumineuses en lecture et écriture séquentielles. Une taille de bloc plus petite peut offrir de meilleures performances pour les charges de travail qui effectuent des écritures aléatoires peu volumineuses sur les fichiers ou les fichiers volumineux.
+*** *Ratio d'écriture moyen* : pourcentage d'opérations qui sont des opérations d'écriture pour vos charges de travail. Le taux par défaut est de 30 % en écriture et de 70 % en lecture.
+
+
+
+
+. Dans la section _considérations relatives à la capacité cible et à la protection_, sélectionnez l'une des options de stockage suivantes.
++
+.. *Taux moyen de réduction des données* : choisissez parmi les trois ratios communs de réduction des données. Sélectionnez « 1:1 - aucune réduction », « 1:1.25 - 20 % de réduction » ou « 1:1.5 - 33 % de réduction ».
+.. *Pourcentage de marge* : saisissez le pourcentage de croissance de la capacité ajouté à la capacité de vos systèmes de fichiers FSX pour ONTAP.
++
+Notez que si vous sélectionnez une quantité inférieure à 20 %, vous ne pourrez pas créer de snapshots de volume pour la protection et les sauvegardes à long terme.
+
+.. *Protection de snapshot VM* : activez cette option pour protéger les machines virtuelles avec des snapshots.
+
+
+. Sélectionnez *Suivant*.
+
+
+. Sur la page *revoir les volumes EC2*, passez en revue les informations relatives aux VM, les règles de classification des volumes, les attributions de volumes et la liste des volumes qui seront migrés dans le cadre du déploiement.
+. Sélectionnez *Suivant*.
+. Sur la page *Review instance Storage*, examinez les instances EC2 et les volumes affectés à différents clusters FSX pour ONTAP.
+. Sur la page *revoir le plan de déploiement*, passez en revue le coût mensuel estimé pour tous les ordinateurs virtuels que vous prévoyez de migrer.
++
+Le haut de la page décrit le coût mensuel de tous les VM déployés et de tous les systèmes de fichiers FSX pour ONTAP. Vous pouvez développer chaque section pour afficher des détails sur la configuration du système de fichiers Amazon FSX for ONTAP recommandée, la répartition des coûts estimés, la configuration des volumes, les hypothèses de dimensionnement et les avertissements techniques.
+
+. Lorsque vous êtes satisfait du plan de migration, vous disposez de plusieurs options :
++
+** Sélectionnez *Deploy* pour déployer les systèmes de fichiers FSX for ONTAP pour prendre en charge vos machines virtuelles. link:deploy-fsx-file-system.html["Découvrez comment déployer un système de fichiers FSX pour ONTAP"].
+** Sélectionnez *Plan de téléchargement > déploiement VM* pour télécharger le plan de migration au format .csv afin de pouvoir l'utiliser pour créer votre nouvelle infrastructure de données intelligente basée sur le cloud.
+** Sélectionnez *Télécharger le plan > Plan report* pour télécharger le plan de migration au format .PDF afin de distribuer le plan pour examen.
+** Sélectionnez *Exporter le plan* pour enregistrer le plan de migration en tant que modèle au format .json. Vous pouvez importer le plan ultérieurement pour l'utiliser comme modèle lors du déploiement de systèmes présentant des exigences similaires.
+
+
+

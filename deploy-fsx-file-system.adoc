@@ -15,10 +15,14 @@ Après avoir vérifié que le système de fichiers FSX pour ONTAP recommandé (o
 
 Selon la stratégie et les autorisations que vous avez ajoutées à votre compte Workload Factory, vous pouvez déployer complètement le système de fichiers FSX for ONTAP à l'aide de Workload Factory (en mode automate). Si vous avez moins d'autorisations (mode lecture) ou pas d'autorisations (mode base), vous devez utiliser les informations CloudFormation de la Codebox et déployer vous-même le système de fichiers FSX pour ONTAP dans AWS.
 
-.De formation
+.Configuration requise pour les déploiements dans VMware Cloud on AWS
 * Vous devez utiliser VMware Cloud on AWS Software-Defined Data Center (SDDC) version 1.20 ou supérieure pour déployer les systèmes de fichiers FSX for ONTAP.
 * Vous ne devez pas déployer le système de fichiers FSX pour ONTAP dans le même VPC que celui utilisé lors du déploiement SDDC. Vous devez plutôt le déployer dans un nouveau VPC Amazon que vous possédez pour permettre l'intégration de VMware Cloud on AWS avec Amazon FSX for NetApp ONTAP.
 * Vous devez déployer le système de fichiers FSX pour ONTAP dans la même région AWS que votre SDDC.
+
+
+.Configuration requise pour les déploiements sur Amazon EC2
+* Le volume root du système de fichiers FSX pour ONTAP doit être créé en tant que volume EBS.
 
 
 .Étapes
@@ -36,7 +40,7 @@ Vous pouvez utiliser l'option création rapide ou création avancée. La créati
 +
 .. *Région et VPC* : sélectionnez la région et le VPC où le système de fichiers FSX pour ONTAP sera déployé.
 +
-Le déploiement doit être effectué dans un VPC différent du VPC dans lequel VMware Cloud on AWS est déployé.
+Si vous déployez sur VMware Cloud on AWS, assurez-vous de le déployer dans un VPC différent du VPC dans lequel le cloud VMware sur AWS est déployé.
 
 .. *Groupe de sécurité* : lorsque vous utilisez l'option *création avancée*, vous pouvez sélectionner le groupe de sécurité par défaut pour le VPC FSX pour ONTAP afin que tout le trafic puisse accéder au système de fichiers FSX pour ONTAP.
 +

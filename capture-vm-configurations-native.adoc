@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations.html 
+permalink: capture-vm-configurations-native.html 
 keywords: vm workloads, capture vm details 
 summary: 'Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools pour capturer vos configurations VM actuelles. Nous vous recommandons d"utiliser le script du collecteur de VM de migration Advisor, car il collecte les données de configuration et de performances des ordinateurs virtuels pour un plan extrêmement précis.' 
 ---
-= Enregistrez vos configurations de machines virtuelles actuelles avant de migrer vers VMware Cloud
+= Capture de vos configurations de serveurs virtuels actuelles avant de migrer vers Amazon EC2
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -12,8 +12,6 @@ summary: 'Vous pouvez utiliser le script du collecteur VM de migration Advisor o
 
 [role="lead"]
 Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools pour capturer vos configurations VM actuelles. Nous vous recommandons d'utiliser le script du collecteur de VM de migration Advisor, car il collecte les données de configuration et de performances des ordinateurs virtuels pour un plan extrêmement précis.
-
-Si vous prévoyez de déployer un nouveau système en fonction d'un plan de déploiement existant que vous avez précédemment enregistré localement, vous pouvez ignorer cette étape et sélectionner le plan de déploiement existant. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Apprenez à utiliser un plan existant pour élaborer un nouveau plan"].
 
 [role="tabbed-block"]
 ====
@@ -36,10 +34,7 @@ Notez que si vous prévoyez de capturer des statistiques à long terme à partir
 
 .Étapes
 . Connectez-vous à Workload Factory.
-. Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*.
-+
-La page principale de VMware migration Advisor s'affiche.
-
+. Dans la mosaïque VMware, sélectionnez *Access and plan*.
 . Sélectionnez *Créer un nouveau plan de déploiement*, sélectionnez l'option *utiliser le conseiller de migration VMware Data Collector*, puis sélectionnez *Suivant*.
 +
 La page *Prepare for VMware Cloud on AWS migration* s'affiche.
@@ -70,7 +65,7 @@ où ?
 
 
 .Résultat
-Le script génère un fichier CSV nommé `list-vms-yyyy-MM-dd-HH-mm-ss.csv` dans le répertoire de travail actuel. Le fichier CSV contient une liste de toutes les machines virtuelles et leurs propriétés, ainsi que leurs données d'IOPS et de débit.
+Le script génère un fichier compressé avec un horodatage dans le nom du répertoire de travail actuel. Le fichier .zip contient une liste de toutes les machines virtuelles et de leurs propriétés, ainsi que leurs données d'IOPS et de débit.
 
 --
 .Utiliser le logiciel RVTools
@@ -97,4 +92,4 @@ Le fichier xlsx ou xls contenant vos résultats est enregistré dans votre répe
 --
 ====
 .Et la suite ?
-link:launch-onboarding-advisor.html["Créez un plan de déploiement VMware Cloud on AWS à l'aide de l'outil de conseil en migration"].
+link:launch-onboarding-advisor-native.html["Créez un plan de déploiement Amazon EC2 à l'aide de l'outil de conseil de migration"].

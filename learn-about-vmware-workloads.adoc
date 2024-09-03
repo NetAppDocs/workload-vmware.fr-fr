@@ -11,9 +11,9 @@ summary: 'Workload Factory pour VMware fournit des outils pour déplacer vos don
 
 
 [role="lead"]
-Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers VMware Cloud on AWS (VMC). VMware migration Advisor vous permet d'analyser les configurations actuelles de vos machines virtuelles dans les environnements vSphere sur site et de générer un plan de déploiement des infrastructures de machines virtuelles recommandées dans les clusters VMware Cloud on AWS vSphere et d'utiliser des systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.
+Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers VMware Cloud on AWS (VMC) ou Amazon EC2. VMware migration Advisor vous permet d'analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site et de générer un plan de déploiement des infrastructures de serveurs virtuels recommandées dans les clusters Amazon EC2 ou VMware Cloud sur AWS vSphere et d'utiliser des systèmes de fichiers Amazon FSX pour NetApp ONTAP personnalisés en tant que datastores externes.
 
-Amazon FSX for NetApp ONTAP est un datastore NFS externe basé sur le système de fichiers ONTAP de NetApp qui peut être connecté aux clusters VMware Cloud on AWS vSphere. Inutile d'ajouter des hôtes pour augmenter la disponibilité du stockage ; utilisez plutôt FSX pour les volumes ONTAP en tant que datastores externes pour compléter les datastores VSAN. Vous disposez ainsi d'une infrastructure de stockage virtualisée, haute performance et flexible, capable d'évoluer indépendamment des ressources de calcul.
+Amazon FSX for NetApp ONTAP est un datastore NFS externe basé sur le système de fichiers ONTAP de NetApp qui peut être connecté aux instances Amazon EC2 ou aux clusters VMware Cloud on AWS vSphere. Inutile d'ajouter des hôtes pour augmenter la disponibilité du stockage ; utilisez plutôt FSX pour les volumes ONTAP en tant que datastores externes pour compléter les datastores VSAN. Vous disposez ainsi d'une infrastructure de stockage virtualisée, haute performance et flexible, capable d'évoluer indépendamment des ressources de calcul.
 
 image:diagram-vmware-fsx-overview.png["Diagramme illustrant l'architecture."]
 
@@ -21,7 +21,7 @@ image:diagram-vmware-fsx-overview.png["Diagramme illustrant l'architecture."]
 
 == Fonctionnement de VMware migration Advisor
 
-L'assistant de migration peut vous aider à déplacer des machines virtuelles sur site et leurs données, s'exécutant sur tous les datastores VMware pris en charge, vers des datastores VMware Cloud, qui incluent des datastores NFS supplémentaires sur un système de fichiers FSX pour ONTAP.
+L'outil de conseil pour la migration peut vous aider à déplacer des machines virtuelles (VM) sur site et leurs données, s'exécutant sur tous les datastores VMware pris en charge, vers des datastores Amazon EC2 ou VMware Cloud, qui incluent des datastores NFS supplémentaires sur un système de fichiers FSX pour ONTAP.
 
 image:diagram-vmware-fsx-old-new.png["Un diagramme illustrant un exemple d'architecture ancienne et nouvelle architecture après la migration."]
 
@@ -34,19 +34,19 @@ Notez que vous pouvez connecter jusqu'à quatre (4) volumes FSX pour ONTAP à un
 L'assistant de migration offre les fonctionnalités suivantes :
 
 * Analysez les configurations de VM sur site
-* Déterminez les machines virtuelles à migrer vers VMware Cloud on AWS
+* Déterminez les serveurs virtuels à migrer vers Amazon EC2 ou VMware Cloud sur AWS
 * Identifiez l'espace requis sur les volumes FSX pour ONTAP à utiliser en tant que datastores externes de VM
 * Examinez le rapport résultant pour comprendre les étapes de déploiement
 * Effectuer le déploiement réel
 
 
-Le conseiller en migration prend en charge la planification de la configuration d'un cluster VMware Cloud on AWS connecté à un seul système de fichiers FSX for ONTAP.
+Le conseiller pour la migration prend en charge la planification de la configuration d'une instance Amazon EC2 ou d'un cluster VMware Cloud sur AWS connecté à un seul système de fichiers FSX pour ONTAP.
 
 
 
 == Avantages de l'utilisation de migration Advisor
 
-La transition d'une partie de votre infrastructure actuelle vers VMware Cloud on AWS à l'aide d'Amazon FSX for ONTAP en tant que datastores NFS externes offre les avantages suivants :
+Le transfert d'une partie de votre infrastructure actuelle vers Amazon EC2 ou VMware Cloud on AWS à l'aide d'Amazon FSX for ONTAP en tant que datastores NFS externes offre les avantages suivants :
 
 * Optimisation des coûts grâce au découplage de l'hôte et du stockage et à une efficacité avancée des données
 * Possibilité de développer la capacité de stockage en fonction des besoins sans avoir à acheter d'instances hôtes supplémentaires

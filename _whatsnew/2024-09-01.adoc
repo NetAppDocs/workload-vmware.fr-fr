@@ -1,0 +1,9 @@
+= Migrez vers Amazon EC2
+:allow-uri-read: 
+
+
+
+
+=== Migrez vers Amazon EC2
+
+Workload Factory pour VMware prend désormais en charge la migration vers Amazon EC2 à l'aide de VMware migration Advisor.

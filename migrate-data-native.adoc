@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: migrate-data-native.html 
+keywords: vm workloads, fsx for ontap, migration, data migration, vmware hcx 
+summary: 'Utilisez un outil tel que MGN (AWS application migration Service) pour déplacer vos données de votre ancien stockage de machine virtuelle vers les volumes FSX pour NetApp ONTAP connectés à vos nouvelles machines virtuelles.' 
+---
+= Migrez vos données vers la nouvelle infrastructure
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilisez un outil tel que MGN (AWS application migration Service) pour déplacer vos données de votre ancien stockage de machine virtuelle vers les volumes FSX pour NetApp ONTAP connectés à vos nouvelles machines virtuelles.
+
+AWS MGN vous permet de migrer vos applications vers les volumes FSX pour NetApp ONTAP dans Amazon EC2.
+
+https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html["Consultez la documentation du service de migration des applications AWS"^] pour plus d'informations.
+
+.Et la suite ?
+Maintenant que vous avez migré vos données vers des datastores externes AWS et Amazon FSX pour NetApp ONTAP, vous pouvez sauvegarder et protéger les données importantes de votre système de fichiers FSX pour ONTAP afin d'assurer la disponibilité continue de vos données.
+
+Pour plus d'informations sur la gestion de votre système de fichiers FSX pour ONTAP, consultez le https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Documentation Amazon FSX pour NetApp ONTAP"] pour consulter les fonctionnalités de sauvegarde et de protection que vous pouvez utiliser.
