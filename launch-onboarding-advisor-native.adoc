@@ -27,7 +27,7 @@ Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les en
 
 
 .Étapes
-. Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*. La page principale de VMware migration Advisor s'affiche.
+. Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*. La page principale de VMware migration Advisor s'affiche.
 . Sélectionnez *Créer un nouveau plan de déploiement*.
 . Sélectionnez le type de fichier d'inventaire que vous utiliserez pour remplir Workload Factory avec votre configuration VM actuelle et sélectionnez *Suivant*.
 +
