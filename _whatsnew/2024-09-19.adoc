@@ -1,0 +1,11 @@
+= Améliorations de VMware migration Advisor
+:allow-uri-read: 
+
+
+
+
+=== Améliorations de VMware migration Advisor
+
+Cette version de Workload Factory pour VMware offre des fonctionnalités améliorées et une meilleure stabilité, ainsi que la possibilité d'importer et d'exporter des plans de migration lors de l'utilisation de VMware migration Advisor.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]

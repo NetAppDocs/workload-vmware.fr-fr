@@ -27,7 +27,11 @@ Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les en
 
 
 .Étapes
-. Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*. La page principale de VMware migration Advisor s'affiche.
+. Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*. L'écran de démarrage de VMware migration Advisor s'affiche.
++
+Consultez ces informations pour en savoir plus sur les avantages de l'assistant de migration.
+
+. Lorsque vous êtes prêt, sélectionnez *commençons*.
 . Sélectionnez *Créer un nouveau plan de déploiement*.
 . Sélectionnez le type de fichier d'inventaire que vous utiliserez pour remplir Workload Factory avec votre configuration VM actuelle et sélectionnez *Suivant*.
 +
@@ -82,18 +86,39 @@ Notez que si vous sélectionnez une quantité inférieure à 20 %, vous ne pourr
 
 
 . Sélectionnez *Suivant*.
-
-
-. Sur la page *revoir les volumes EC2*, passez en revue les informations relatives aux VM, les règles de classification des volumes, les attributions de volumes et la liste des volumes qui seront migrés dans le cadre du déploiement.
+. Sur la page *Review EC2 volume assignement*, passez en revue les informations sur les VM, les règles de classification des volumes, les attributions de volumes et la liste des volumes qui seront migrés dans le cadre du déploiement.
 . Sélectionnez *Suivant*.
-. Sur la page *Review instance Storage*, examinez les instances EC2 et les volumes affectés à différents clusters FSX pour ONTAP.
-. Sur la page *revoir le plan de déploiement*, passez en revue le coût mensuel estimé pour tous les ordinateurs virtuels que vous prévoyez de migrer.
+. Sur la page *vérifier l'affectation du stockage de l'instance*, examinez les instances EC2 et les volumes affectés à différents clusters FSX pour ONTAP.
+. Sur la page *revoir votre plan de migration*, passez en revue le coût mensuel estimé pour tous les ordinateurs virtuels que vous prévoyez de migrer.
 +
-Le haut de la page décrit le coût mensuel de tous les VM déployés et de tous les systèmes de fichiers FSX pour ONTAP. Vous pouvez développer chaque section pour afficher des détails sur la configuration du système de fichiers Amazon FSX for ONTAP recommandée, la répartition des coûts estimés, la configuration des volumes, les hypothèses de dimensionnement et les avertissements techniques.
+Le haut de la page estime les économies mensuelles pour les systèmes de fichiers FSX pour ONTAP et les volumes EBS. Vous pouvez développer chaque section pour afficher les détails de la configuration suggérée du système de fichiers, la répartition estimée des économies, les hypothèses et les clauses de non-responsabilité techniques.
 
 . Lorsque vous êtes satisfait du plan de migration, vous disposez de plusieurs options :
 
 
 * Sélectionnez *Plan de téléchargement > déploiement du stockage d'instance* pour télécharger le plan de déploiement du datastore externe au format .csv afin de pouvoir l'utiliser pour créer votre nouvelle infrastructure de données intelligente basée sur le cloud.
 * Sélectionnez *Télécharger le plan > planifier le rapport* pour télécharger le plan de déploiement au format .PDF afin de distribuer le plan pour examen.
+* Sélectionnez *Exporter le plan* pour enregistrer le plan de migration en tant que modèle au format .json. Vous pouvez importer le plan ultérieurement pour l'utiliser comme modèle lors du déploiement de systèmes présentant des exigences similaires.
+
+
+
+
+== Créez un plan de déploiement basé sur un plan existant
+
+Si vous prévoyez un nouveau déploiement similaire à un plan de déploiement existant que vous avez utilisé auparavant, vous pouvez importer ce plan, apporter des modifications, puis l'enregistrer en tant que nouveau plan de déploiement.
+
+.De formation
+Vous devez avoir accès au fichier .json du plan de déploiement existant à partir du système sur lequel vous vous connectez à Workload Factory.
+
+.Étapes
+. Connectez-vous à Workload Factory.
+. Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*.
+. Sélectionnez *Importer un plan de déploiement existant*.
+. image:button-upload-file.png["le bouton de téléchargement"]Sélectionnez et sélectionnez le fichier de plan .json existant que vous souhaitez importer dans le conseiller de migration.
+. Sélectionnez *Suivant*.
++
+La page Revue plan s'affiche.
+
+. Vous pouvez sélectionner *Précédent* pour accéder aux pages précédentes et modifier les paramètres du plan comme décrit dans la section précédente.
+. Après avoir personnalisé le plan selon vos besoins, vous pouvez l'enregistrer ou le télécharger au format PDF.
 
