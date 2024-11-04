@@ -78,6 +78,9 @@ Pour optimiser les performances et la rentabilité, il s'agit généralement de 
 . Dans la section _considérations relatives à la capacité cible et à la protection_, sélectionnez l'une des options de stockage suivantes.
 +
 .. *Taux moyen de réduction des données* : choisissez parmi les trois ratios communs de réduction des données. Sélectionnez « 1:1 - aucune réduction », « 1:1.25 - 20 % de réduction » ou « 1:1.5 - 33 % de réduction ».
++
+Sélectionnez *Aidez-moi à décider* si vous n'êtes pas sûr du ratio à choisir. La boîte de dialogue _Assistant ratio de réduction des données_ s'affiche. Sélectionnez toutes les déclarations qui s'appliquent à l'inventaire et à l'état de stockage de vos ordinateurs virtuels. L'assistant recommande un taux de réduction de données approprié. Sélectionnez *appliquer* pour utiliser le ratio recommandé.
+
 .. *Pourcentage de marge* : saisissez le pourcentage de croissance de la capacité ajouté à la capacité de vos systèmes de fichiers FSX pour ONTAP.
 +
 Notez que si vous sélectionnez une quantité inférieure à 20 %, vous ne pourrez pas créer de snapshots de volume pour la protection et les sauvegardes à long terme.

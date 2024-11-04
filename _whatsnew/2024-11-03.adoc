@@ -1,0 +1,11 @@
+= Aide de VMware migration Advisor sur le taux de réduction des données
+:allow-uri-read: 
+
+
+
+
+=== Aide de VMware migration Advisor sur le taux de réduction des données
+
+Cette version de Workload Factory pour VMware est dotée d'un assistant de réduction des taux de données. L'assistant de réduction des taux de données vous aide à décider quel ratio convient le mieux à votre inventaire et à votre environnement de stockage VMware lors de la préparation de l'intégration au cloud AWS.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]

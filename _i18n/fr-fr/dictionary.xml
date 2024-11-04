@@ -488,4 +488,8 @@
   <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">Vous pouvez sélectionner *Précédent* pour accéder aux pages précédentes et modifier les paramètres du plan comme décrit dans la section précédente.</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">Après avoir personnalisé le plan selon vos besoins, vous pouvez l'enregistrer ou le télécharger au format PDF.</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 septembre 2024</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">Aide de VMware migration Advisor sur le taux de réduction des données</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">Cette version de Workload Factory pour VMware est dotée d'un assistant de réduction des taux de données. L'assistant de réduction des taux de données vous aide à décider quel ratio convient le mieux à votre inventaire et à votre environnement de stockage VMware lors de la préparation de l'intégration au cloud AWS.</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">Sélectionnez *Aidez-moi à décider* si vous n'êtes pas sûr du ratio à choisir. La boîte de dialogue _Assistant ratio de réduction des données_ s'affiche. Sélectionnez toutes les déclarations qui s'appliquent à l'inventaire et à l'état de stockage de vos ordinateurs virtuels. L'assistant recommande un taux de réduction de données approprié. Sélectionnez *appliquer* pour utiliser le ratio recommandé.</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 novembre 2024</block>
 </blocks>
