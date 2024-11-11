@@ -13,18 +13,17 @@ summary: Lancez-vous avec VMware migration Advisor pour migrer votre infrastruct
 [role="lead"]
 Lancez-vous avec VMware migration Advisor pour migrer votre infrastructure actuelle vers VMware Cloud on AWS en utilisant Amazon FSX for ONTAP en tant que datastores NFS externes.
 
-Avant de commencer, vous devez avoir une compréhension de https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modes de fonctionnement"^]
+Avant de commencer, vous devriez avoir une compréhension de https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modes de fonctionnement"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Inscrivez-vous et créez un compte pour Workload Factory
-[role="quick-margin-para"]
-Accédez au https://console.workloads.netapp.com["Console Workload Factory"^] et inscrivez-vous. https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["En savoir plus sur la création de comptes"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Connectez-vous à l'usine de la charge de travail
+Vous devez vous https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configurez un compte avec une usine de charges de travail"^] connecter à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Ajoutez les identifiants et les autorisations AWS à votre compte
 [role="quick-margin-para"]
-Vous pouvez utiliser Workload Factory en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à Workload Factory en mode _Read_ ou _automate_ donne à votre compte Workload Factory les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSX pour ONTAP, et pour déployer et gérer les workloads dans VMware Cloud.
+Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout des identifiants AWS à l'usine de workloads en mode _Read_ ou _automate_ donne au compte d'usine de votre workload les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSX pour ONTAP, et pour déployer et gérer les workloads dans VMware Cloud.
 
 [role="quick-margin-para"]
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment ajouter des informations d'identification et des autorisations"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment ajouter des informations d'identification et des autorisations"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Enregistrez vos configurations de machines virtuelles actuelles dans votre environnement vSphere
 [role="quick-margin-para"]
@@ -52,7 +51,7 @@ link:deploy-fsx-file-system.html["Découvrez comment déployer votre nouveau sys
 Votre Software-Defined Data Center (SDDC) offre des options réseau pour la connexion au système de fichiers FSX for ONTAP en utilisant la fonctionnalité de peering VPC pour étendre la connectivité réseau aux volumes de stockage NFS externes.
 
 [role="quick-margin-para"]
-link:connect-sddc-to-fsx.html["En savoir plus sur la migration de vos données"].
+link:connect-sddc-to-fsx.html["Découvrez comment connecter vos systèmes de fichiers FSX pour ONTAP"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["Sept"] Migrez les données de vos anciens systèmes vers vos nouveaux systèmes de fichiers FSX pour ONTAP
 [role="quick-margin-para"]

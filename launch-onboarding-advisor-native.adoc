@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: launch-onboarding-advisor-native.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: 'Connectez-vous à NetApp Workload Factory pour accéder à VMware migration Advisor. Suivez les étapes de l"assistant pour créer un plan de déploiement ou de migration personnalisé en fonction de vos besoins.' 
+summary: 'Connectez-vous à la fabrique de workloads NetApp pour accéder à VMware migration Advisor. Suivez les étapes de l"assistant pour créer un plan de déploiement ou de migration personnalisé en fonction de vos besoins.' 
 ---
 = Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: 'Connectez-vous à NetApp Workload Factory pour accéder à VMware migr
 
 
 [role="lead"]
-Connectez-vous à NetApp Workload Factory pour accéder à VMware migration Advisor. Suivez les étapes de l'assistant pour créer un plan de déploiement ou de migration personnalisé en fonction de vos besoins.
+Connectez-vous à la fabrique de workloads NetApp pour accéder à VMware migration Advisor. Suivez les étapes de l'assistant pour créer un plan de déploiement ou de migration personnalisé en fonction de vos besoins.
 
-Notez que vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à Workload Factory. Si vous n'y avez pas accès, créez un compte maintenant. Voir les instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ici"].
+Notez que vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à l'usine de la charge de travail. Si vous n'y avez pas accès, créez un compte maintenant. Voir les instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ici"].
 
 
 
@@ -23,17 +23,18 @@ Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les en
 
 .De formation
 * Vous devez avoir créé le fichier d'inventaire à partir de vos systèmes existants en utilisant le collecteur VM de migration Advisor (fichier .zip) ou en utilisant RVTools (fichier.xlsx).
-* Vous devez avoir accès au fichier d'inventaire à partir du système sur lequel vous vous connectez à Workload Factory.
+* Vous devez avoir accès au fichier d'inventaire à partir du système sur lequel vous vous connectez à l'usine de la charge de travail.
 
 
 .Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
 . Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*. L'écran de démarrage de VMware migration Advisor s'affiche.
 +
 Consultez ces informations pour en savoir plus sur les avantages de l'assistant de migration.
 
 . Lorsque vous êtes prêt, sélectionnez *commençons*.
 . Sélectionnez *Créer un nouveau plan de déploiement*.
-. Sélectionnez le type de fichier d'inventaire que vous utiliserez pour remplir Workload Factory avec votre configuration VM actuelle et sélectionnez *Suivant*.
+. Sélectionnez le type de fichier d'inventaire que vous utiliserez pour remplir l'usine de la charge de travail avec votre configuration de machine virtuelle actuelle et sélectionnez *Suivant*.
 +
 ** Sélectionnez *utiliser le conseiller de migration VMware Data Collector* pour utiliser le fichier que vous avez créé à l'aide du collecteur de données VMware.
 ** Sélectionnez *utiliser RVTools* pour utiliser le fichier .xlsx que vous avez créé à l'aide de RVTools.
@@ -111,10 +112,10 @@ Le haut de la page estime les économies mensuelles pour les systèmes de fichie
 Si vous prévoyez un nouveau déploiement similaire à un plan de déploiement existant que vous avez utilisé auparavant, vous pouvez importer ce plan, apporter des modifications, puis l'enregistrer en tant que nouveau plan de déploiement.
 
 .De formation
-Vous devez avoir accès au fichier .json du plan de déploiement existant à partir du système sur lequel vous vous connectez à Workload Factory.
+Vous devez avoir accès au fichier .json du plan de déploiement existant à partir du système sur lequel vous vous connectez à l'usine de la charge de travail.
 
 .Étapes
-. Connectez-vous à Workload Factory.
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
 . Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*.
 . Sélectionnez *Importer un plan de déploiement existant*.
 . image:button-upload-file.png["le bouton de téléchargement"]Sélectionnez et sélectionnez le fichier de plan .json existant que vous souhaitez importer dans le conseiller de migration.

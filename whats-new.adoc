@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Découvrez les nouveautés du composant VMware migration Advisor de Workload Factory. 
+summary: 'Découvrez les nouveautés du composant VMware migration Advisor de l"usine de workloads.' 
 ---
 = Quoi de neuf
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Découvrez les nouveautés du composant VMware migration Advisor de Wor
 
 
 [role="lead"]
-Découvrez les nouveautés du composant VMware Cloud migration Advisor de Workload Factory.
+Découvrez les nouveautés du composant VMware Cloud migration Advisor de l'usine de workloads.
 
 
 
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Améliorations de VMware migration Advisor
 
-Cette version de Workload Factory pour VMware offre des fonctionnalités améliorées et une meilleure stabilité, ainsi que la possibilité d'importer et d'exporter des plans de migration lors de l'utilisation de VMware migration Advisor.
+Cette version de l'usine de workloads pour VMware offre des fonctionnalités améliorées et une meilleure stabilité, ainsi que la possibilité d'importer et d'exporter des plans de migration lors de l'utilisation de VMware migration Advisor.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
 
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Migrez vers Amazon EC2
 
-Workload Factory pour VMware prend désormais en charge la migration vers Amazon EC2 à l'aide de VMware migration Advisor.
+L'usine de workloads pour VMware prend désormais en charge la migration vers Amazon EC2 à l'aide de VMware migration Advisor.
 
 
 
@@ -53,6 +53,6 @@ Workload Factory pour VMware prend désormais en charge la migration vers Amazon
 
 
 
-=== Lancement initial de Workload Factory pour VMware
+=== Version initiale de l'usine de workloads pour VMware
 
 La version initiale permet d'utiliser VMware migration Advisor pour analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site, et de générer un plan de déploiement des infrastructures de serveurs virtuels recommandées dans VMware Cloud on AWS et d'utiliser des systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.

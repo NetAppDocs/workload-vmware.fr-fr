@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: get-help.html 
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
-summary: 'NetApp prend en charge Workload Factory de différentes manières. De nombreuses options d"auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.' 
+summary: 'NetApp prend en charge l"usine de workloads de plusieurs manières. De nombreuses options d"auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.' 
 ---
 = Obtenez de l'aide
 :allow-uri-read: 
