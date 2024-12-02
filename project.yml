@@ -10,7 +10,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,it-it
+  langs: fr-fr,us-en,de-de,es-es,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
   - title: Documentation sur les workloads VMware
@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: Commencez
     entries:
-    - title: Découvrez l'usine de workloads VMware
+    - title: Découvrez la fabrique de workloads BlueXP  pour VMware
       url: "/learn-about-vmware-workloads.html"
     - title: Démarrage rapide de la migration vers VMware Cloud sur AWS
       url: "/quick-start.html"

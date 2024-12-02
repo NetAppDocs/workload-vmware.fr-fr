@@ -15,6 +15,23 @@ Découvrez les nouveautés du composant VMware Cloud migration Advisor de l'usin
 
 
 
+== 1 décembre 2024
+
+
+
+=== Améliorations d'Amazon EC2 migration Advisor
+
+Cette version de l'usine de workloads BlueXP  pour VMware apporte plusieurs améliorations à l'expérience de migration Advisor :
+
+* *Collecte de données* : l'usine de workloads BlueXP  pour VMware prend en charge la possibilité de collecter des données pour une période spécifique lorsque vous utilisez le conseiller de migration.
+* *Sélection VM* : l'usine de workloads BlueXP  pour VMware prend désormais en charge la sélection des machines virtuelles que vous souhaitez inclure dans votre déploiement de migration.
+* *Quick vs Advanced Experience* : lorsque vous utilisez le conseiller de migration, vous pouvez désormais choisir une expérience de migration rapide, en utilisant RVTools, ou l'expérience avancée, qui utilise le collecteur de données de migration Advisor.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
+
+
+
 == 3 novembre 2024
 
 
@@ -35,11 +52,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 Cette version de l'usine de workloads pour VMware offre des fonctionnalités améliorées et une meilleure stabilité, ainsi que la possibilité d'importer et d'exporter des plans de migration lors de l'utilisation de VMware migration Advisor.
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
-
-
-
-== 1er septembre 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"] == 1 septembre 2024
 
 
 

@@ -7,7 +7,7 @@ summary: 'NetApp prend en charge l"usine de workloads de plusieurs manières. De
 = Obtenez de l'aide
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

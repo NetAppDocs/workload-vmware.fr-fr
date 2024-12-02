@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: 'Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers l"usine de workloads. Grâce aux outils permettant de migrer vos données des systèmes sur site vers VMware Cloud on AWS (VMC) ou Amazon EC2.' 
+summary: 'BlueXP  Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers VMware Cloud on AWS (VMC) ou Amazon EC2.' 
 ---
-= Découvrez l'usine de workloads VMware
+= Découvrez la fabrique de workloads BlueXP  pour VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers VMware Cloud on AWS (VMC) ou Amazon EC2.
+BlueXP  Workload Factory pour VMware fournit des outils pour déplacer vos données des systèmes sur site vers VMware Cloud on AWS (VMC) ou Amazon EC2.
 
 
 
-== Quelle est l'usine de workloads de VMware ?
+== Quelle est l'usine de workloads BlueXP  pour VMware ?
 
-Workload Factory pour VMware fournit un conseiller de migration qui vous permet d'analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site. L'expert en migration génère ensuite un plan pour déployer les infrastructures de serveurs virtuels recommandées vers les clusters Amazon EC2 ou VMware Cloud sur AWS vSphere et utilise les systèmes de fichiers Amazon FSX pour NetApp ONTAP personnalisés en tant que datastores externes.
+BlueXP  Workload Factory pour VMware fournit un conseiller de migration qui vous permet d'analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site. L'expert en migration génère ensuite un plan pour déployer les infrastructures de serveurs virtuels recommandées vers les clusters Amazon EC2 ou VMware Cloud sur AWS vSphere et utilise les systèmes de fichiers Amazon FSX pour NetApp ONTAP personnalisés en tant que datastores externes.
 
 Amazon FSX for NetApp ONTAP est un datastore NFS externe basé sur le système de fichiers ONTAP de NetApp qui peut être connecté aux instances Amazon EC2 ou aux clusters VMware Cloud on AWS vSphere. Inutile d'ajouter des hôtes pour augmenter la disponibilité du stockage ; utilisez plutôt FSX pour les volumes ONTAP en tant que datastores externes pour compléter les datastores VSAN. Vous disposez ainsi d'une infrastructure de stockage virtualisée, haute performance et flexible, capable d'évoluer indépendamment des ressources de calcul.
 
