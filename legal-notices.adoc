@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Mentions légales
+= Mentions légales relatives à la fabrique de workloads BlueXP  pour VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

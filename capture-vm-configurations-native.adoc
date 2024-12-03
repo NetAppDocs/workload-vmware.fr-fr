@@ -4,7 +4,7 @@ permalink: capture-vm-configurations-native.html
 keywords: vm workloads, capture vm details 
 summary: 'Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools pour capturer vos configurations VM actuelles. Nous vous recommandons d"utiliser le script du collecteur de VM de migration Advisor, car il collecte les données de configuration et de performances des ordinateurs virtuels pour un plan extrêmement précis.' 
 ---
-= Capture de vos configurations de serveurs virtuels actuelles avant de migrer vers Amazon EC2
+= Capture de vos configurations de serveurs virtuels avant de migrer vers Amazon EC2 avec les workloads VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

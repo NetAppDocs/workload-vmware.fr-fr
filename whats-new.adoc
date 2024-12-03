@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: 'Découvrez les nouveautés du composant VMware migration Advisor de l"usine de workloads.' 
 ---
-= Quoi de neuf
+= Nouveautés de l'usine de workloads BlueXP  pour VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

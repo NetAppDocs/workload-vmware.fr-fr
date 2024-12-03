@@ -4,7 +4,7 @@ permalink: deploy-fsx-file-system.html
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: 'Après avoir vérifié que la solution FSX pour le système de fichiers ONTAP recommandée, ou dans certains cas, répond exactement à vos exigences, vous pouvez utiliser l"usine de workloads pour déployer le système dans votre environnement AWS.' 
 ---
-= Déployez le système de fichiers FSX pour ONTAP recommandé
+= Déployez le système de fichiers FSX pour ONTAP recommandé par les workloads VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
