@@ -11,9 +11,9 @@ summary: 'Avant d"ouvrir un dossier de demande de support auprès du support tec
 
 
 [role="lead"]
-Le support doit être enregistré pour bénéficier du support technique spécifique à Workload Factory et à ses solutions et services de stockage. Vous devez vous inscrire au support depuis la console BlueXP, qui est une console web distincte de Workload Factory.
+Le support doit être enregistré pour recevoir le support technique spécifique à l'usine de workloads BlueXP  ainsi qu'à ses solutions et services de stockage. Vous devez vous inscrire au support depuis la console BlueXP , qui est une console web distincte de la fabrique des charges de travail.
 
-L'inscription au support n'active pas le support NetApp pour un service de fichiers de fournisseur cloud. Pour obtenir un support technique concernant un service de fichiers d'un fournisseur cloud, son infrastructure ou toute solution utilisant le service, reportez-vous à la section « obtention d'aide » de la documentation Workload Factory de ce produit.
+L'inscription au support n'active pas le support NetApp pour un service de fichiers de fournisseur cloud. Pour obtenir de l'aide technique concernant un service de fichiers d'un fournisseur cloud, son infrastructure ou toute solution utilisant le service, reportez-vous à la section « obtention d'aide » de la documentation d'usine de la charge de travail de ce produit.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX pour ONTAP"^]
 
@@ -38,7 +38,7 @@ Pour vous inscrire au support et activer le support, un utilisateur de votre com
 Si vous êtes client NetApp avec un compte NSS, il vous suffit de vous inscrire pour obtenir du support dans BlueXP.
 
 .Étapes
-. Dans le coin supérieur droit de la console Workload Factory, sélectionnez *aide > support*.
+. Dans le coin supérieur droit de la console d'usine de la charge de travail, sélectionnez *aide > support*.
 +
 La sélection de cette option ouvre un nouvel onglet de navigateur sur la console BlueXP et charge le tableau de bord de support.
 
@@ -80,7 +80,7 @@ Si vous possédez déjà des licences et des numéros de série NetApp, mais que
 Si vous êtes nouveau chez NetApp et que vous ne disposez pas d'un compte NSS, effectuez chacune des étapes ci-dessous.
 
 .Étapes
-. Dans le coin supérieur droit de la console Workload Factory, sélectionnez *aide > support*.
+. Dans le coin supérieur droit de la console d'usine de la charge de travail, sélectionnez *aide > support*.
 +
 La sélection de cette option ouvre un nouvel onglet de navigateur sur la console BlueXP et charge le tableau de bord de support.
 
