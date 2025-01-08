@@ -36,7 +36,7 @@ Notez que si vous prévoyez de capturer des statistiques à long terme à partir
 
 .Étapes
 . Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-. Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*.
+. Dans la mosaïque workloads VMware, sélectionnez *évaluer et planifier*, puis sélectionnez *migrer vers VMware Cloud sur AWS*.
 +
 La page principale de VMware migration Advisor s'affiche.
 

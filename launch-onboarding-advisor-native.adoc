@@ -28,7 +28,7 @@ Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les en
 
 .Étapes
 . Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-. Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*. L'écran de démarrage de VMware migration Advisor s'affiche.
+. Dans la mosaïque workloads VMware, sélectionnez *évaluer et planifier*, puis sélectionnez *migrer vers le calcul natif AWS*. L'écran de démarrage de VMware migration Advisor s'affiche.
 +
 Consultez ces informations pour en savoir plus sur les avantages de l'assistant de migration.
 
@@ -148,7 +148,7 @@ Le haut de la page estime les économies mensuelles pour les systèmes de fichie
 ====
 Lorsque vous êtes satisfait du plan de migration, vous disposez de plusieurs options :
 
-* Sélectionnez *gérer le plan > Enregistrer un plan* pour enregistrer les données du plan de déploiement dans votre compte, ce qui vous permet d'importer le plan ultérieurement pour l'utiliser comme modèle lors du déploiement de systèmes ayant des exigences similaires. Vous pouvez nommer le plan avant de l'enregistrer.
+* Sélectionnez *gérer le plan > Enregistrer un plan* pour enregistrer les données du plan de déploiement dans votre compte, ce qui vous permet d'importer le plan ultérieurement pour l'utiliser comme modèle lors du déploiement de systèmes ayant des exigences similaires. Vous pouvez nommer le plan avant de l'enregistrer (le nom d'utilisateur et l'horodatage sont ajoutés au nom que vous indiquez).
 * Sélectionnez *gérer le plan > Exporter un plan* pour enregistrer le plan de migration en tant que modèle au format .json sur votre ordinateur. Vous pouvez importer le plan ultérieurement pour l'utiliser comme modèle lors du déploiement de systèmes présentant des exigences similaires.
 * Sélectionnez *gérer le plan > Télécharger un rapport* pour télécharger le plan de déploiement au format .PDF afin de distribuer le plan pour examen.
 * Sélectionnez *gérer le plan > Télécharger le déploiement du stockage d'instance* pour télécharger le plan de déploiement du datastore externe au format .csv afin de pouvoir l'utiliser pour créer votre nouvelle infrastructure de données intelligente basée sur le cloud.
@@ -167,7 +167,7 @@ Vous devez avoir accès au fichier .json du plan de déploiement existant à par
 
 .Étapes
 . Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-. Dans la mosaïque des charges de travail VMware, sélectionnez *Access and plan*, puis *migration vers le calcul natif AWS*.
+. Dans la mosaïque workloads VMware, sélectionnez *évaluer et planifier*, puis sélectionnez *migrer vers le calcul natif AWS*.
 . Sélectionnez *Importer plan*.
 . Effectuez l'une des opérations suivantes :
 +
@@ -180,10 +180,13 @@ Vous devez avoir accès au fichier .json du plan de déploiement existant à par
 ** Sélectionnez *à partir de mon ordinateur*.
 +
 ... Sélectionnez le fichier de plan .json existant que vous souhaitez importer dans le conseiller de migration, puis sélectionnez *Ouvrir*.
++
+La page *Plan de revue* s'affiche.
 
 
 
 
 
+. Vous pouvez sélectionner *Précédent* pour accéder aux pages précédentes et modifier les paramètres du plan comme décrit dans la section précédente.
+. Après avoir personnalisé le plan selon vos besoins, vous pouvez l'enregistrer ou le télécharger au format PDF.
 
-La page *Plan de revue* s'affiche. . Vous pouvez sélectionner *Précédent* pour accéder aux pages précédentes et modifier les paramètres du plan comme décrit dans la section précédente. . Après avoir personnalisé le plan selon vos besoins, vous pouvez l'enregistrer ou le télécharger au format PDF.

@@ -34,7 +34,7 @@ Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les en
 
 .Étapes
 . Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-. Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*.
+. Dans la mosaïque workloads VMware, sélectionnez *évaluer et planifier*, puis sélectionnez *migrer vers VMware Cloud sur AWS*.
 +
 La page principale de VMware migration Advisor s'affiche.
 
@@ -158,7 +158,7 @@ Vous devez avoir accès au fichier .json du plan de déploiement existant à par
 
 .Étapes
 . Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-. Dans la mosaïque workloads VMware, sélectionnez *Access and plan*, puis *migration vers VMware Cloud on AWS*. La page principale de VMware migration Advisor s'affiche.
+. Dans la mosaïque workloads VMware, sélectionnez *évaluer et planifier*, puis sélectionnez *migrer vers VMware Cloud sur AWS*. La page principale de VMware migration Advisor s'affiche.
 . Sélectionnez *Importer un plan de déploiement existant*.
 . image:button-upload-file.png["le bouton de téléchargement"]Sélectionnez et sélectionnez le fichier de plan existant que vous souhaitez importer dans le conseiller de migration.
 . Sélectionnez *Suivant* et la page Plan de révision s'affiche.
