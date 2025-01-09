@@ -17,7 +17,11 @@ Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools 
 ====
 .Utilisez le script du collecteur VM de migration Advisor
 --
-Le script du collecteur de VM de NetApp migration Advisor collecte les informations de configuration de VM à partir de votre vCenter, comme RVTools collecte. Cependant, il capture les données de performances de VM actuelles pour fournir des statistiques réelles d'IOPS et de débit en lecture et écriture. Vous pouvez utiliser le script dans l'un des deux modes suivants : * collecte de données à court terme * collecte de données à long terme
+Le script du collecteur de VM de NetApp migration Advisor collecte les informations de configuration de VM à partir de votre vCenter, comme RVTools collecte. Cependant, il capture les données de performances de VM actuelles pour fournir des statistiques réelles d'IOPS et de débit en lecture et écriture. Vous pouvez utiliser le script dans l'un des deux modes suivants :
+
+* Collecte des données horaires
+* Collecte quotidienne des données
+
 
 Vous devez démarrer le conseiller migration pour copier le script du collecteur VM du conseiller migration à partir de la fenêtre Codebox.
 
