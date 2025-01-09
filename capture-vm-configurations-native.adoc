@@ -49,22 +49,31 @@ La fenêtre Codebox s'affiche sur le côté droit de la page.
 .. Connectez-vous au système sur lequel vous avez téléchargé le collecteur de données, sur lequel PowerShell et PowerCLI sont installés.
 .. Connectez-vous à votre serveur VMware vCenter en exécutant la commande suivante :
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 Remplacez <server_IP> par l'adresse IP ou le nom d'hôte de votre serveur VMware.
 
-.. Exécutez le script du collecteur de données que vous avez téléchargé et spécifiez l'option de collecte de données pour les statistiques de VM « quotidiennes » ou « horaires ».
+.. Exécutez le script de collecteur de données que vous avez téléchargé et spécifiez l'option de collecte de données pour les statistiques de VM « horaire » ou « quotidien ».
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -PerformanceStatisticsTimePeriod <LastHour | LastDay>
+----
 +
 où ?
 
 +
-*** *True* collecte les données d'IOPS et de débit pour une période personnalisée, par intervalles d'une heure.
-*** *FALSE* collecte les données d'IOPS et de débit de la dernière heure par intervalles de 20 secondes.
+*** *LastHour* collecte les données sur les IOPS et le débit de la dernière heure, par intervalles de 20 secondes.
+*** *LastDay* collecte les données sur les IOPS et le débit des 24 dernières heures par intervalles de 5 minutes.
 
 
 
+
++
+Vous pouvez éventuellement exécuter le script du collecteur de données sans spécifier d'options ; ceci vous permet de sélectionner la période de collecte de données dans le menu interactif.
 
 
 
