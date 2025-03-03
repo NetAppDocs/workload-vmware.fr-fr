@@ -1,0 +1,16 @@
+= Améliorations d'Amazon EC2 migration Advisor
+:allow-uri-read: 
+
+
+
+
+=== Améliorations d'Amazon EC2 migration Advisor
+
+Cette version de la fabrique de workloads BlueXP  pour VMware apporte plusieurs améliorations à l'expérience de l'outil de conseil en migration Amazon EC2 :
+
+* *Estimation du type d'instance* : migration Advisor peut désormais examiner les exigences de votre environnement et fournir un type d'instance Amazon EC2 estimé pour chaque machine virtuelle. Vous pouvez choisir d'inclure le type d'instance estimé pour chaque machine virtuelle pendant l'étape Scope de l'assistant de migration.
+* *Possibilité de recommander des volumes Amazon EBS* : le conseiller en migration peut désormais recommander la migration des volumes de données vers Amazon Elastic Block Store (EBS) plutôt que vers Amazon FSX pour NetApp ONTAP en raison des besoins spécifiques en termes de capacité ou de performances d'une région donnée.
+* *Attribution automatique améliorée du système de fichiers* : l'affectation du système de fichiers Amazon FSX pour NetApp ONTAP a été améliorée afin de mieux optimiser les coûts et de minimiser le débit.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
