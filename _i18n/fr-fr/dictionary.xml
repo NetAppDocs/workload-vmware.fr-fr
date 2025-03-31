@@ -478,7 +478,6 @@
   <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">BlueXP  Workload Factory pour VMware fournit un conseiller de migration qui vous permet d'analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site. L'expert en migration génère ensuite un plan pour déployer les infrastructures de serveurs virtuels recommandées vers les clusters Amazon EC2 ou VMware Cloud sur AWS vSphere et utilise les systèmes de fichiers Amazon FSX pour NetApp ONTAP personnalisés en tant que datastores externes.</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">Usine de workloads BlueXP</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">1 décembre 2024</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">Capture de vos configurations de serveurs virtuels avant de migrer vers Amazon EC2 avec les workloads VMware</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">Capturez vos configurations de machines virtuelles avant de migrer vers VMware Cloud avec les workloads VMware</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">Déployez le système de fichiers FSX pour ONTAP recommandé par les workloads VMware</block>
@@ -539,6 +538,14 @@
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">Dans la liste VM, vous pouvez sélectionner les types d'informations VM à afficher sous forme de colonnes. Par exemple, si vous sélectionnez _Estimated instance type_, une colonne affiche le type d'instance Amazon EC2 estimé pour chaque machine virtuelle, en fonction des besoins en ressources de la machine virtuelle.</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">Si un volume présente des exigences de capacité ou de performances supérieures aux fonctionnalités d'un système de fichiers Amazon FSX pour NetApp ONTAP d'une région spécifique, migration Advisor recommande de déployer le volume sur un système de fichiers Amazon EBS.</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 mars 2025</block>
-  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 3 novembre 2024</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 septembre 2024</block>
+  <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*Conseils améliorés d'attribution de volume* : les informations d'affectation de volume des étapes « classifier » et « Package » du conseiller de migration EC2 offrent une meilleure lisibilité et une plus grande facilité d'utilisation. Des informations plus utiles s'affichent sur chaque volume pour vous permettre de mieux identifier les volumes et de déterminer comment les attribuer.</block>
+  <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">*Améliorations de l'efficacité du script du collecteur de données* : le script du collecteur de données EC2 migration Advisor optimise l'utilisation du processeur lors de la collecte de données pour les déploiements de machines virtuelles plus petits.</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 mars 2025</block>
+  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 1 décembre 2024</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 novembre 2024</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs et communauté</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs BlueXP</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
 </blocks>
