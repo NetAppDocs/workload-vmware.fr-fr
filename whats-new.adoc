@@ -15,6 +15,26 @@ Découvrez les nouveautés du composant VMware migration Advisor de l'usine de w
 
 
 
+== 4 mai 2025
+
+
+
+=== Améliorations d'Amazon EC2 migration Advisor
+
+Cette version de la fabrique de workloads BlueXP  pour VMware offre les améliorations suivantes à l'expérience de migration Advisor dans Amazon EC2 :
+
+*Informations sur l'infrastructure de données NetApp en tant que source de données* : la fabrique de workloads se connecte désormais directement aux informations sur l'infrastructure de données NetApp pour collecter des informations sur le déploiement VMware lorsque vous utilisez le collecteur de données EC2 migration Advisor.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
+
+
+
+=== Mise à jour de la terminologie des autorisations
+
+L'interface utilisateur et la documentation de l'usine de la charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture-écriture » pour faire référence aux autorisations d'automatisation.
+
+
+
 == 30 mars 2025
 
 
@@ -44,11 +64,7 @@ Cette version de la fabrique de workloads BlueXP  pour VMware apporte plusieurs
 * *Attribution automatique améliorée du système de fichiers* : l'affectation du système de fichiers Amazon FSX pour NetApp ONTAP a été améliorée afin de mieux optimiser les coûts et de minimiser le débit.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
-
-
-
-== 5 janvier 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"] == 5 janvier 2025
 
 
 
@@ -60,7 +76,11 @@ Cette version de l'usine de workloads BlueXP  pour VMware apporte plusieurs am�
 * *Amélioration de la sélection des machines virtuelles* : l'usine de workloads BlueXP  pour VMware prend désormais en charge le filtrage et la recherche de la liste des machines virtuelles que vous souhaitez inclure dans votre déploiement de migration.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"] == 1 décembre 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
+
+
+
+== 1er décembre 2024
 
 
 

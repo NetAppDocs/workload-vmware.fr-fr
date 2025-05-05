@@ -65,18 +65,7 @@ Le transfert d'une partie de votre infrastructure actuelle vers Amazon EC2 ou VM
 * Réduction des coûts et de la latence grâce à des configurations AZ uniques qui utilisent le peering VPC sans nécessiter de passerelle de transit
 
 
-
-
-== Outils pour utiliser l'usine de charge de travail
-
-Vous pouvez utiliser l'usine de workloads BlueXP  avec les outils suivants :
-
-* *Workload Factory console*: La console de fabrique de charge de travail fournit une interface visuelle qui vous donne une vue globale de vos applications et projets.
-* *Console BlueXP * : la console BlueXP  offre une interface hybride pour que vous puissiez utiliser la fabrique de workloads BlueXP  avec d'autres services BlueXP .
-* *API REST* : les API REST d'usine de workloads vous permettent de déployer et de gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS
-* *CloudFormation* : le code AWS CloudFormation vous permet d'effectuer les actions que vous avez définies dans la console d'usine de la charge de travail pour modéliser, provisionner et gérer les ressources AWS et tierces à partir de la pile CloudFormation de votre compte AWS.
-* *Terraform BlueXP  Workload Factory Provider*: Terraform vous permet de créer et de gérer des flux de travail d'infrastructure générés dans la console d'usine de la charge de travail.
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 
