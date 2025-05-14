@@ -65,7 +65,20 @@ Le transfert d'une partie de votre infrastructure actuelle vers Amazon EC2 ou VM
 * Réduction des coûts et de la latence grâce à des configurations AZ uniques qui utilisent le peering VPC sans nécessiter de passerelle de transit
 
 
-https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
+
+
+== Outils pour utiliser l'usine de charge de travail
+
+Vous pouvez utiliser l'usine de workloads BlueXP  avec les outils suivants :
+
+* *Workload Factory console*: La console de fabrique de charge de travail offre une vue visuelle et holistique de vos applications et projets.
+* *Console BlueXP * : la console BlueXP  offre une interface hybride pour que vous puissiez utiliser la fabrique de workloads BlueXP  avec d'autres services BlueXP .
+* *Posez-moi* : utilisez l'assistant Ask Me ai pour poser des questions et en savoir plus sur l'usine de charge de travail sans quitter l'interface utilisateur Web de l'usine de charge de travail. Accédez à Me demander à partir du menu d'aide de l'usine de la charge de travail.
+* *CLI CloudShell* : la fabrique de workloads inclut une interface de ligne de commande CloudShell pour gérer et exploiter les environnements AWS et NetApp entre les comptes à partir d'une seule interface de ligne de commande basée sur navigateur. Accédez à CloudShell à partir de la barre supérieure de la console d'usine de la charge de travail.
+* *API REST* : utilisez les API REST d'usine pour déployer et gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS.
+* *CloudFormation* : utilisez le code AWS CloudFormation pour effectuer les actions que vous avez définies dans la console d'usine de la charge de travail afin de modéliser, de provisionner et de gérer les ressources AWS et tierces à partir de la pile CloudFormation de votre compte AWS.
+* *Terraform BlueXP  Workload Factory Provider* : utilisez Terraform pour créer et gérer les flux de travail d'infrastructure générés dans la console d'usine de la charge de travail.
+
 
 
 
