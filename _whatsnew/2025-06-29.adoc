@@ -1,0 +1,11 @@
+= Présentation de la prise en charge du conseiller de migration pour Amazon Elastic VMware Service
+:allow-uri-read: 
+
+
+
+
+=== Présentation de la prise en charge du conseiller de migration pour Amazon Elastic VMware Service
+
+L'usine de charges de travail BlueXP pour VMware prend désormais en charge Amazon Elastic VMware Service. Grâce à l'assistant de migration, vous pouvez migrer rapidement vos charges de travail VMware sur site vers Amazon Elastic VMware Service. Vous optimisez ainsi vos coûts et bénéficiez d'un meilleur contrôle sur votre environnement VMware sans avoir à refactoriser ou à repenser la plateforme de vos applications.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Créer un plan de déploiement pour Amazon EVS à l'aide du conseiller de migration"]

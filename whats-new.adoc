@@ -15,6 +15,18 @@ Découvrez les nouveautés du composant VMware migration Advisor de l'usine de w
 
 
 
+== 29 juin 2025
+
+
+
+=== Présentation de la prise en charge du conseiller de migration pour Amazon Elastic VMware Service
+
+L'usine de charges de travail BlueXP pour VMware prend désormais en charge Amazon Elastic VMware Service. Grâce à l'assistant de migration, vous pouvez migrer rapidement vos charges de travail VMware sur site vers Amazon Elastic VMware Service. Vous optimisez ainsi vos coûts et bénéficiez d'un meilleur contrôle sur votre environnement VMware sans avoir à refactoriser ou à repenser la plateforme de vos applications.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Créer un plan de déploiement pour Amazon EVS à l'aide du conseiller de migration"]
+
+
+
 == 4 mai 2025
 
 
@@ -47,11 +59,7 @@ Cette version de la fabrique de workloads BlueXP  pour VMware apporte plusieurs
 * *Améliorations de l'efficacité du script du collecteur de données* : le script du collecteur de données EC2 migration Advisor optimise l'utilisation du processeur lors de la collecte de données pour les déploiements de machines virtuelles plus petits.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
-
-
-
-== 2 mars 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"] == 2 mars 2025
 
 
 
@@ -64,7 +72,11 @@ Cette version de la fabrique de workloads BlueXP  pour VMware apporte plusieurs
 * *Attribution automatique améliorée du système de fichiers* : l'affectation du système de fichiers Amazon FSX pour NetApp ONTAP a été améliorée afin de mieux optimiser les coûts et de minimiser le débit.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"] == 5 janvier 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
+
+
+
+== 5 janvier 2025
 
 
 
