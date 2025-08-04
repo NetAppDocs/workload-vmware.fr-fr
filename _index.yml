@@ -13,10 +13,28 @@ indexpage:
     links:
     - title: Découvrez la fabrique de workloads BlueXP  pour VMware
       url: learn-about-vmware-workloads.html
+    - title: 'Démarrage rapide : migrer vers Amazon Elastic VMware Service'
+      url: quick-start-evs.html
     - title: 'Démarrage rapide : migrez vers VMware Cloud sur AWS'
       url: quick-start.html
     - title: 'Démarrage rapide : migrez vers Amazon EC2'
       url: quick-start-native.html
+  - title: Migrer vers Amazon Elastic VMware Service
+    links:
+    - title: Explorez les économies
+      url: calculate-evs-savings.html
+    - title: Créez un plan de déploiement à l'aide du conseiller de migration
+      url: launch-migration-advisor-evs-manual.html
+    - title: Déployez le système de fichiers FSX pour ONTAP recommandé
+      url: deploy-fsx-file-system.html
+  - title: Migrez vers Amazon EC2
+    links:
+    - title: Capturez vos configurations VM actuelles
+      url: capture-vm-configurations-native.html
+    - title: Créez un plan de déploiement à l'aide du conseiller de migration
+      url: launch-onboarding-advisor-native.html
+    - title: Déployez le système de fichiers FSX pour ONTAP recommandé
+      url: deploy-fsx-file-system.html
   - title: Migrez vers VMware Cloud on AWS
     links:
     - title: Capturez vos configurations VM actuelles
@@ -30,14 +48,6 @@ indexpage:
       url: connect-sddc-to-fsx.html
     - title: Migrez vos données vers la nouvelle infrastructure
       url: migrate-data.html
-  - title: Migrez vers Amazon EC2
-    links:
-    - title: Capturez vos configurations VM actuelles
-      url: capture-vm-configurations-native.html
-    - title: Créez un plan de déploiement à l'aide du conseiller de migration
-      url: launch-onboarding-advisor-native.html
-    - title: Déployez le système de fichiers FSX pour ONTAP recommandé
-      url: deploy-fsx-file-system.html
   - title: Blogs et communauté
     links:
     - title: Communauté NetApp
