@@ -6,7 +6,7 @@
 
 === Prise en charge améliorée du conseiller de migration pour Amazon Elastic VMware Service
 
-Le conseiller de migration Amazon Elastic VMware Service prend désormais en charge le déploiement et le montage automatiques de votre système de fichiers Amazon FSx for NetApp ONTAP .  Cela vous permet de commencer à déployer vos machines virtuelles sur les systèmes de fichiers FSx pour ONTAP lorsque la migration vers l'environnement Amazon EVS est terminée.
+NetApp Workload Factory prend désormais en charge le déploiement et le montage automatiques de votre système de fichiers Amazon FSx for NetApp ONTAP .  Cela vous permet de commencer à déployer vos machines virtuelles sur les systèmes de fichiers FSx for ONTAP une fois la migration vers l'environnement Amazon EVS terminée.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Créer un plan de déploiement pour Amazon EVS à l'aide du conseiller de migration"]
 
