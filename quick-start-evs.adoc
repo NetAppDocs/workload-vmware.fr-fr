@@ -15,25 +15,32 @@ Commencez avec le conseiller de migration VMware pour déplacer votre infrastruc
 
 Avant de commencer, vous devriez avoir une compréhension de https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modes de fonctionnement"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Connectez-vous à l'usine de la charge de travail
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"]Connectez-vous à Workload Factory
 [role="quick-margin-para"]
-Vous devez vous https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configurez un compte avec une usine de charges de travail"^] connecter à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+Vous aurez besoin de https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["créer un compte avec Workload Factory"^] et connectez-vous en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Ajoutez les identifiants et les autorisations AWS à votre compte
 [role="quick-margin-para"]
-Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à la fabrique de charges de travail en mode _lecture seule_ ou _lecture/écriture_ donne à votre compte de fabrique de charges de travail les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSx pour ONTAP, ainsi que pour déployer et gérer les charges de travail dans Amazon EC2.
+Vous pouvez utiliser Workload Factory en mode _Basic_ sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à Workload Factory en mode _lecture seule_ ou _lecture/écriture_ donne à votre compte Workload Factory les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSx pour ONTAP , ainsi que pour déployer et gérer les charges de travail dans Amazon EC2.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment ajouter des informations d'identification et des autorisations"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Créez un plan de déploiement à l'aide de VMware migration Advisor
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"]Télécharger les données d'inventaire de la machine virtuelle
+[role="quick-margin-para"]
+Vous pouvez utiliser le centre de planification pour télécharger les détails d'inventaire sur votre environnement de machine virtuelle actuel.  Utilisez le script de collecte de données, RVTools ou NetApp Data Infrastructure Insights pour capturer votre configuration de machine virtuelle actuelle et télécharger les données vers le centre de planification.
+
+[role="quick-margin-para"]
+link:upload-vm-inventory.html["Apprenez à télécharger les données d'inventaire des machines virtuelles"^] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Créez un plan de déploiement à l'aide de VMware migration Advisor
 [role="quick-margin-para"]
 Lancez le conseiller de migration VMware et configurez manuellement l’environnement de machine virtuelle que vous souhaitez créer sur l’infrastructure Amazon Elastic VMWare Service à l’aide d’un système de fichiers Amazon FSx for ONTAP en tant que banques de données NFS externes.
 
 [role="quick-margin-para"]
-link:launch-migration-advisor-evs-manual.html["Découvrez comment utiliser le conseiller de migration VMware pour créer un plan de déploiement"].
+link:launch-migration-advisor-evs.html["Découvrez comment utiliser le conseiller de migration VMware pour créer un plan de déploiement"] .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Déployez le système de fichiers FSX pour ONTAP recommandé
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinq"] Déployez le système de fichiers FSX pour ONTAP recommandé
 [role="quick-margin-para"]
 Déployez le nouveau système de fichiers FSX pour ONTAP qui fournira les datastores de vos machines virtuelles dans votre infrastructure Amazon EC2.
 

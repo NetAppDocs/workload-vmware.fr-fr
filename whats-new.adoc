@@ -2,16 +2,34 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 'Découvrez les nouveautés du composant VMware migration Advisor de l"usine de workloads.' 
+summary: Découvrez les nouveautés du composant VMware Migration Advisor de Workload Factory. 
 ---
-= Nouveautés de l'usine de workloads BlueXP  pour VMware
+= Nouveautés de NetApp Workload Factory pour VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Découvrez les nouveautés du composant VMware migration Advisor de l'usine de workloads.
+Découvrez les nouveautés du composant VMware Migration Advisor de Workload Factory.
+
+
+
+== 5 octobre 2025
+
+
+
+=== BlueXP workload factory désormais NetApp Workload Factory
+
+BlueXP a été renommé et repensé pour mieux refléter le rôle qu'il joue dans la gestion de votre infrastructure de données. Par conséquent, BlueXP workload factory a été renommée NetApp Workload Factory.
+
+
+
+=== Présentation du centre de planification des charges de travail VMware
+
+Le centre de planification des charges de travail VMware vous permet d'afficher et de gérer votre inventaire de machines virtuelles et vos plans de migration à partir d'un seul endroit.  Vous pouvez télécharger et enregistrer plusieurs inventaires de machines virtuelles à partir de différents environnements et commencer à planifier une migration vers le service AWS EC2 ou Amazon Elastic VMware pour l'un d'entre eux.  Vous pouvez également créer et enregistrer des plans de migration AWS EC2 ou EVS.
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Explorez le centre de planification des charges de travail VMware"]
 
 
 
@@ -31,7 +49,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 Vous pouvez désormais explorer les économies potentielles liées à la migration de vos charges de travail VMware vers Amazon Elastic VMware Service (EVS).  Le calculateur d'économies vous permet de comparer les coûts d'utilisation d'Amazon EVS avec et sans Amazon FSx for NetApp ONTAP comme stockage sous-jacent.  Le calculateur affiche les économies potentielles en temps réel à mesure que vous ajustez les caractéristiques de votre environnement.
 
-https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Découvrez les économies réalisées avec Amazon Elastic VMware Service avec BlueXP workload factory"]
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Découvrez les économies réalisées sur Amazon Elastic VMware Service avec BlueXP Workload Factory"]
 
 
 
@@ -41,7 +59,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Décou
 
 === Présentation de la prise en charge du conseiller de migration pour Amazon Elastic VMware Service
 
-L'usine de charges de travail BlueXP pour VMware prend désormais en charge Amazon Elastic VMware Service. Grâce à l'assistant de migration, vous pouvez migrer rapidement vos charges de travail VMware sur site vers Amazon Elastic VMware Service. Vous optimisez ainsi vos coûts et bénéficiez d'un meilleur contrôle sur votre environnement VMware sans avoir à refactoriser ou à repenser la plateforme de vos applications.
+BlueXP Workload Factory pour VMware prend désormais en charge Amazon Elastic VMware Service.  Vous pouvez migrer rapidement vos charges de travail VMware sur site vers Amazon Elastic VMware Service à l'aide du conseiller de migration, optimisant ainsi les coûts et permettant un meilleur contrôle sur votre environnement VMware sans avoir à refactoriser ou à re-plateformer vos applications.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Créer un plan de déploiement pour Amazon EVS à l'aide du conseiller de migration"]
 
@@ -53,7 +71,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 === Améliorations d'Amazon EC2 migration Advisor
 
-Cette version de la fabrique de workloads BlueXP  pour VMware offre les améliorations suivantes à l'expérience de migration Advisor dans Amazon EC2 :
+Cette version de BlueXP Workload Factory pour VMware présente l'amélioration suivante de l'expérience du conseiller de migration Amazon EC2 :
 
 *Informations sur l'infrastructure de données NetApp en tant que source de données* : la fabrique de workloads se connecte désormais directement aux informations sur l'infrastructure de données NetApp pour collecter des informations sur le déploiement VMware lorsque vous utilisez le collecteur de données EC2 migration Advisor.
 
@@ -63,7 +81,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Mise à jour de la terminologie des autorisations
 
-L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
+L'interface utilisateur et la documentation de Workload Factory utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
 
 
 
@@ -73,7 +91,7 @@ L'interface utilisateur et la documentation de l'usine de charge de travail util
 
 === Améliorations d'Amazon EC2 migration Advisor
 
-Cette version de la fabrique de workloads BlueXP  pour VMware apporte plusieurs améliorations à l'expérience de l'outil de conseil en migration Amazon EC2 :
+Cette version de BlueXP Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration Amazon EC2 :
 
 * *Conseils améliorés d'attribution de volume* : les informations d'affectation de volume des étapes « classifier » et « Package » du conseiller de migration EC2 offrent une meilleure lisibilité et une plus grande facilité d'utilisation. Des informations plus utiles s'affichent sur chaque volume pour vous permettre de mieux identifier les volumes et de déterminer comment les attribuer.
 * *Améliorations de l'efficacité du script du collecteur de données* : le script du collecteur de données EC2 migration Advisor optimise l'utilisation du processeur lors de la collecte de données pour les déploiements de machines virtuelles plus petits.
@@ -89,7 +107,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Améliorations d'Amazon EC2 migration Advisor
 
-Cette version de la fabrique de workloads BlueXP  pour VMware apporte plusieurs améliorations à l'expérience de l'outil de conseil en migration Amazon EC2 :
+Cette version de BlueXP Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration Amazon EC2 :
 
 * *Estimation du type d'instance* : migration Advisor peut désormais examiner les exigences de votre environnement et fournir un type d'instance Amazon EC2 estimé pour chaque machine virtuelle. Vous pouvez choisir d'inclure le type d'instance estimé pour chaque machine virtuelle pendant l'étape Scope de l'assistant de migration.
 * *Possibilité de recommander des volumes Amazon EBS* : le conseiller en migration peut désormais recommander la migration des volumes de données vers Amazon Elastic Block Store (EBS) plutôt que vers Amazon FSX pour NetApp ONTAP en raison des besoins spécifiques en termes de capacité ou de performances d'une région donnée.
@@ -106,10 +124,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Améliorations d'Amazon EC2 migration Advisor
 
-Cette version de l'usine de workloads BlueXP  pour VMware apporte plusieurs améliorations à l'expérience de migration Advisor :
+Cette version de BlueXP Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration :
 
-* *Enregistrer ou télécharger un plan de migration* : vous pouvez maintenant enregistrer ou télécharger un plan de migration et charger le plan de migration pour remplir le conseiller de migration. Lorsque vous enregistrez un plan de migration, celui-ci est enregistré avec votre compte d'usine de charge de travail.
-* *Amélioration de la sélection des machines virtuelles* : l'usine de workloads BlueXP  pour VMware prend désormais en charge le filtrage et la recherche de la liste des machines virtuelles que vous souhaitez inclure dans votre déploiement de migration.
+* *Enregistrer ou télécharger un plan de migration* : Vous pouvez désormais enregistrer ou télécharger un plan de migration et charger le plan de migration pour remplir le conseiller de migration.  Lorsque vous enregistrez un plan de migration, le plan est enregistré avec votre compte Workload Factory.
+* *Sélection de machine virtuelle améliorée* : BlueXP Workload Factory pour VMware prend désormais en charge le filtrage et la recherche de la liste des machines virtuelles que vous souhaitez inclure dans votre déploiement de migration.
 
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
@@ -122,10 +140,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Améliorations d'Amazon EC2 migration Advisor
 
-Cette version de l'usine de workloads BlueXP  pour VMware apporte plusieurs améliorations à l'expérience de migration Advisor :
+Cette version de NetApp Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration :
 
-* *Collecte de données* : l'usine de workloads BlueXP  pour VMware prend en charge la possibilité de collecter des données pour une période spécifique lorsque vous utilisez le conseiller de migration.
-* *Sélection VM* : l'usine de workloads BlueXP  pour VMware prend désormais en charge la sélection des machines virtuelles que vous souhaitez inclure dans votre déploiement de migration.
+* *Collecte de données* : BlueXP Workload Factory pour VMware prend en charge la possibilité de collecter des données pour une période spécifique lorsque vous utilisez le conseiller de migration.
+* *Sélection de VM* : BlueXP Workload Factory pour VMware prend désormais en charge la sélection des VM que vous souhaitez inclure dans votre déploiement de migration.
 * *Quick vs Advanced Experience* : lorsque vous utilisez le conseiller de migration, vous pouvez désormais choisir une expérience de migration rapide, en utilisant RVTools, ou l'expérience avancée, qui utilise le collecteur de données de migration Advisor.
 
 
@@ -151,7 +169,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Améliorations de VMware migration Advisor
 
-Cette version de l'usine de workloads pour VMware offre des fonctionnalités améliorées et une meilleure stabilité, ainsi que la possibilité d'importer et d'exporter des plans de migration lors de l'utilisation de VMware migration Advisor.
+Cette version de Workload Factory pour VMware présente des améliorations de fonctionnalités et de stabilité, ainsi que la possibilité d'importer et d'exporter des plans de migration lors de l'utilisation du conseiller de migration VMware.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Créez un plan de déploiement pour Amazon EC2 à l'aide du conseiller de migration"]
 
@@ -171,6 +189,6 @@ L'usine de workloads pour VMware prend désormais en charge la migration vers Am
 
 
 
-=== Version initiale de l'usine de workloads pour VMware
+=== Version initiale de Workload Factory pour VMware
 
 La version initiale permet d'utiliser VMware migration Advisor pour analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site, et de générer un plan de déploiement des infrastructures de serveurs virtuels recommandées dans VMware Cloud on AWS et d'utiliser des systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.

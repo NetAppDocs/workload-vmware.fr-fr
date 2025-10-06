@@ -2,24 +2,24 @@
 sidebar: sidebar 
 permalink: get-help.html 
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
-summary: 'NetApp prend en charge l"usine de workloads de plusieurs manières. De nombreuses options d"auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.' 
+summary: 'NetApp fournit un support pour Workload Factory de différentes manières. De nombreuses options d"auto-assistance gratuites sont disponibles 24h/24 et 7j/7, telles que des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut une assistance technique à distance via un ticket web.' 
 ---
-= Obtenez de l'aide avec la fabrique de workloads BlueXP  pour VMware
+= Obtenez de l'aide avec NetApp Workload Factory pour VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp prend en charge de nombreuses manières l'usine de workloads BlueXP  et ses services cloud. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.
+NetApp fournit un support pour Workload Factory et ses services cloud de diverses manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24h/24 et 7j/7, telles que des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut une assistance technique à distance via un ticket web.
 
 
 
 == Bénéficiez du support de FSX pour ONTAP
 
-Pour obtenir un support technique concernant FSX for ONTAP, son infrastructure ou toute solution utilisant le service, reportez-vous à la section « obtention d'aide » de la documentation d'usine des charges de travail de ce produit.
+Pour obtenir une assistance technique relative à FSx for ONTAP, à son infrastructure ou à toute solution utilisant le service, reportez-vous à « Obtenir de l'aide » dans la documentation Workload Factory de ce produit.
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX pour ONTAP"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX pour ONTAP"^]
 
 Pour bénéficier du support technique spécifique à Workload Factory et à ses solutions et services de stockage, utilisez les options de support décrites ci-dessous.
 
@@ -31,15 +31,15 @@ Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :
 
 * Documentation
 +
-La documentation d'usine de la charge de travail que vous consultez actuellement.
+La documentation de Workload Factory que vous consultez actuellement.
 
 * https://kb.netapp.com["Base de connaissances"^]
 +
-Effectuez des recherches dans la base de connaissances de l'usine de workloads pour trouver des articles utiles permettant de résoudre les problèmes.
+Recherchez dans la base de connaissances Workload Factory pour trouver des articles utiles pour résoudre les problèmes.
 
 * http://community.netapp.com/["Communautés"^]
 +
-Rejoignez la communauté d'usines de charge de travail pour suivre les discussions en cours ou en créer de nouvelles.
+Rejoignez la communauté Workload Factory pour suivre les discussions en cours ou en créer de nouvelles.
 
 
 
@@ -50,12 +50,12 @@ Rejoignez la communauté d'usines de charge de travail pour suivre les discussio
 Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.
 
 .Avant de commencer
-Pour utiliser la fonction *Créer un cas*, vous devez d'abord vous inscrire à l'assistance. Associez vos informations d'identification du site de support NetApp à votre identifiant d'usine de charge de travail. link:support-registration.html["Découvrez comment vous inscrire à de l'aide"].
+Pour utiliser la fonctionnalité *Créer un dossier*, vous devez d'abord vous inscrire au support. Associez vos informations d'identification du site de support NetApp à votre connexion Workload Factory. link:support-registration.html["Découvrez comment vous inscrire à de l'aide"] .
 
 .Étapes
-. Dans le coin supérieur droit de la console d'usine de la charge de travail, sélectionnez *aide > support*.
+. Dans le coin supérieur droit de la console Workload Factory, sélectionnez *Aide > Support*.
 +
-La sélection de cette option ouvre un nouvel onglet de navigateur sur la console BlueXP et charge le tableau de bord de support.
+La sélection de cette option ouvre la console NetApp dans un nouvel onglet de navigateur et charge le tableau de bord de support.
 
 . Sur la page *Ressources*, choisissez l'une des options disponibles sous support technique :
 +
@@ -91,7 +91,7 @@ Il est possible que vous rencontriez le message d'erreur suivant lors de la cré
 
 « Vous n'êtes pas autorisé à créer un dossier pour le service sélectionné »
 
-Cette erreur peut signifier que le compte NSS et la société d'enregistrement auquel il est associé n'est pas la même société d'enregistrement pour le numéro de série du compte BlueXP (par exemple 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez demander de l'aide en utilisant l'une des options suivantes :
+Cette erreur peut signifier que le compte NSS et la société d'enregistrement à laquelle il est associé ne sont pas la même société d'enregistrement pour le numéro de série du compte NetApp Console (c'est-à-dire. 960xxxx) ou le numéro de série du système. Vous pouvez demander de l’aide en utilisant l’une des options suivantes :
 
 * Utilisez le chat du produit
 * Pour soumettre un dossier non technique, rendez-vous sur https://mysupport.netapp.com/site/help[]
@@ -101,7 +101,7 @@ Cette erreur peut signifier que le compte NSS et la société d'enregistrement a
 
 == Gestion de vos dossiers de demande de support (aperçu)
 
-Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.
+Vous pouvez afficher et gérer les cas de support actifs et résolus directement depuis la console NetApp . Vous pouvez gérer les cas associés à votre compte NSS et à votre entreprise.
 
 La gestion des dossiers est disponible en tant qu'aperçu. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.
 
@@ -124,13 +124,13 @@ Pour plus d'informations, consultez les étapes ci-dessous.
 
 
 .Étapes
-. Dans le coin supérieur droit de la console d'usine de la charge de travail, sélectionnez *aide > support*.
+. Dans le coin supérieur droit de la console Workload Factory, sélectionnez *Aide > Support*.
 +
-La sélection de cette option ouvre un nouvel onglet de navigateur sur la console BlueXP et charge le tableau de bord de support.
+La sélection de cette option ouvre la console NetApp , un nouvel onglet de navigateur et charge le tableau de bord de support.
 
-. Sélectionnez *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.
+. Sélectionnez *Gestion des cas* et si vous y êtes invité, ajoutez votre compte NSS à la console NetApp .
 +
-La page *gestion des cas* affiche les cas ouverts associés au compte NSS associé à votre compte utilisateur BlueXP. Il s'agit du même compte NSS qui apparaît en haut de la page *gestion NSS*.
+La page *Gestion des cas* affiche les cas ouverts liés au compte NSS associé à votre compte utilisateur NetApp Console. Il s'agit du même compte NSS qui apparaît en haut de la page *Gestion NSS*.
 
 . Modifiez éventuellement les informations qui s'affichent dans le tableau :
 +

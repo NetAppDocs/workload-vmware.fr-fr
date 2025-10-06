@@ -1,17 +1,27 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations-native.html 
+permalink: upload-vm-inventory.html 
 keywords: vm workloads, capture vm details 
-summary: 'Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools pour capturer vos configurations VM actuelles. Nous vous recommandons d"utiliser le script du collecteur de VM de migration Advisor, car il collecte les données de configuration et de performances des ordinateurs virtuels pour un plan extrêmement précis.' 
+summary: Vous pouvez utiliser le Centre de planification pour télécharger des informations sur votre environnement VMware actuel. 
 ---
-= Capture de vos configurations de serveurs virtuels avant de migrer vers Amazon EC2 avec les workloads VMware
+= Télécharger les données d'inventaire des machines virtuelles vers NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Vous pouvez utiliser le script de collecteur de données VM migration Advisor, RVTools ou NetApp Data Infrastructure Insights pour capturer vos configurations de VM actuelles. Nous vous recommandons d'utiliser le script de collecteur de VM migration Advisor ou les informations sur l'infrastructure de données, car ces options rassemblent les données de configuration et de performances des ordinateurs virtuels pour un plan plus précis.
+Avant de pouvoir créer un plan de migration, vous devez télécharger vos données d’inventaire de machines virtuelles.
+
+.Étapes
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
+. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.
++
+Depuis le centre de planification, vous pouvez télécharger vos données d'inventaire de machine virtuelle, consulter les téléchargements de données d'inventaire précédents et planifier une migration à l'aide de l'un des ensembles de données d'inventaire de machine virtuelle.
+
+. Sélectionnez *Télécharger l'inventaire de la machine virtuelle*.
+. Choisissez la méthode de collecte de données à utiliser :
+
 
 [role="tabbed-block"]
 ====
@@ -22,6 +32,11 @@ RVTools est une application Windows qui interagit avec vCenter et le serveur ESX
 https://www.robware.net/home["En savoir plus sur RVTools"^]
 
 .Étapes
+. Sélectionnez la tuile *RVTools* et sélectionnez *Suivant*.
++
+La page *préparer l'intégration au cloud AWS* s'affiche.
+
+. Saisissez un nom pour l’ensemble de données d’inventaire de machine virtuelle que vous allez créer.
 . Téléchargez et installez RVTools 4.4.2 ou version ultérieure à partir de https://www.robware.net/download["Site Web RVTools"^]
 . Lancez RVTools et connectez-vous au serveur vCenter cible.
 +
@@ -31,13 +46,13 @@ Les informations relatives à vCenter Server seront ainsi capturées.
 +
  https://resources.robware.net/resources/prod/RVTools.pdf["Documentation RVTools"^]Pour plus de détails, reportez-vous au chapitre « Paramètres de ligne de commande » dans le.
 
+. Sélectionnerimage:button-upload-file.png["le bouton de téléchargement"] et choisissez le fichier RVTools que vous avez exporté.
+. Sélectionnez *Télécharger*.
+. Sélectionnez *Terminer*.
 
-
-.Résultat
-Le fichier xlsx ou xls contenant vos résultats est enregistré dans votre répertoire de travail.
 
 --
-.Utiliser le script du collecteur de VM de migration Advisor (planification détaillée)
+.Utiliser le collecteur de données (planification détaillée)
 --
 Le script du collecteur de VM de NetApp migration Advisor collecte les informations de configuration de VM à partir de votre vCenter, comme RVTools collecte. Cependant, il capture les données de performances de VM actuelles pour fournir des statistiques réelles d'IOPS et de débit en lecture et écriture. Vous pouvez utiliser le script dans l'un des deux modes suivants :
 
@@ -59,16 +74,7 @@ Le système sur lequel vous exécuterez le script Collector doit répondre aux e
 Notez que si vous prévoyez de capturer des statistiques à long terme à partir de vos machines virtuelles (statistiques quotidiennes), vous devez avoir activé le niveau de statistiques 3 ou supérieur dans la console de gestion vSphere (environnement de gestion VMware).
 
 .Étapes
-. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
-. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.
-+
-Depuis le centre de planification, vous pouvez télécharger vos données d'inventaire de machine virtuelle, consulter les téléchargements de données d'inventaire précédents et planifier une migration à l'aide de l'un des ensembles de données d'inventaire de machine virtuelle. puis sélectionnez *Migration vers le calcul natif AWS*.  L'écran de démarrage du conseiller de migration VMware s'affiche.
-
-+
-Consultez ces informations pour en savoir plus sur les avantages de l'assistant de migration.
-
-. Lorsque vous êtes prêt, sélectionnez *commençons*.
-. Sélectionnez la mosaïque *Detailed planning* et sélectionnez *Next*.
+. Sélectionnez la tuile *Collecteur de données* et sélectionnez *Suivant*.
 +
 La fenêtre Codebox s'affiche sur le côté droit de la page.
 
@@ -104,10 +110,11 @@ où ?
 +
 Vous pouvez éventuellement exécuter le script du collecteur de données sans spécifier d'options ; ceci vous permet de sélectionner la période de collecte de données dans le menu interactif.
 
++
++ Le script génère un fichier compressé avec un horodatage dans le nom dans le répertoire de travail actuel.  Le fichier .zip contient une liste de toutes les machines virtuelles et de leurs propriétés, ainsi que leurs données d'IOPS et de débit.
 
+. Sélectionnez *Télécharger*.
 
-.Résultat
-Le script génère un fichier compressé avec un horodatage dans le nom du répertoire de travail actuel. Le fichier .zip contient une liste de toutes les machines virtuelles et de leurs propriétés, ainsi que leurs données d'IOPS et de débit.
 
 --
 .Informations exploitables sur l'infrastructure de données NetApp (planification détaillée)
@@ -117,30 +124,29 @@ NetApp Data Infrastructure Insights est un outil de surveillance de l'infrastruc
 https://docs.netapp.com/us-en/data-infrastructure-insights/["En savoir plus sur les informations exploitables de l'infrastructure de données"^]
 
 .Étapes
-. Connectez-vous à votre compte Data Infrastructure Insights.
-. Dans le menu de navigation latéral, sélectionnez *Admin*.
-. Dans le menu qui s'affiche, sélectionnez *API Access*.
-. Dans l'onglet *API Access Tokens*, sélectionnez *+ API Access Token*.
+. Sélectionnez la mosaïque * Data Infrastructure Insights* et sélectionnez *Suivant*.
 +
-La boîte de dialogue Créer un jeton d'accès API s'affiche.
+La page *préparer l'intégration au cloud AWS* s'affiche.
 
-. Indiquez un nom et une description pour le jeton API.
-. Sous *quel type d'API ce token sera utilisé pour appeler*, sélectionnez l'une des options suivantes :
+. Saisissez un nom pour l’ensemble de données d’inventaire de machine virtuelle que vous allez créer.
+. Saisissez le point de terminaison du locataire pour Data Infrastructure Insights.
 +
-** Unité d'acquisition
-** Ressources
-** Collecte de données
+Il doit s'agir de l'URL que vous utilisez pour accéder aux informations exploitables de l'infrastructure de données.
 
+. Si vous n'avez pas encore généré de jeton d'accès par API pour Data Infrastructure Insights, suivez les instructions qui s'affichent à la page pour en créer un. Sinon, collez votre jeton d'accès à l'API dans la zone de texte *entrer le jeton d'accès à l'API*.
+. Sélectionnez *Télécharger*.
++
+Workload Factory collecte des informations à partir de Data Infrastructure Insights.
 
-. Sous *autorisations*, sélectionnez *lecture seule*.
-. Sous *Token expire dans*, choisissez la durée de validité du jeton API.
-. Décochez *rotation automatique des tokens pour Kubernetes*.
-. Sélectionnez *Enregistrer*.
-. Sélectionnez *Copy API Access Token*.
-. Enregistrez ce jeton en vue de l’utiliser avec le conseiller de migration Workload Factory.
 
 
 --
 ====
 .Et la suite ?
-link:launch-onboarding-advisor-native.html["Créez un plan de déploiement Amazon EC2 à l'aide de l'outil de conseil de migration"].
+Gérez vos données d’inventaire de machines virtuelles téléchargées à partir du centre de planification ou créez un plan de déploiement.
+
+* link:explore-planning-center.html["Explorez le centre de planification des charges de travail VMware"]
+* link:launch-onboarding-advisor.html["Créer un plan de déploiement Amazon VMware Cloud"]
+* link:launch-migration-advisor-evs.html["Créer un plan de déploiement Amazon Elastic VMware Service"]
+* link:launch-onboarding-advisor-native.html["Créer un plan de déploiement Amazon EC2"]
+

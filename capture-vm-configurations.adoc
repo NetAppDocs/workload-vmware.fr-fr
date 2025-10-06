@@ -35,7 +35,7 @@ Le système sur lequel vous exécuterez le script Collector doit répondre aux e
 Notez que si vous prévoyez de capturer des statistiques à long terme à partir de vos machines virtuelles (statistiques quotidiennes), vous devez avoir activé le niveau de statistiques 3 ou supérieur dans la console de gestion vSphere (environnement de gestion VMware).
 
 .Étapes
-. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
 . Dans la mosaïque workloads VMware, sélectionnez *évaluer et planifier*, puis sélectionnez *migrer vers VMware Cloud sur AWS*.
 +
 La page principale de VMware migration Advisor s'affiche.

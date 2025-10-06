@@ -16,4 +16,4 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 Vous pouvez désormais explorer les économies potentielles liées à la migration de vos charges de travail VMware vers Amazon Elastic VMware Service (EVS).  Le calculateur d'économies vous permet de comparer les coûts d'utilisation d'Amazon EVS avec et sans Amazon FSx for NetApp ONTAP comme stockage sous-jacent.  Le calculateur affiche les économies potentielles en temps réel à mesure que vous ajustez les caractéristiques de votre environnement.
 
-https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Découvrez les économies réalisées avec Amazon Elastic VMware Service avec BlueXP workload factory"]
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Découvrez les économies réalisées sur Amazon Elastic VMware Service avec BlueXP Workload Factory"]

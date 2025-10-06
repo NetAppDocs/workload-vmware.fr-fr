@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: explore-planning-center.html 
+keywords: vm workloads, netapp Workload Factory 
+summary: 'Vous pouvez utiliser le centre de planification VMware pour gérer les données d"inventaire téléchargées et les plans de migration que vous avez créés.' 
+---
+= Explorez le centre de planification VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le centre de planification VMware vous permet de télécharger de nouvelles données d'inventaire de machines virtuelles et de créer de nouveaux plans de migration, ainsi que de gérer les données d'inventaire de machines virtuelles et les plans de migration que vous avez déjà enregistrés avec NetApp Workload Factory.
+
+
+
+== Gérer les données d'inventaire des machines virtuelles
+
+Utilisez le centre de planification pour créer et gérer les données d’inventaire des machines virtuelles.
+
+
+
+=== Télécharger les données d'inventaire de la machine virtuelle
+
+Vous pouvez télécharger les données d'inventaire des machines virtuelles lorsque vous êtes prêt à utiliser Workload Factory pour explorer les options de migration vers les environnements Amazon AWS.  Se référer àlink:upload-vm-inventory.html["Télécharger les données d'inventaire de la machine virtuelle"] pour les instructions.
+
+
+
+=== Renommer un ensemble de données
+
+Vous pouvez modifier le nom d’un ensemble de données enregistré.
+
+.Étapes
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
+. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.  Le centre de planification apparaît.
+. Sélectionnez le menu Actions (...) pour l'ensemble de données que vous souhaitez renommer, puis sélectionnez *Renommer*.
+. Saisissez un nouveau nom pour l’ensemble de données et sélectionnez *Enregistrer*.
+
+
+
+
+=== Supprimer un ensemble de données
+
+Lorsqu'un ensemble de données n'est plus nécessaire, vous pouvez le supprimer à tout moment.
+
+.Étapes
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
+. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.  Le centre de planification apparaît.
+. Sélectionnez le menu Actions (...) pour l'ensemble de données que vous souhaitez supprimer, puis sélectionnez *Supprimer*.
+. Sélectionnez *Supprimer* pour confirmer l'action.
+
+
+
+
+== Gérer les plans de migration
+
+Utilisez le centre de migration pour créer et gérer des plans de migration.
+
+
+
+=== Fournir un plan de migration
+
+Vous pouvez sélectionner un plan de migration et le provisionner afin que les machines virtuelles soient migrées vers l'environnement Amazon AWS de votre choix.
+
+.Étapes
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
+. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.  Le centre de planification apparaît.
+. Sélectionnez le menu *Plans de migration*.
+. Sélectionnez le menu Actions (...) pour le plan de migration que vous souhaitez provisionner, puis sélectionnez *Provision*.
+. Selon le plan de migration, reportez-vous aux instructions pour déployer le système de fichiers :
++
+** link:deploy-fsx-file-system.html["Déployer le système de fichiers pour les plans Amazon VMware Cloud"]
+** link:deploy-fsx-file-system-native.html["Déployer le système de fichiers pour les plans Amazon EC2"]
+** link:deploy-fsx-file-system-evs.html["Déployer le système de fichiers pour les plans Amazon Elastic VMware Service"]
+
+
+
+
+
+
+=== Modifier le commentaire pour un plan de migration
+
+Si vous devez modifier les détails d'un commentaire pour un plan de migration, modifiez le commentaire depuis le centre de planification.
+
+.Étapes
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
+. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.  Le centre de planification apparaît.
+. Sélectionnez les *Plans de migration*.
+. Sélectionnez le menu Actions (...) pour le plan de migration que vous souhaitez modifier, puis sélectionnez *Modifier le commentaire*.
+. Saisissez un commentaire et sélectionnez *Enregistrer*.
+
+
+
+
+=== Créer un rapport PDF d'un plan de migration
+
+Créez un rapport PDF des détails d’un plan de migration.
+
+.Étapes
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
+. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.  Le centre de planification apparaît.
+. Sélectionnez les *Plans de migration*.
+. Sélectionnez le menu Actions (...) pour le plan de migration pour lequel créer un rapport PDF, puis sélectionnez *Créer un rapport*.
+. Saisissez un nom pour le rapport PDF et sélectionnez *Enregistrer*.
+
+
+
+
+=== Supprimer un plan de migration
+
+Lorsqu'un plan de migration n'est plus nécessaire, vous pouvez le supprimer à tout moment.
+
+.Étapes
+. Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
+. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.  Le centre de planification apparaît.
+. Sélectionnez les *Plans de migration*.
+. Sélectionnez le menu Actions (...) pour le plan de migration que vous souhaitez supprimer, puis sélectionnez *Supprimer*.
+. Confirmez l'action en sélectionnant *Supprimer*.
+
