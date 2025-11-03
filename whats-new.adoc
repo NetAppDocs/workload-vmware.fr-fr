@@ -15,6 +15,41 @@ Découvrez les nouveautés du composant VMware Migration Advisor de Workload Fac
 
 
 
+== 2 novembre 2025
+
+
+
+=== Présentation des préférences d'Amazon Elastic VMware Service dans l'assistant de déploiement du système de fichiers FSx pour ONTAP
+
+Lorsque vous déployez un système de fichiers FSx for ONTAP destiné à être utilisé comme banque de données NFS externe pour Amazon Elastic VMware Service, vous pouvez désormais sélectionner l'environnement EVS auquel les banques de données seront connectées.  Cela permet de remplir automatiquement plusieurs champs de l'assistant de déploiement afin de simplifier le processus de déploiement.
+
+https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["Déployez le système de fichiers FSX pour ONTAP recommandé"]
+
+
+
+=== Modifications des autorisations pour les charges de travail VMware
+
+VMware Workloads offre une meilleure visibilité sur les autorisations requises pour des actions spécifiques et une granularité permettant de sélectionner uniquement les autorisations nécessaires.  Lorsque vous ajouterez des informations d'identification, vous aurez le choix entre deux options d'autorisation au lieu du modèle d'autorisation précédent qui était _lecture seule_ et _lecture/écriture_. Le nouveau modèle d'autorisations décompose les politiques d'autorisation comme suit :
+
+* _Visualisation, planification et analyse_ : Consultez l’inventaire des environnements de virtualisation EVS, obtenez une analyse détaillée de vos systèmes et explorez les économies possibles.
+* _Déploiement et connectivité des datastores_ : Déployez les configurations de machines virtuelles recommandées sur les clusters Amazon EVS, Amazon EC2 ou VMware Cloud on AWS vSphere et utilisez des systèmes de fichiers Amazon FSx for NetApp ONTAP comme datastores externes.
+
+
+Lors de l'ajout d'informations d'identification, vous pouvez sélectionner une ou plusieurs de ces stratégies d'autorisation en fonction du niveau d'accès que vous souhaitez accorder aux charges de travail VMware.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Référence des autorisations de Workload Factory"^]
+
+
+
+=== Améliorations d'Amazon EC2 migration Advisor
+
+Cette version de NetApp Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration :
+
+* *Enregistrer ou télécharger un plan de migration* : Vous pouvez désormais enregistrer ou télécharger un plan de migration au format PDF ou CSV.  Lorsque vous enregistrez un plan de migration, celui-ci est enregistré sur votre compte Workload Factory.
+
+
+
+
 == 5 octobre 2025
 
 

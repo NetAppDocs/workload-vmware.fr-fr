@@ -13,19 +13,20 @@ summary: Depuis le centre de planification VMware, vous pouvez lancer le conseil
 [role="lead"]
 Depuis le centre de planification VMware, vous pouvez lancer le conseiller de migration Amazon EVS pour vous aider à créer un plan de migration personnalisé en fonction de vos besoins.
 
-Notez que vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à Workload Factory.  Si vous n'avez pas accès, créez un compte maintenant.  Voir les instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ici"] .
-
-
-
-== Créez un plan de déploiement à l'aide du conseiller de migration
-
 Vous pouvez créer un plan de déploiement pour migrer des machines virtuelles vers Amazon Elastic VMware Service et utiliser des systèmes de fichiers Amazon FSx for NetApp ONTAP personnalisés comme banques de données externes.  Les options du conseiller de migration peuvent différer en fonction de l’outil utilisé pour collecter les données d’inventaire de la machine virtuelle.
 
-.De formation
+
+
+== De formation
+
+* Vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à Workload Factory.  Si vous n'avez pas accès, créez un compte maintenant.  Consultez les instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ici"] .
 * Vous devez disposer d’un abonnement Amazon Elastic VMware Service.
 
 
-.Étapes
+
+
+== Étapes
+
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
 . Si vous avez accédé à Workload Factory à partir de la console Workload Factory, dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*, puis sélectionnez *Centre de planification VMware*.  Le centre de planification VMware s'affiche.
 . Sélectionnez un inventaire de machines virtuelles dans la liste que vous souhaitez utiliser pour créer un plan de déploiement, puis sélectionnez *Démarrer la planification* sur cette ligne.
@@ -91,7 +92,7 @@ Dans la liste des machines virtuelles, vous pouvez sélectionner les types d’i
 [discrete]
 ===== Design
 
-. Sur la page *Attribution de stockage d'instance ClassReview*, vérifiez les informations de la machine virtuelle, les règles de classification des volumes, les attributions de volumes et la liste des volumes qui seront migrés dans le cadre du déploiement, puis sélectionnez *Suivant*.
+* Sur la page *Attribution de stockage d'instance ClassReview*, vérifiez les informations de la machine virtuelle, les règles de classification des volumes, les attributions de volumes et la liste des volumes qui seront migrés dans le cadre du déploiement, puis sélectionnez *Suivant*.
 
 
 [discrete]
@@ -103,6 +104,10 @@ Le haut de la page estime les économies mensuelles pour les systèmes de fichie
 
 +
 Le plan de migration est automatiquement enregistré par défaut dans la liste des plans du centre de planification.
+
+. Vous pouvez également exporter le plan de migration au format PDF ou CSV en sélectionnant *Gérer le plan* en haut à droite de la page, puis *Télécharger un rapport (.pdf)* ou *Télécharger le déploiement du stockage VM (.csv)*.
++
+Le fichier .csv crée une carte de toutes les machines virtuelles incluses dans le plan de migration, ainsi que de leurs volumes de stockage attribués.
 
 . Lorsque vous êtes prêt à poursuivre le plan, sélectionnez *Provision* pour commencer à déployer le système de fichiers Amazon FSx for NetApp ONTAP recommandé.
 
