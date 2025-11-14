@@ -13,8 +13,6 @@ summary: 'Vous pouvez utiliser le script du collecteur VM de migration Advisor o
 [role="lead"]
 Vous pouvez utiliser le script du collecteur VM de migration Advisor ou RVTools pour capturer vos configurations VM actuelles. Nous vous recommandons d'utiliser le script du collecteur de VM de migration Advisor, car il collecte les données de configuration et de performances des ordinateurs virtuels pour un plan extrêmement précis.
 
-Si vous prévoyez de déployer un nouveau système en fonction d'un plan de déploiement existant que vous avez précédemment enregistré localement, vous pouvez ignorer cette étape et sélectionner le plan de déploiement existant. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Apprenez à utiliser un plan existant pour élaborer un nouveau plan"].
-
 [role="tabbed-block"]
 ====
 .Utilisez le script du collecteur VM de migration Advisor

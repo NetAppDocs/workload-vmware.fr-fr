@@ -13,11 +13,7 @@ summary: Connectez-vous à NetApp Workload Factory pour accéder au conseiller d
 [role="lead"]
 Connectez-vous à NetApp Workload Factory pour accéder au conseiller de migration VMware.  Vous suivrez les étapes de l’assistant pour créer un plan de déploiement ou un plan de migration personnalisé en fonction de vos besoins.
 
-Lorsque vous migrez vers VMware Cloud, vous pouvez utiliser le conseiller de migration pour créer un plan de déploiement pour les scénarios suivants :
-
-* <<Création d'un plan de déploiement basé sur un environnement vSphere sur site,Pour migrer votre environnement vSphere sur site vers le cloud VMware.>>
-* <<Create a deployment plan based on an existing plan,Pour déployer un système dans le cloud en fonction d'un plan de déploiement existant aux exigences similaires.>>
-
+Lors de la migration vers VMware Cloud, vous pouvez utiliser l'assistant de migration pour migrer votre environnement vSphere sur site actuel vers le cloud VMware.
 
 Notez que vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à Workload Factory.  Si vous n'avez pas accès, créez un compte maintenant.  Voir les instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ici"] .
 
