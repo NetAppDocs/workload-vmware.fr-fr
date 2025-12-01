@@ -1,0 +1,13 @@
+= Calculez les économies réalisées grâce à la migration vers Amazon Elastic VMware Service pour des régions spécifiques.
+:allow-uri-read: 
+
+
+
+
+=== Calculez les économies réalisées grâce à la migration vers Amazon Elastic VMware Service pour des régions spécifiques.
+
+Vous pouvez désormais explorer la valeur des différentes options de déploiement pour votre migration vers le cloud, optimiser les efforts investis dans l'évaluation des solutions et examiner en profondeur les solutions susceptibles de générer de la valeur et des économies dans le cloud.
+
+Vous pouvez également consulter les économies de cœurs vCPU réalisables grâce à l'utilisation de FSx pour ONTAP dans le cadre d'un déploiement EVS.
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Découvrez les économies réalisées sur Amazon Elastic VMware Service avec NetApp Workload Factory"]
