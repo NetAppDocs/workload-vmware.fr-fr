@@ -767,4 +767,7 @@
   <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">Sous *Plan de facturation EVS*, sélectionnez le plan que vous utilisez.</block>
   <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">Pour utiliser le conseiller de migration <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> Pour un environnement Amazon EVS, sélectionnez *Planifier la migration EVS*.</block>
   <block id="815e75619b370a1b845eccec6979ed74" category="section-title">27 novembre 2025</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Intégration de l'assistant IA à la page d'accueil de Ask me</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">La page d'accueil de la console Workload Factory intègre l'assistant IA Ask me, vous permettant de poser des questions sur votre propre infrastructure de stockage, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes. Vous pouvez interagir avec « Demandez-moi » pour comprendre vos charges de travail, résoudre les problèmes et en savoir plus sur Workload Factory, le tout sans quitter la console.</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">04 janvier 2026</block>
 </blocks>
