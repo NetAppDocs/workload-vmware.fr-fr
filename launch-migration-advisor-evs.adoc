@@ -28,7 +28,10 @@ Vous pouvez créer un plan de déploiement pour migrer des machines virtuelles v
 == Étapes
 
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
-. Si vous avez accédé à Workload Factory à partir de la console Workload Factory, dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*, puis sélectionnez *Centre de planification VMware*.  Le centre de planification VMware s'affiche.
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet d'accéder aux charges de travail telles que le stockage, l'analyse de données d'entreprise (EDA), l'intelligence artificielle (IA), les bases de données, VMware et l'administration."] puis sélectionnez *VMware*.
++
+Le centre de planification est affiché.
+
 . Sélectionnez un inventaire de machines virtuelles dans la liste que vous souhaitez utiliser pour créer un plan de déploiement, puis sélectionnez *Démarrer la planification* sur cette ligne.
 . Sélectionnez *EVS* dans le menu déroulant qui apparaît.
 +

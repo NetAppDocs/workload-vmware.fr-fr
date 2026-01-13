@@ -60,9 +60,9 @@ Notez que si vous prévoyez de capturer des statistiques à long terme à partir
 
 .Étapes
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
-. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet d'accéder aux charges de travail telles que le stockage, l'analyse de données d'entreprise (EDA), l'intelligence artificielle (IA), les bases de données, VMware et l'administration."] puis sélectionnez *VMware*.
 +
-Depuis le centre de planification, vous pouvez télécharger vos données d'inventaire de machine virtuelle, consulter les téléchargements de données d'inventaire précédents et planifier une migration à l'aide de l'un des ensembles de données d'inventaire de machine virtuelle. puis sélectionnez *Migration vers le calcul natif AWS*.  L'écran de démarrage du conseiller de migration VMware s'affiche.
+Le centre de planification est affiché. Depuis le centre de planification, vous pouvez importer vos données d'inventaire de machines virtuelles, consulter les importations de données d'inventaire précédentes et planifier une migration à l'aide de n'importe quel ensemble de données d'inventaire de machines virtuelles, puis sélectionner *Migration vers le calcul natif AWS*. L'écran d'accueil de l'assistant de migration VMware s'affiche.
 
 +
 Consultez ces informations pour en savoir plus sur les avantages de l'assistant de migration.

@@ -27,7 +27,7 @@ Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les en
 
 .Étapes
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
-. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet d'accéder aux charges de travail telles que le stockage, l'analyse de données d'entreprise (EDA), l'intelligence artificielle (IA), les bases de données, VMware et l'administration."] puis sélectionnez *VMware*.
 +
 Le centre de planification est affiché.
 

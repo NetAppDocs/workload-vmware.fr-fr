@@ -26,7 +26,11 @@ NOTE: Avant de continuer, consultez la clause de non-responsabilité au bas du c
 
 .Étapes
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
-. Dans la mosaïque Charges de travail VMware, sélectionnez *Explorer les économies*, puis *Amazon Elastic VMware Service (EVS)*.  Le calculateur d'économies s'affiche.
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet d'accéder aux charges de travail telles que le stockage, l'analyse de données d'entreprise (EDA), l'intelligence artificielle (IA), les bases de données, VMware et l'administration."] puis sélectionnez *VMware*.
++
+Le centre de planification est affiché.
+
+. Dans le menu VMware, sélectionnez *Explorer les économies*. Le calculateur d'économies s'affiche.
 +
 Dans le panneau *Préférences d'environnement*, vous pouvez sélectionner votre région de déploiement EVS et ajuster en conséquence les prévisions de coût total de possession et d'économies.
 

@@ -15,9 +15,9 @@ Avant de pouvoir créer un plan de migration, vous devez télécharger vos donn�
 
 .Étapes
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
-. Dans la mosaïque Charges de travail VMware, sélectionnez *Centre de planification VMware*.
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet d'accéder aux charges de travail telles que le stockage, l'analyse de données d'entreprise (EDA), l'intelligence artificielle (IA), les bases de données, VMware et l'administration."] puis sélectionnez *VMware*.
 +
-Depuis le centre de planification, vous pouvez télécharger vos données d'inventaire de machine virtuelle, consulter les téléchargements de données d'inventaire précédents et planifier une migration à l'aide de l'un des ensembles de données d'inventaire de machine virtuelle.
+Le centre de planification est affiché. Depuis le centre de planification, vous pouvez télécharger vos données d'inventaire de machines virtuelles, consulter les téléchargements de données d'inventaire précédents et planifier une migration en utilisant n'importe quel ensemble de données d'inventaire de machines virtuelles.
 
 . Sélectionnez *Télécharger l'inventaire de la machine virtuelle*.
 . Choisissez la méthode de collecte de données à utiliser :
