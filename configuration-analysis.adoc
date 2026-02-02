@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: configuration-analysis.html 
+keywords: evs, well-architected, configuration analysis, best practices, recommendations 
+summary: 'Découvrez comment Workload Factory analyse les configurations d"Amazon Elastic VMware Service pour identifier les problèmes et fournir des recommandations de bonne pratique.' 
+---
+= Analyse de configuration pour les configurations EVS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory analyse régulièrement les configurations Amazon Elastic VMware Service (EVS) afin d’identifier les non-conformités aux bonnes pratiques. Utilisez les résultats pour améliorer les performances, la rentabilité et la conformité.
+
+Principales fonctionnalités :
+
+* Analyse quotidienne de la configuration
+* Validations automatiques des bonnes pratiques
+* Observabilité proactive
+* Des idées à l'action
+
+
+
+
+== Statut bien architecturé
+
+Dans la console Workload Factory, l'état bien architecturé est indiqué pour tous les environnements de virtualisation EVS détectés. Les états bien architecturés sont classés comme « Optimisé » ou « Non optimisé ». En sélectionnant *Inventory*, vous accédez à l'onglet de l'état bien architecturé de l'environnement, où vous pouvez trouver toutes les configurations de l'environnement.
+
+
+
+== Catégories de configuration
+
+Workload Factory évalue les configurations EVS selon plusieurs catégories afin de garantir leur conformité avec AWS et NetApp bonne pratique. Chaque catégorie se concentre sur des aspects spécifiques de votre environnement EVS :
+
+Disponibilité:: À quel point la configuration EVS est censée être accessible et opérationnelle.
+Sécurité:: Dans quelle mesure la configuration EVS protège les données et contrôle l'accès (par exemple, la protection contre l'arrêt et la terminaison EC2).
+Résilience:: La capacité de la configuration EVS à se remettre de pannes ou d'interruptions.
+
+
+.Et ensuite
+link:view-evs-well-architected.html["Mettre en œuvre des configurations bien architecturées"]

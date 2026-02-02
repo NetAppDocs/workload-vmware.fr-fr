@@ -217,7 +217,6 @@
   <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">Possibilité de modifier le débit des données, les IOPS et la taille du système de fichiers en plus d'augmenter ou de réduire la taille des volumes</block>
   <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">Haute disponibilité prenant en charge les déploiements dans plusieurs zones de disponibilité (AZ)</block>
   <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">Réduction des coûts et de la latence grâce à des configurations AZ uniques qui utilisent le peering VPC sans nécessiter de passerelle de transit</block>
-  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Le coût</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">Licences</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Les mentions légales donnent accès aux déclarations de copyright, aux marques, aux brevets, etc.</block>
@@ -768,4 +767,132 @@
   <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">Dans le menu VMware, sélectionnez *Évaluer et planifier* puis *Migration vers VMware Cloud on AWS*.</block>
   <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">Sélectionnez *Commençons !*. Vous pouvez choisir de ne plus afficher cette page en cochant la case.</block>
   <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">Le centre de planification est affiché. Depuis le centre de planification, vous pouvez télécharger vos données d'inventaire de machines virtuelles, consulter les téléchargements de données d'inventaire précédents et planifier une migration en utilisant n'importe quel ensemble de données d'inventaire de machines virtuelles.</block>
+  <block id="8f1b9e3fbbd44cf22e9f5ac28290aba0" category="doc">Analyse bien architecturée pour Amazon Elastic VMware Service</block>
+  <block id="f6c8ff445c3db04296fa83d4b2790691" category="paragraph">Workload Factory propose désormais une analyse automatisée bien architecturée de vos environnements Amazon Elastic VMware Service (EVS). Des analyses quotidiennes identifient les incohérences de configuration et offrent des recommandations de remédiation détaillées pour vous aider à maintenir des opérations, une sécurité et une efficacité des coûts optimales.</block>
+  <block id="7e27d05efe618fad67c0e09d831368c6" category="paragraph">Les analyses sont effectuées à l'aide des API AWS—aucun identifiant vSphere ni connexion vCenter n'est requis. Les résultats sont disponibles dans le nouvel onglet *Well-architected status* des détails de votre environnement EVS.</block>
+  <block id="b49141c08a1be0c2df4a29b08af10e5e" category="paragraph">Cette version inclut des informations sur :</block>
+  <block id="eb309475830119de69a172afb7c872e1" category="list-text">*État de la protection contre l'arrêt/la suppression des instances* : Identifie les nœuds EVS sans protection contre l'arrêt ou la suppression EC2. L'arrêt ou la suppression de nœuds EVS depuis la console EC2 peut entraîner l'indisponibilité des données de la machine virtuelle ou une perte de données.</block>
+  <block id="5e10e9fc9dc23fca9bdc4e8b00ae9469" category="list-text">*Alignement du placement des partitions des nœuds du cluster* : détecte les désalignements de partitionnement susceptibles d’entraîner une perte de puissance de traitement importante ou une interruption en cas de défaillance d’une partition au sein d’une AWS Availability Zone. Chaque insight comprend des niveaux de gravité, des résultats détaillés avec des informations sur les ressources impactées et des procédures de correction étape par étape basées sur les bonnes pratiques AWS.</block>
+  <block id="3ac4be70f27829fbadc2c932a5b029e4" category="inline-link-macro">Mettre en œuvre des configurations bien architecturées</block>
+  <block id="0f39698d75936e2b93022b9c574c0eb3" category="paragraph"><block ref="0f39698d75936e2b93022b9c574c0eb3" category="inline-link-macro-rx"></block></block>
+  <block id="811182fb87c3ac2818bca780e05e0c5c" category="summary">Découvrez comment Workload Factory analyse les configurations d'Amazon Elastic VMware Service pour identifier les problèmes et fournir des recommandations de bonne pratique.</block>
+  <block id="b998e1ace581318d41cd37b71dfe5cac" category="doc">Analyse de configuration pour les configurations EVS</block>
+  <block id="ee876b0ee5fe63fbc90fddc929719edd" category="paragraph">Workload Factory analyse régulièrement les configurations Amazon Elastic VMware Service (EVS) afin d’identifier les non-conformités aux bonnes pratiques. Utilisez les résultats pour améliorer les performances, la rentabilité et la conformité.</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">Principales fonctionnalités :</block>
+  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">Analyse quotidienne de la configuration</block>
+  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">Validations automatiques des bonnes pratiques</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">Observabilité proactive</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">Des idées à l'action</block>
+  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">Statut bien architecturé</block>
+  <block id="ebd5767595bd56d8d385eee9f3e5317a" category="paragraph">Dans la console Workload Factory, l'état bien architecturé est indiqué pour tous les environnements de virtualisation EVS détectés. Les états bien architecturés sont classés comme « Optimisé » ou « Non optimisé ». En sélectionnant *Inventory*, vous accédez à l'onglet de l'état bien architecturé de l'environnement, où vous pouvez trouver toutes les configurations de l'environnement.</block>
+  <block id="a4394e01049a42d14bd6258585de98b7" category="section-title">Catégories de configuration</block>
+  <block id="a5584aec16bb244b4e3daa5c56c07600" category="paragraph">Workload Factory évalue les configurations EVS selon plusieurs catégories afin de garantir leur conformité avec AWS et NetApp bonne pratique. Chaque catégorie se concentre sur des aspects spécifiques de votre environnement EVS :</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">Disponibilité</block>
+  <block id="bc2da75aa54d732564f6242c6a869d0c" category="list-text">À quel point la configuration EVS est censée être accessible et opérationnelle.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="list-text">Sécurité</block>
+  <block id="6c02cf363d34d913745020138dfa79a6" category="list-text">Dans quelle mesure la configuration EVS protège les données et contrôle l'accès (par exemple, la protection contre l'arrêt et la terminaison EC2).</block>
+  <block id="02bc0523497de72834c4c7990e32d155" category="list-text">Résilience</block>
+  <block id="75927f968f22d6de4aff600752ad874d" category="list-text">La capacité de la configuration EVS à se remettre de pannes ou d'interruptions.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">Et ensuite</block>
+  <block id="eb9cf952bc2ab533d61d93bdca17a2a1" category="section-title">Analyse bien architecturée pour les environnements EVS</block>
+  <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">L'onglet « Architecture optimisée » effectue une analyse quotidienne automatisée de vos environnements Amazon Elastic VMware Service (EVS) afin de garantir leur conformité avec les bonnes pratiques AWS et NetApp. L'onglet identifie les problèmes de configuration et fournit des recommandations détaillées pour les résoudre, afin de vous aider à maintenir des opérations, une sécurité et une efficacité des coûts optimales.</block>
+  <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">Les analyses automatiques sont effectuées à l'aide des API AWS—aucune vSphere credentials ne sont requises. Les résultats sont organisés par domaine de configuration, chaque résultat incluant l'état, les niveaux de gravité, les détails des ressources impactées et les procédures de remédiation étape par étape.</block>
+  <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Mettez en œuvre des configurations EVS bien architecturées dans Workload Factory</block>
+  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>. == Coût</block>
+  <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> Passez en revue les insights bien architecturés pour votre environnement EVS</block>
+  <block id="9af4d557947285cd35bace6367e46950" category="paragraph">Lorsque votre environnement EVS est détecté, Workload Factory effectue automatiquement des analyses quotidiennes bien architecturées afin d'identifier les problèmes de configuration et de fournir des recommandations de remédiation.</block>
+  <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">Apprenez à mettre en œuvre des configurations bien architecturées</block>
+  <block id="5dc782d436d94215ab9c41482cff8c02" category="paragraph"><block ref="f09015d4a26b2878c118305ce478ca5f" category="inline-link-macro-rx"></block>.</block>
+  <block id="fc6485a9112c61e8addae60c9881529a" category="summary">Vérifiez l'état d'architecture des configurations EVS dans Workload Factory et suivez les recommandations de correction basées sur les bonnes pratiques d'AWS et de NetApp.</block>
+  <block id="74163cd660daafe169a986c2d540a418" category="doc">Mettre en œuvre des configurations EVS bien architecturées</block>
+  <block id="55f759553ee3b4403a36ef5481e92158" category="paragraph">Utilisez l'analyse de configuration de Workload Factory pour examiner l'état bien architecturé de vos configurations Amazon Elastic VMware Service (EVS) et corriger les problèmes qui affectent la fiabilité, la sécurité et le coût.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">À propos de cette tâche</block>
+  <block id="992962ec039b953e3a26be2bbe0354ea" category="paragraph">Des analyses quotidiennes automatiques de tous les environnements EVS détectés, effectuées à l'aide des API AWS, analysent votre configuration EVS et identifient les problèmes potentiels susceptibles d'affecter la disponibilité, la résilience, la sécurité ou l'optimisation des coûts. Les résultats sont organisés par domaine de configuration, chaque résultat incluant l'état, les niveaux de gravité, les détails des ressources impactées et les procédures de correction étape par étape.</block>
+  <block id="46983665512cec916d21fde7e5cd3c92" category="paragraph">Les principales caractéristiques sont les suivantes :</block>
+  <block id="d5bec1394e46fe7beb3bfc357658dbee" category="list-text">*Analyses quotidiennes automatiques* : Tous les environnements EVS découverts sont automatiquement analysés une fois par jour afin de garantir que les informations restent à jour.</block>
+  <block id="7178f1776bec85b1fa0d80ba102bb59c" category="list-text">*Analyse basée sur l'API AWS* : Les analyses utilisent les API AWS et ne nécessitent pas d'identifiants vSphere ni de connectivité à votre vCenter.</block>
+  <block id="8157ddea6dba3cc417056b072b8b80f3" category="list-text">*Instructions détaillées sur la résolution des problèmes* : Chaque problème identifié comprend une explication claire, un niveau de gravité et des procédures de résolution étape par étape.</block>
+  <block id="1f4af7de884cca1c2591581301dfb2d3" category="list-text">*Informations en lecture seule* : Fournit des résultats et des recommandations détaillés sans options de résolution automatisée des problèmes.</block>
+  <block id="8a932e11437d1c455e0309f4576aecfc" category="section-title">Comprendre les insights bien architecturés</block>
+  <block id="ba3c34291d7a94693a481a33bd15d66a" category="paragraph">L'onglet « Well-architected » affiche les informations suivantes :</block>
+  <block id="8092529325e1bffb70e26a2f0a96de8c" category="list-text">*Nom de la configuration*: La zone de configuration évaluée.</block>
+  <block id="fb65a696254587c809d66cfee810bcb9" category="list-text">*Étiquettes* : Libellés indiquant les domaines d'impact (tels que Disponibilité, Résilience, Sécurité).</block>
+  <block id="191370a235cb47e01e8bb5d93f56f68e" category="list-text">*Statut* : Soit « Optimisé » (aucun problème trouvé) ou « Non optimisé » (problèmes trouvés).</block>
+  <block id="7e06d612ab32ad7e5b276e570d6052db" category="list-text">*Gravité* : Le niveau d’importance de la constatation (par exemple, Avertissement).</block>
+  <block id="8b38d8216b4a9677a6565c6987244bfd" category="list-text">*Type de ressource* : Le type de ressource AWS évalué.</block>
+  <block id="aed619db5443435ab1909111087c9354" category="list-text">*Nombre de ressources impactées*: Le nombre de ressources affectées par le problème.</block>
+  <block id="d17c25d685d870f3162fd07bd3759e9d" category="section-title">Fréquence de balayage</block>
+  <block id="ec009bfd9b9d35c799aa225e2210ad5d" category="paragraph">Des analyses bien conçues sont effectuées automatiquement pour toutes les configurations EVS détectées. Principaux détails concernant la planification des analyses :</block>
+  <block id="200b6c38eb872375baba819532b25c35" category="list-text">Les analyses sont effectuées une fois par jour pour chaque configuration EVS.</block>
+  <block id="aac386e06e58e41f07f21274a2ce3cd3" category="list-text">Les analyses des différentes configurations peuvent avoir lieu à différents moments.</block>
+  <block id="cbf4a11b9106a765a8d59f5bde22b92b" category="list-text">Si une analyse échoue pour une configuration, les analyses pour d'autres configurations dans le même compte seront tout de même tentées.</block>
+  <block id="2e23c7712db264116ae4e9427788e890" category="list-text">La carte d'horodatage de l'onglet d'état Well-architected indique quand la dernière analyse a été effectuée pour la configuration actuelle.</block>
+  <block id="6b263d7d4b1960744986bbf27f19031b" category="admonition">L'exécution à la demande d'analyses bien conçues n'est actuellement pas prise en charge. Toutes les analyses sont effectuées automatiquement selon la planification quotidienne.</block>
+  <block id="6943da56f7bfefaf87bd63fa31f32343" category="inline-link">ajouté des identifiants AWS</block>
+  <block id="de6391d66ba7208735ea026c0163bd82" category="list-text">Vous devez disposer<block ref="1c3a105d12a49d2155fa535811f69d6c" category="inline-link-rx"></block> des autorisations _Affichage, planification et analyse_ pour les charges de travail VMware.</block>
+  <block id="7c751b705d8b34dd77f43768750957ae" category="list-text">Vous devez avoir au moins un environnement Amazon Elastic VMware Service découvert dans votre compte AWS.</block>
+  <block id="bcfe7032eb38dd46f96fae8e821cb2f5" category="section-title">Accédez à l'onglet d'état well-architected</block>
+  <block id="9a1e15b3cbcb65c9396541d3f9c5193b" category="list-text">Dans le menu VMware, sélectionnez *Inventory*.</block>
+  <block id="744339c5b641ba182ae35bbb4cfc33a4" category="list-text">Dans la liste *Environnements de virtualisation*, sélectionnez l’environnement EVS découvert pour lequel vous souhaitez consulter des informations bien architecturées.</block>
+  <block id="97136f0d9a483a6fdfdfc42b5a59cfe7" category="list-text">Sélectionnez l’onglet *Well-architected status*.</block>
+  <block id="a563ade9a0b771335a4862de1340dc24" category="paragraph">Les éléments suivants sont affichés :</block>
+  <block id="4898eb92487a19f75bf5dd69bf5044ca" category="list-text">*Horodatage de l'analyse quotidienne automatique* : Indique quand la dernière analyse a été effectuée pour cet environnement.</block>
+  <block id="327c34fae86c3c2d78f5cfa847ccf61c" category="list-text">*Configurations* : Organise les résultats par domaine de configuration et affiche leur statut et leurs détails.</block>
+  <block id="3cecc2f68d529e2866ede0865952d12e" category="section-title">Afficher des évaluations bien architecturées</block>
+  <block id="dc1feaa4afec46ae71e1b4ce87c52cc9" category="section-title">Gestion des nœuds de cluster</block>
+  <block id="1bb51698a0663f165dbe5f273c5c5673" category="paragraph">Cela évalue si les nœuds de votre cluster EVS ont une protection d'arrêt et de résiliation EC2 appropriée configurée.</block>
+  <block id="5a82da798b8d52a1877e0af59310a695" category="paragraph">*Statut*:</block>
+  <block id="2177db57d319d13e0bf2ae908c5ad3fd" category="list-text">*Optimisé* : Tous les nœuds EVS ont la protection contre l’arrêt EC2 et la protection contre la terminaison configurées.</block>
+  <block id="645739737a5dbda70addbb1793f629c5" category="list-text">*Non optimisé* : Au moins un nœud EVS n’a pas de protection contre l’arrêt ou la suppression EC2 configurée.</block>
+  <block id="813bbde82916c6d5352808ebeccf0b78" category="paragraph">*Pourquoi c'est important*:</block>
+  <block id="47ba39ae7dbe55540d6304890df50c31" category="paragraph">Les nœuds EVS ESXi doivent être gérés exclusivement à l'aide de vCenter ou d'autres outils de gestion au niveau VMware. Sans protections adéquates au niveau EC2, les nœuds pourraient être arrêtés ou supprimés accidentellement depuis la console EC2, ce qui peut entraîner l'indisponibilité des données des machines virtuelles ou une perte de données.</block>
+  <block id="852fec60fb308754480e33bb8725f7d0" category="paragraph">*Pour consulter les résultats détaillés*:</block>
+  <block id="5b924baabf30c77d336ab00807a2e592" category="list-text">Dans l’onglet Well-architected status, repérez *Cluster node management*.</block>
+  <block id="2f0a4abe3577a24388d3503c76df1f1e" category="list-text">Sélectionnez *View* pour ouvrir la boîte de dialogue des résultats.</block>
+  <block id="f771ae48bfbea0e9bd4510a2944d7c27" category="paragraph">La boîte de dialogue affiche :</block>
+  <block id="beceff88971536474ce183c2c49086a3" category="list-text">*Résumé des constatations*: Une explication détaillée du problème détecté dans votre environnement.</block>
+  <block id="521b5581051893604e80bc8d9a9b2a47" category="list-text">*Grille des ressources* : Un tableau présentant tous les nœuds EVS et leur état de protection, notamment :</block>
+  <block id="1e64edfa54c534cdd3eab5eafafdc723" category="list-text">Identifiant du nœud</block>
+  <block id="79a2c7f2446afac26daa7c86e7c7552d" category="list-text">Statut de protection contre l'arrêt EC2</block>
+  <block id="e26fc7b3b268da15eeb1541c027f3181" category="list-text">Statut de protection contre la résiliation EC2</block>
+  <block id="dd3ff4b0d866a1f342fc31bf10649488" category="list-text">*Action requise*: Procédures de résolution des problèmes étape par étape.</block>
+  <block id="2fb2741679a033656b8deb871364d1ba" category="list-text">*Recommandation* : Bonne pratique.</block>
+  <block id="801eec1f5aa15441f8563024525f7de2" category="paragraph">*Remédiation*:</block>
+  <block id="0dcf33d70ce0ac99ae40cb18631345ea" category="paragraph">Pour remédier à ce problème, activez la protection contre l'arrêt et la terminaison pour vos nœuds EVS :</block>
+  <block id="f1f93afb3b5ca94caad02f19d5690631" category="inline-link">Documentation AWS pour l’activation de la protection contre l’arrêt</block>
+  <block id="3de60d42654be51b8431224f33d26e80" category="list-text">Suivez la procédure spécifiée dans<block ref="39a165446f78431d50e534c995c99eb1" category="inline-link-rx"></block>.</block>
+  <block id="0ed28b656053bbc9750b2cb527e317cd" category="inline-link">Documentation AWS pour l'activation de la protection contre la résiliation</block>
+  <block id="ecf75ab49e92be6325b9b3a05088f6a0" category="list-text">Suivez la procédure spécifiée dans<block ref="723a60649762a3af21a294f7843f9b4c" category="inline-link-rx"></block>.</block>
+  <block id="ce129dbc888eb33b14b32d1fa034d7b7" category="section-title">résilience de l'environnement EVS</block>
+  <block id="c049b3d231c8b43b1fd719fd9a8215e5" category="paragraph">Cela permet de vérifier si les nœuds de votre cluster EVS sont correctement répartis entre les groupes de placement de partitions.</block>
+  <block id="30323180fe07f0de31c13be7ab8edff5" category="list-text">*Optimisé* : Tous les nœuds sont membres d’un seul groupe de placement de partition configuré avec quatre partitions ou plus.</block>
+  <block id="bb6b44588620725c2fafc527d3a36108" category="list-text">*Non optimisé* si l'une des conditions suivantes est vraie :</block>
+  <block id="5ceff40676061e4d49313b93769e0092" category="list-text">Les nœuds sont membres de plusieurs groupes de placement.</block>
+  <block id="80e60c8a90e80f84fb5d310b198db129" category="list-text">Au moins un nœud est membre d'un groupe de placement non partitionné.</block>
+  <block id="0a410fbafeb1762934b94f77af190020" category="list-text">Tous les nœuds sont membres d'un groupe de placement partitionné avec moins de quatre partitions.</block>
+  <block id="4c9e98121a4fe72e482aafa4e8b548dd" category="paragraph">Un partitionnement adéquat garantit que les nœuds de votre cluster EVS sont répartis sur plusieurs partitions matérielles isolées contre les pannes au sein d'une zone de disponibilité AWS. Un mauvais positionnement peut entraîner une perte importante de puissance de traitement ou une interruption en cas de défaillance d'une partition.</block>
+  <block id="c5b0e174597ee5abfad58c8d92e612ab" category="list-text">Dans l'onglet Well-architected status, repérez *EVS environment resiliency*.</block>
+  <block id="0e3b484d9d0687e5c5b32b8f2ad39c25" category="list-text">*Résumé des résultats* : Une explication détaillée du désalignement du partitionnement.</block>
+  <block id="ae7e05a26896efe16ac92af493496bfe" category="list-text">*Grille des ressources* : Un tableau présentant les nœuds de l’environnement EVS avec :</block>
+  <block id="9a4247fce420e054bc53b23a77efaa26" category="list-text">Nom du groupe de placement</block>
+  <block id="035f6ab94403d611f603c8115478662d" category="list-text">Type de groupe de placement</block>
+  <block id="3cba1eb347e09ee7cfb864eb01fccac4" category="list-text">Nombre de partitions du groupe de placement</block>
+  <block id="bb4564e55d348d7a7b7061c258291236" category="list-text">*Action requise* : Procédures de remédiation étape par étape</block>
+  <block id="626f65450b25b8256e989a7d96d9dd8c" category="list-text">*Recommandation* : Meilleures pratiques recommandées</block>
+  <block id="1741ef00400e675fccbb26bb1e459a1c" category="paragraph">Pour remédier aux problèmes de placement des partitions :</block>
+  <block id="190ae6870996db4b351353f26146dfe2" category="list-text">Lors de l'ajout de nouveaux nœuds à l'environnement EVS, provisionnez les nouveaux nœuds à l'aide d'un groupe de placement partitionné avec au moins quatre partitions.</block>
+  <block id="9bc8310ff2c5946d58c2c80b2c49c003" category="list-text">Si des nœuds de cluster sont remplacés, assurez-vous que les nœuds de remplacement sont provisionnés à l'aide d'un groupe de placement partitionné avec au moins quatre partitions.</block>
+  <block id="b4f5ac9ad226f10eca619b94888a2179" category="list-text">Essayez de regrouper tous les nœuds EVS dans un seul groupe de placement, conformément aux recommandations ci-dessus.</block>
+  <block id="ceb2f3b962adcc18ee161b7e14839412" category="paragraph">*Recommandation de bonnes pratiques*:</block>
+  <block id="fe90fa535ae4fff7efe640e795799979" category="paragraph">Lors de la création ou de l'extension d'un environnement EVS, provisionnez tous les nœuds du cluster à l'aide d'un seul groupe de placement partitionné configuré avec quatre partitions ou plus.</block>
+  <block id="f2dd5e328e06e8cf91d1b5390e4cd997" category="paragraph">Après avoir examiné vos well-architected insights et mis en œuvre les changements recommandés :</block>
+  <block id="139deeaf3f0b706655accefb5d2c2384" category="list-text">Surveillez quotidiennement l'onglet de statut bien architecturé pour rester informé de l'état de votre environnement.</block>
+  <block id="1a2bd51e6c9820e6b845fcee8b825038" category="list-text">Suivez les procédures de remédiation pour tout résultat « Not optimized ».</block>
+  <block id="84125effdc43235cd3e3b49417a766ea" category="list-text">Consultez la documentation AWS et NetApp pour connaître les meilleures pratiques supplémentaires.</block>
+  <block id="0b3b97923e2348ff9e1f39e9effff018" category="list-text">Envisagez de mettre en œuvre les recommandations avant d'étendre votre environnement EVS.</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Liens associés</block>
+  <block id="ab9fa5da04b047baee14c97180c20a08" category="inline-link">Documentation des groupes de placement AWS</block>
+  <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
+  <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">01 février 2026</block>
+  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">Administrer et surveiller</block>
 </blocks>
