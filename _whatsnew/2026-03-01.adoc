@@ -1,0 +1,13 @@
+= Nouveau signet Ask Me disponible dans Workload Factory
+:allow-uri-read: 
+
+
+
+
+=== Nouveau signet Ask Me disponible dans Workload Factory
+
+Nous avons ajouté un nouveau raccourci Ask Me sur chaque écran de la console Workload Factory. Cette amélioration vous permet d'accéder plus facilement et plus rapidement à Ask Me dès que vous avez besoin d'aide. Ask Me est notre assistant IA, qui vous permet de poser des questions sur vos propres environnements de charge de travail, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes.
+
+Vous pouvez ouvrir Ask Me depuis n'importe quelle page en cliquant sur le nouveau signet. Cela lance Ask Me dans un panneau latéral sans interrompre votre travail en cours et offre des explications et des recommandations rapides en rapport avec ce que vous faites actuellement.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["En savoir plus sur Ask Me"^]

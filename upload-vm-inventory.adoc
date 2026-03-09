@@ -149,4 +149,5 @@ Gérez vos données d’inventaire de machines virtuelles téléchargées à par
 * link:launch-onboarding-advisor.html["Créer un plan de déploiement Amazon VMware Cloud"]
 * link:launch-migration-advisor-evs.html["Créer un plan de déploiement Amazon Elastic VMware Service"]
 * link:launch-onboarding-advisor-native.html["Créer un plan de déploiement Amazon EC2"]
+* link:launch-migration-advisor-gcve.html["Créer un plan de déploiement Google Cloud VMware Engine"]
 

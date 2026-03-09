@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
-permalink: quick-start-native.html 
-keywords: quick start 
-summary: Lancez-vous avec VMware migration Advisor pour migrer votre infrastructure actuelle vers Amazon EC2 en utilisant Amazon FSX pour ONTAP en tant que datastores NFS externes. 
+permalink: quick-start-gcve.html 
+keywords: quick start, gcve, google cloud vmware engine, gcnv, google cloud netapp volumes 
+summary: 'Commencez par utiliser l"assistant de migration VMware pour transférer votre infrastructure actuelle vers Google Cloud VMware Engine en utilisant Google Cloud NetApp Volumes comme datastores NFS externes.' 
 ---
-= Démarrage rapide de la migration vers Amazon EC2 à l'aide de VMware workloads migration Advisor
+= Démarrage rapide pour la migration vers Google Cloud VMware Engine à l'aide de l'advisor de migration des workloads VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Lancez-vous avec VMware migration Advisor pour migrer votre infrastructure actuelle vers Amazon EC2 en utilisant Amazon FSX pour ONTAP en tant que datastores NFS externes.
+Commencez par utiliser l'assistant de migration VMware pour transférer votre infrastructure actuelle vers Google Cloud VMware Engine en utilisant Google Cloud NetApp Volumes comme datastores NFS externes.
 
 Avant de commencer, vous devriez avoir une compréhension de https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["autorisations pour NetApp Workload Factory"^].
 
@@ -24,10 +24,10 @@ Vous aurez besoin de https://docs.netapp.com/us-en/workload-setup-admin/sign-up-
 Choisissez le https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Politiques d'autorisation"] pour répondre à vos besoins.
 
 [role="quick-margin-para"]
-Si vous choisissez de ne pas accorder d'autorisations, vous pouvez commencer à utiliser Workload Factory for Databases pour copier des exemples de code partiellement complétés.
+Si vous choisissez de ne pas accorder les autorisations, vous pouvez commencer à utiliser Workload Factory pour VMware pour copier des exemples de code partiellement complétés.
 
 [role="quick-margin-para"]
-Si vous choisissez d'accorder des autorisations, vous devrez https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ajouter manuellement les identifiants à un compte"] Cela comprend la sélection des capacités de charge de travail, telles que les bases de données et l'IA, et la création des politiques IAM pour les autorisations requises.
+Si vous choisissez d'accorder des autorisations, vous devrez  https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ajouter manuellement les identifiants à un compte"]notamment fournir un compte de service GCP disposant des autorisations nécessaires pour consulter et gérer les ressources Google Cloud NetApp Volumes, la configuration VPC et la connectivité au datastore Google Cloud VMware Engine.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment ajouter des informations d'identification et des autorisations"^].
@@ -41,14 +41,7 @@ link:upload-vm-inventory.html["Apprenez à télécharger les données d'inventai
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Créez un plan de déploiement à l'aide de VMware migration Advisor
 [role="quick-margin-para"]
-Lancez l'assistant de migration VMware et sélectionnez les machines virtuelles que vous souhaitez migrer vers l'infrastructure Amazon EC2 en utilisant un système de fichiers Amazon FSX pour ONTAP en tant que datastores NFS externes. Vous pouvez apporter des modifications avant d'enregistrer le plan.
+Lancez l'assistant de migration VMware et configurez l'environnement de machine virtuelle que vous souhaitez créer sur l'infrastructure Google Cloud VMware Engine en utilisant Google Cloud NetApp Volumes comme datastores NFS externes.
 
 [role="quick-margin-para"]
-link:launch-onboarding-advisor-native.html["Découvrez comment utiliser le conseiller de migration VMware pour créer un plan de déploiement"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinq"] Déployez le système de fichiers FSX pour ONTAP recommandé
-[role="quick-margin-para"]
-Déployez le nouveau système de fichiers FSX pour ONTAP qui fournira les datastores de vos machines virtuelles dans votre infrastructure Amazon EC2.
-
-[role="quick-margin-para"]
-link:deploy-fsx-file-system-native.html["Découvrez comment déployer votre nouveau système de fichiers FSX pour ONTAP"].
+link:launch-migration-advisor-gcve.html["Découvrez comment utiliser le conseiller de migration VMware pour créer un plan de déploiement"].

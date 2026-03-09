@@ -15,6 +15,39 @@ Découvrez les nouveautés du composant VMware Migration Advisor de Workload Fac
 
 
 
+== 09 mars 2026
+
+
+
+=== Introduction de la prise en charge de l'assistant de migration pour Google Cloud VMware Engine
+
+NetApp Workload Factory prend désormais en charge Google Cloud VMware Engine. Vous pouvez migrer vos charges de travail VMware sur site vers Google Cloud VMware Engine en utilisant Google Cloud NetApp Volumes comme datastores NFS externes, optimisant les coûts et permettant un meilleur contrôle de votre environnement VMware sans avoir à refactoriser ni à replatformer vos applications.
+
+L'assistant de migration Google Cloud VMware Engine fournit :
+
+* Dimensionnement et conception automatisés des clusters Google Cloud VMware Engine avec prise en charge des types de nœuds VE1 et VE2
+* Optimisation de la disposition des machines virtuelles entre les datastores internes vSAN et les datastores NFS externes Google Cloud NetApp Volumes.
+* Comparaison détaillée des coûts et analyse du coût total de possession (TCO) entre les configurations utilisant uniquement vSAN et celles optimisées par Google Cloud NetApp Volumes.
+* Prise en charge des niveaux de service Standard, Premium et Extreme de Google Cloud NetApp Volumes.
+* Déploiement d'infrastructure en tant que code avec Terraform pour un provisionnement automatisé.
+
+
+
+
+== 01 mars 2026
+
+
+
+=== Nouveau signet Ask Me disponible dans Workload Factory
+
+Nous avons ajouté un nouveau raccourci Ask Me sur chaque écran de la console Workload Factory. Cette amélioration vous permet d'accéder plus facilement et plus rapidement à Ask Me dès que vous avez besoin d'aide. Ask Me est notre assistant IA, qui vous permet de poser des questions sur vos propres environnements de charge de travail, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes.
+
+Vous pouvez ouvrir Ask Me depuis n'importe quelle page en cliquant sur le nouveau signet. Cela lance Ask Me dans un panneau latéral sans interrompre votre travail en cours et offre des explications et des recommandations rapides en rapport avec ce que vous faites actuellement.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["En savoir plus sur Ask Me"^]
+
+
+
 == 01 février 2026
 
 
