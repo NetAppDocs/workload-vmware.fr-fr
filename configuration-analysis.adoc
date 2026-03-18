@@ -23,19 +23,67 @@ Principales fonctionnalités :
 
 
 
-== Statut bien architecturé
+== Comment ça marche
 
-Dans la console Workload Factory, l'état bien architecturé est indiqué pour tous les environnements de virtualisation EVS détectés. Les états bien architecturés sont classés comme « Optimisé » ou « Non optimisé ». En sélectionnant *Inventory*, vous accédez à l'onglet de l'état bien architecturé de l'environnement, où vous pouvez trouver toutes les configurations de l'environnement.
+Workload Factory analyse vos charges de travail exécutées sur les déploiements de systèmes de fichiers Amazon FSx for NetApp ONTAP quotidiennement. L'analyse fournit un état bien architecturé, des informations et des recommandations.
+
+Une fois l'analyse quotidienne terminée, les configurations apparaissent comme « optimisées » ou « non optimisées » dans le tableau de bord Well-architected du déploiement. Vous trouverez le score d'optimisation total, les problèmes de configuration par catégorie et une liste des problèmes de configuration et des recommandations. Vous pouvez consulter les recommandations pour les problèmes de configuration. Certains problèmes peuvent être résolus automatiquement par Workload Factory, tandis que d'autres nécessitent une intervention manuelle. Dans ce cas, Workload Factory fournit des instructions détaillées pour vous aider à mettre en œuvre les modifications recommandées.
+
+Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à vos environnements. Cela évite les alertes inutiles et des résultats d'optimisation inexacts. Lorsque vous ignorez une analyse de configuration spécifique, Workload Factory n'inclut pas la configuration dans le score d'optimisation total.
 
 
 
-== Catégories de configuration
+== Pourquoi c'est important
 
-Workload Factory évalue les configurations EVS selon plusieurs catégories afin de garantir leur conformité avec AWS et NetApp bonne pratique. Chaque catégorie se concentre sur des aspects spécifiques de votre environnement EVS :
+Workload Factory applique les meilleures pratiques aux environnements de stockage, de base de données et VMware de grande envergure en combinant une évaluation continue avec des recommandations et des corrections. Les correctifs automatisés appliqués dans la console Workload Factory réduisent les erreurs humaines, garantissent une gestion uniforme et préservent les performances et la fiabilité de vos infrastructures de charges de travail.
 
-Disponibilité:: À quel point la configuration EVS est censée être accessible et opérationnelle.
-Sécurité:: Dans quelle mesure la configuration EVS protège les données et contrôle l'accès (par exemple, la protection contre l'arrêt et la terminaison EC2).
-Résilience:: La capacité de la configuration EVS à se remettre de pannes ou d'interruptions.
+
+
+== Exigences d'analyse
+
+Pour une analyse de configuration complète, vous devez effectuer les opérations suivantes :
+
+* Associez un lien. La connectivité des liens permet à Workload Factory d'analyser toutes les configurations du système de fichiers, comme la protection des données et les performances.
++
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Apprenez comment associer un lien existant ou créer et associer un nouveau lien"].
+
+* Accorder les autorisations de _visualisation, de planification et d'analyse_ pour les charges de travail VMware.
++
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment accorder des autorisations à un compte AWS"^]
+
+* Vous devez avoir au moins un environnement Amazon Elastic VMware Service découvert dans votre compte AWS.
+
+
+
+
+== Meilleures pratiques et recommandations pour les charges de travail EVS
+
+Workload Factory fournit des bonnes pratiques et des recommandations pour l'exploitation de charges de travail Amazon Elastic VMware Service (EVS) bien architecturées. L'analyse bien architecturée évalue les configurations EVS afin d'aider à garantir que vos environnements VMware sont optimisés pour la fiabilité, la sécurité, l'excellence opérationnelle, l'optimisation des coûts et l'efficacité des performances. Depuis l'onglet de statut bien architecturé dans VMware, vous trouverez des informations et des recommandations pour vous aider à mettre en œuvre les bonnes pratiques bien architecturées pour vos environnements EVS.
+
+L'analyse bien conçue catégorise les configurations dans les piliers suivants du cadre : _fiabilité_ et _sécurité_.
+
+
+
+=== Fiabilité
+
+La fiabilité garantit que les charges de travail exécutent leurs fonctions prévues correctement et de manière constante, même en cas de perturbations.
+
+* *Résilience de l'environnement EVS*
++
+Assurez-vous que les nœuds de votre cluster EVS sont correctement répartis entre les groupes de placement de partitions. Tous les nœuds doivent être membres d’un seul groupe de placement de partitions configuré avec quatre partitions ou plus. Un placement correct des partitions garantit que les nœuds de votre cluster EVS sont répartis sur plusieurs partitions matérielles isolées contre les pannes au sein d’une zone de disponibilité AWS. Un mauvais alignement peut entraîner une perte importante de puissance de traitement ou une interruption si une partition tombe en panne.
+
+
+
+
+
+=== Sécurité
+
+La sécurité met l'accent sur la protection des données, des systèmes et des actifs grâce à des évaluations des risques et des stratégies d'atténuation.
+
+* *Gestion des nœuds du cluster*
++
+Assurez-vous que les nœuds de votre cluster EVS disposent d'une protection adéquate contre l'arrêt et la suppression d'instances EC2. Les nœuds ESXi d'EVS doivent être gérés exclusivement à l'aide de vCenter ou d'autres outils de gestion de niveau VMware. Sans protections appropriées au niveau EC2, les nœuds pourraient être arrêtés ou supprimés accidentellement depuis la console EC2, ce qui peut entraîner l'indisponibilité des données des machines virtuelles ou une perte de données.
+
 
 
 .Et ensuite
