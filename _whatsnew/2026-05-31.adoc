@@ -1,0 +1,9 @@
+= Prise en charge d'AWS GovCloud (US) dans NetApp Workload Factory
+:allow-uri-read: 
+
+
+
+
+=== Prise en charge d'AWS GovCloud (US) dans NetApp Workload Factory
+
+NetApp Workload Factory prend en charge les comptes AWS GovCloud (US). En utilisant un compte GovCloud, vous pouvez déployer et gérer des charges de travail de stockage dans les régions AWS GovCloud (US).

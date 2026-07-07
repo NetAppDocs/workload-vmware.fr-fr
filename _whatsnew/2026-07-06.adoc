@@ -1,0 +1,13 @@
+= Prise en charge de l'instance i7i.metal-24xl dans le calculateur de TCO EVS
+:allow-uri-read: 
+
+
+
+
+=== Prise en charge de l'instance i7i.metal-24xl dans le calculateur de TCO EVS
+
+Le calculateur de coût total de possession (TCO) d'EVS prend désormais en charge les instances EC2 AWS i7i.metal-24xl comme hôtes de cluster. Par rapport aux configurations i4i.metal, ces instances permettent de réduire le coût initial d'EVS d'environ 33 % pour le calcul et de 25 % pour le stockage vSAN.
+
+Le calculateur compare automatiquement les deux types d'instances et sélectionne l'option la plus économique. Une nouvelle section de comparaison affiche les configurations hôtes EVS côte à côte, ce qui facilite la recherche de la configuration la mieux adaptée à vos besoins.
+
+link:calculate-evs-savings.html["Calculez les économies estimées pour EVS"]

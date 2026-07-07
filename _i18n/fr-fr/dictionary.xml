@@ -623,7 +623,6 @@
   <block id="df3078cbf2344fdc96564c4276d42b3a" category="paragraph">Workload Factory est pris en charge dans toutes les régions commerciales où FSx for ONTAP est pris en charge.<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">Les régions AWS suivantes ne sont pas prises en charge :</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">régions de Chine</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">Régions GovCloud (États-Unis)</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">Nuage secret</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">Nuage top secret</block>
   <block id="262fa4a3da671ed4e99add58ab265149" category="doc">Mentions légales pour NetApp Workload Factory pour VMware</block>
@@ -778,7 +777,6 @@
   <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">L'onglet « Architecture optimisée » effectue une analyse quotidienne automatisée de vos environnements Amazon Elastic VMware Service (EVS) afin de garantir leur conformité avec les bonnes pratiques AWS et NetApp. L'onglet identifie les problèmes de configuration et fournit des recommandations détaillées pour les résoudre, afin de vous aider à maintenir des opérations, une sécurité et une efficacité des coûts optimales.</block>
   <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">Les analyses automatiques sont effectuées à l'aide des API AWS—aucune vSphere credentials ne sont requises. Les résultats sont organisés par domaine de configuration, chaque résultat incluant l'état, les niveaux de gravité, les détails des ressources impactées et les procédures de remédiation étape par étape.</block>
   <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Mettez en œuvre des configurations EVS bien architecturées dans Workload Factory</block>
-  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>. == Coût</block>
   <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> Passez en revue les insights bien architecturés pour votre environnement EVS</block>
   <block id="9af4d557947285cd35bace6367e46950" category="paragraph">Lorsque votre environnement EVS est détecté, Workload Factory effectue automatiquement des analyses quotidiennes bien architecturées afin d'identifier les problèmes de configuration et de fournir des recommandations de remédiation.</block>
   <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">Apprenez à mettre en œuvre des configurations bien architecturées</block>
@@ -1064,4 +1062,15 @@
   <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">La sécurité met l'accent sur la protection des données, des systèmes et des actifs grâce à des évaluations des risques et des stratégies d'atténuation.</block>
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">*Gestion des nœuds du cluster*</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">Assurez-vous que les nœuds de votre cluster EVS disposent d'une protection adéquate contre l'arrêt et la suppression d'instances EC2. Les nœuds ESXi d'EVS doivent être gérés exclusivement à l'aide de vCenter ou d'autres outils de gestion de niveau VMware. Sans protections appropriées au niveau EC2, les nœuds pourraient être arrêtés ou supprimés accidentellement depuis la console EC2, ce qui peut entraîner l'indisponibilité des données des machines virtuelles ou une perte de données.</block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="doc">Prise en charge d'AWS GovCloud (US) dans NetApp Workload Factory</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload Factory prend en charge les comptes AWS GovCloud (US). En utilisant un compte GovCloud, vous pouvez déployer et gérer des charges de travail de stockage dans les régions AWS GovCloud (US).</block>
+  <block id="caa606c0b1085a846c384cef14c3a17f" category="doc">Prise en charge de l'instance i7i.metal-24xl dans le calculateur de TCO EVS</block>
+  <block id="b055674b094a39e8822f5941fd1ddf8d" category="paragraph">Le calculateur de coût total de possession (TCO) d'EVS prend désormais en charge les instances EC2 AWS i7i.metal-24xl comme hôtes de cluster. Par rapport aux configurations i4i.metal, ces instances permettent de réduire le coût initial d'EVS d'environ 33 % pour le calcul et de 25 % pour le stockage vSAN.</block>
+  <block id="bbc7cb1849fc26e314ad21ecd99ca5fe" category="paragraph">Le calculateur compare automatiquement les deux types d'instances et sélectionne l'option la plus économique. Une nouvelle section de comparaison affiche les configurations hôtes EVS côte à côte, ce qui facilite la recherche de la configuration la mieux adaptée à vos besoins.</block>
+  <block id="0665cdd8950328e06e0db9b1e16938d3" category="inline-link-macro">Calculez les économies estimées pour EVS</block>
+  <block id="86271c8c1063215a7f1ff0f45240c576" category="paragraph"><block ref="86271c8c1063215a7f1ff0f45240c576" category="inline-link-macro-rx"></block></block>
+  <block id="1449013968addffe716f61980587a6e9" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Coût</block>
+  <block id="b2384f97ee5bce1c28f5573e6878c9c1" category="section-title">06 juillet 2026</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">31 mai 2026</block>
 </blocks>

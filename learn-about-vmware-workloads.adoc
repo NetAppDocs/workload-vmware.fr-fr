@@ -84,7 +84,11 @@ L'onglet « Architecture optimisée » effectue une analyse quotidienne automa
 
 Les analyses automatiques sont effectuées à l'aide des API AWS—aucune vSphere credentials ne sont requises. Les résultats sont organisés par domaine de configuration, chaque résultat incluant l'état, les niveaux de gravité, les détails des ressources impactées et les procédures de remédiation étape par étape.
 
-link:view-evs-well-architected.html["Mettez en œuvre des configurations EVS bien architecturées dans Workload Factory"]. == Coût
+link:view-evs-well-architected.html["Mettez en œuvre des configurations EVS bien architecturées dans Workload Factory"].
+
+
+
+== Coût
 
 L’utilisation de Workload Factory pour VMware est gratuite.
 
@@ -105,7 +109,6 @@ Workload Factory est pris en charge dans toutes les régions commerciales où FS
 Les régions AWS suivantes ne sont pas prises en charge :
 
 * régions de Chine
-* Régions GovCloud (États-Unis)
 * Nuage secret
 * Nuage top secret
 
