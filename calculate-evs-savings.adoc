@@ -17,6 +17,7 @@ Si le calculateur d’économies détermine que le stockage le plus rentable est
 
 
 
+[[explore-savings-for-evs-environments]]
 == Découvrez les économies réalisées pour les environnements EVS
 
 Suivez ces étapes pour explorer les économies potentielles pour une migration planifiée vers un environnement Amazon EVS.

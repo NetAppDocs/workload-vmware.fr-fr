@@ -17,6 +17,7 @@ Vous pouvez spécifier manuellement vos exigences en matière de machines virtue
 
 
 
+[[requirements]]
 == De formation
 
 * Vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour accéder à Workload Factory.  Si vous n'avez pas accès, créez un compte maintenant.  Consultez les instructions https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ici"] .
@@ -25,6 +26,7 @@ Vous pouvez spécifier manuellement vos exigences en matière de machines virtue
 
 
 
+[[steps]]
 == Étapes
 
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .

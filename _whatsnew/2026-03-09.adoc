@@ -4,6 +4,7 @@
 
 
 
+[[introducing-migration-advisor-support-for-google-cloud-vmware-engine]]
 === Introduction de la prise en charge de l'assistant de migration pour Google Cloud VMware Engine
 
 NetApp Workload Factory prend désormais en charge Google Cloud VMware Engine. Vous pouvez migrer vos charges de travail VMware sur site vers Google Cloud VMware Engine en utilisant Google Cloud NetApp Volumes comme datastores NFS externes, optimisant les coûts et permettant un meilleur contrôle de votre environnement VMware sans avoir à refactoriser ni à replatformer vos applications.

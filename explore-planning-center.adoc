@@ -15,18 +15,21 @@ Le centre de planification VMware vous permet de télécharger de nouvelles donn
 
 
 
+[[manage-vm-inventory-data]]
 == Gérer les données d'inventaire des machines virtuelles
 
 Utilisez le centre de planification pour créer et gérer les données d’inventaire des machines virtuelles.
 
 
 
+[[upload-vm-inventory-data]]
 === Télécharger les données d'inventaire de la machine virtuelle
 
 Vous pouvez télécharger les données d'inventaire des machines virtuelles lorsque vous êtes prêt à utiliser Workload Factory pour explorer les options de migration vers les environnements Amazon AWS.  Se référer àlink:upload-vm-inventory.html["Télécharger les données d'inventaire de la machine virtuelle"] pour les instructions.
 
 
 
+[[rename-a-dataset]]
 === Renommer un ensemble de données
 
 Vous pouvez modifier le nom d’un ensemble de données enregistré.
@@ -43,6 +46,7 @@ Le centre de planification est affiché.
 
 
 
+[[delete-a-dataset]]
 === Supprimer un ensemble de données
 
 Lorsqu'un ensemble de données n'est plus nécessaire, vous pouvez le supprimer à tout moment.
@@ -59,12 +63,14 @@ Le centre de planification est affiché.
 
 
 
+[[manage-migration-plans]]
 == Gérer les plans de migration
 
 Utilisez le centre de migration pour créer et gérer des plans de migration.
 
 
 
+[[provision-a-migration-plan]]
 === Fournir un plan de migration
 
 Vous pouvez sélectionner un plan de migration et le configurer pour que les machines virtuelles soient migrées vers l'environnement Amazon AWS de votre choix.
@@ -88,6 +94,7 @@ Le centre de planification est affiché.
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === Modifier le commentaire pour un plan de migration
 
 Si vous devez modifier les détails d'un commentaire pour un plan de migration, modifiez le commentaire depuis le centre de planification.
@@ -105,6 +112,7 @@ Le centre de planification est affiché.
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === Créez un rapport PDF ou CSV d'un plan de migration
 
 Créez un rapport PDF ou CSV détaillant le plan de migration.
@@ -122,6 +130,7 @@ Le centre de planification est affiché.
 
 
 
+[[delete-a-migration-plan]]
 === Supprimer un plan de migration
 
 Lorsqu'un plan de migration n'est plus nécessaire, vous pouvez le supprimer à tout moment.

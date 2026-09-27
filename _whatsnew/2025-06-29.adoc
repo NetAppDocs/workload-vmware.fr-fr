@@ -4,6 +4,7 @@
 
 
 
+[[introducing-migration-advisor-support-for-amazon-elastic-vmware-service]]
 === Présentation de la prise en charge du conseiller de migration pour Amazon Elastic VMware Service
 
 BlueXP Workload Factory pour VMware prend désormais en charge Amazon Elastic VMware Service. Vous pouvez migrer manuellement vos charges de travail VMware sur site vers Amazon Elastic VMware Service, optimisant ainsi les coûts et permettant un meilleur contrôle sur votre environnement VMware sans avoir à refactoriser ou à re-plateformer vos applications.

@@ -15,34 +15,40 @@ Découvrez les nouveautés du composant VMware Migration Advisor de Workload Fac
 
 
 
+[[06-july-2026]]
 == 06 juillet 2026
 
 
 
+[[i7i-metal-24xl-instance-support-in-evs-tco-calculator]]
 === Prise en charge de l'instance i7i.metal-24xl dans le calculateur de TCO EVS
 
 Le calculateur de coût total de possession (TCO) d'EVS prend désormais en charge les instances EC2 AWS i7i.metal-24xl comme hôtes de cluster. Par rapport aux configurations i4i.metal, ces instances permettent de réduire le coût initial d'EVS d'environ 33 % pour le calcul et de 25 % pour le stockage vSAN.
 
 Le calculateur compare automatiquement les deux types d'instances et sélectionne l'option la plus économique. Une nouvelle section de comparaison affiche les configurations hôtes EVS côte à côte, ce qui facilite la recherche de la configuration la mieux adaptée à vos besoins.
 
-link:calculate-evs-savings.html["Calculez les économies estimées pour EVS"]
+link:https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Calculez les économies estimées pour EVS"]
 
 
 
+[[31-may-2026]]
 == 31 mai 2026
 
 
 
+[[support-for-aws-govcloud-us-in-netapp-workload-factory]]
 === Prise en charge d'AWS GovCloud (US) dans NetApp Workload Factory
 
 NetApp Workload Factory prend en charge les comptes AWS GovCloud (US). En utilisant un compte GovCloud, vous pouvez déployer et gérer des charges de travail de stockage dans les régions AWS GovCloud (US).
 
 
 
+[[09-march-2026]]
 == 09 mars 2026
 
 
 
+[[introducing-migration-advisor-support-for-google-cloud-vmware-engine]]
 === Introduction de la prise en charge de l'assistant de migration pour Google Cloud VMware Engine
 
 NetApp Workload Factory prend désormais en charge Google Cloud VMware Engine. Vous pouvez migrer vos charges de travail VMware sur site vers Google Cloud VMware Engine en utilisant Google Cloud NetApp Volumes comme datastores NFS externes, optimisant les coûts et permettant un meilleur contrôle de votre environnement VMware sans avoir à refactoriser ni à replatformer vos applications.
@@ -58,10 +64,12 @@ L'assistant de migration Google Cloud VMware Engine fournit :
 
 
 
+[[01-march-2026]]
 == 01 mars 2026
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Nouveau signet Ask Me disponible dans Workload Factory
 
 Nous avons ajouté un nouveau raccourci Ask Me sur chaque écran de la console Workload Factory. Cette amélioration vous permet d'accéder plus facilement et plus rapidement à Ask Me dès que vous avez besoin d'aide. Ask Me est notre assistant IA, qui vous permet de poser des questions sur vos propres environnements de charge de travail, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes.
@@ -72,10 +80,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
+[[01-february-2026]]
 == 01 février 2026
 
 
 
+[[well-architected-analysis-for-amazon-elastic-vmware-service]]
 === Analyse bien architecturée pour Amazon Elastic VMware Service
 
 Workload Factory propose désormais une analyse automatisée bien architecturée de vos environnements Amazon Elastic VMware Service (EVS). Des analyses quotidiennes identifient les incohérences de configuration et offrent des recommandations de remédiation détaillées pour vous aider à maintenir des opérations, une sécurité et une efficacité des coûts optimales.
@@ -92,20 +102,24 @@ link:view-evs-well-architected.html["Mettre en œuvre des configurations bien ar
 
 
 
+[[04-january-2026]]
 == 04 janvier 2026
 
 
 
+[[ask-me-ai-assistant-home-page-integration]]
 === Intégration de l'assistant IA à la page d'accueil de Ask me
 
 La page d'accueil de la console Workload Factory intègre l'assistant IA Ask me, vous permettant de poser des questions sur votre propre infrastructure de stockage, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes. Vous pouvez interagir avec « Demandez-moi » pour comprendre vos charges de travail, résoudre les problèmes et en savoir plus sur Workload Factory, le tout sans quitter la console.
 
 
 
+[[27-november-2025]]
 == 27 novembre 2025
 
 
 
+[[calculate-cost-savings-of-migrating-to-amazon-elastic-vmware-service-for-specific-regions]]
 === Calculez les économies réalisées grâce à la migration vers Amazon Elastic VMware Service pour des régions spécifiques.
 
 Vous pouvez désormais explorer la valeur des différentes options de déploiement pour votre migration vers le cloud, optimiser les efforts investis dans l'évaluation des solutions et examiner en profondeur les solutions susceptibles de générer de la valeur et des économies dans le cloud.
@@ -116,10 +130,12 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Décou
 
 
 
+[[2-november-2025]]
 == 2 novembre 2025
 
 
 
+[[introducing-the-amazon-elastic-vmware-service-preferences-in-the-fsx-for-ontap-file-system-deployment-wizard]]
 === Présentation des préférences d'Amazon Elastic VMware Service dans l'assistant de déploiement du système de fichiers FSx pour ONTAP
 
 Lorsque vous déployez un système de fichiers FSx for ONTAP destiné à être utilisé comme banque de données NFS externe pour Amazon Elastic VMware Service, vous pouvez désormais sélectionner l'environnement EVS auquel les banques de données seront connectées.  Cela permet de remplir automatiquement plusieurs champs de l'assistant de déploiement afin de simplifier le processus de déploiement.
@@ -128,6 +144,7 @@ https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["D
 
 
 
+[[permissions-changes-for-vmware-workloads]]
 === Modifications des autorisations pour les charges de travail VMware
 
 VMware Workloads offre une meilleure visibilité sur les autorisations requises pour des actions spécifiques et une granularité permettant de sélectionner uniquement les autorisations nécessaires.  Lorsque vous ajouterez des informations d'identification, vous aurez le choix entre deux options d'autorisation au lieu du modèle d'autorisation précédent qui était _lecture seule_ et _lecture/écriture_. Le nouveau modèle d'autorisations décompose les politiques d'autorisation comme suit :
@@ -142,6 +159,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Améliorations d'Amazon EC2 migration Advisor
 
 Cette version de NetApp Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration :
@@ -151,16 +169,19 @@ Cette version de NetApp Workload Factory pour VMware présente plusieurs amélio
 
 
 
+[[5-october-2025]]
 == 5 octobre 2025
 
 
 
+[[bluexp-workload-factory-now-netapp-workload-factory]]
 === BlueXP workload factory désormais NetApp Workload Factory
 
 BlueXP a été renommé et repensé pour mieux refléter le rôle qu'il joue dans la gestion de votre infrastructure de données. Par conséquent, BlueXP workload factory a été renommée NetApp Workload Factory.
 
 
 
+[[introducing-the-vmware-workloads-planning-center]]
 === Présentation du centre de planification des charges de travail VMware
 
 Le centre de planification des charges de travail VMware vous permet d'afficher et de gérer votre inventaire de machines virtuelles et vos plans de migration à partir d'un seul endroit.  Vous pouvez télécharger et enregistrer plusieurs inventaires de machines virtuelles à partir de différents environnements et commencer à planifier une migration vers le service AWS EC2 ou Amazon Elastic VMware pour l'un d'entre eux.  Vous pouvez également créer et enregistrer des plans de migration AWS EC2 ou EVS.
@@ -169,6 +190,7 @@ https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Expl
 
 
 
+[[introducing-migration-advisor-support-for-amazon-elastic-vmware-service]]
 === Présentation de la prise en charge du conseiller de migration pour Amazon Elastic VMware Service
 
 BlueXP Workload Factory pour VMware vous permet désormais d'utiliser le conseiller de migration Amazon Elastic VMware Service pour migrer rapidement vos charges de travail VMware sur site vers Amazon Elastic VMware Service.  Une fois que vous avez créé un plan de migration à l’aide du conseiller de migration, il est automatiquement enregistré dans la liste des plans de migration du centre de planification.
@@ -177,10 +199,12 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html[
 
 
 
+[[3-august-2025]]
 == 3 août 2025
 
 
 
+[[improved-migration-advisor-support-for-amazon-elastic-vmware-service]]
 === Prise en charge améliorée du conseiller de migration pour Amazon Elastic VMware Service
 
 NetApp Workload Factory prend désormais en charge le déploiement et le montage automatiques de votre système de fichiers Amazon FSx for NetApp ONTAP .  Cela vous permet de commencer à déployer vos machines virtuelles sur les systèmes de fichiers FSx for ONTAP une fois la migration vers l'environnement Amazon EVS terminée.
@@ -189,6 +213,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 
 
+[[calculate-cost-savings-of-migrating-to-amazon-elastic-vmware-service]]
 === Calculez les économies réalisées lors de la migration vers Amazon Elastic VMware Service
 
 Vous pouvez désormais explorer les économies potentielles liées à la migration de vos charges de travail VMware vers Amazon Elastic VMware Service (EVS).  Le calculateur d'économies vous permet de comparer les coûts d'utilisation d'Amazon EVS avec et sans Amazon FSx for NetApp ONTAP comme stockage sous-jacent.  Le calculateur affiche les économies potentielles en temps réel à mesure que vous ajustez les caractéristiques de votre environnement.
@@ -197,10 +222,12 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Décou
 
 
 
+[[29-june-2025]]
 == 29 juin 2025
 
 
 
+[[introducing-migration-advisor-support-for-amazon-elastic-vmware-service]]
 === Présentation de la prise en charge du conseiller de migration pour Amazon Elastic VMware Service
 
 BlueXP Workload Factory pour VMware prend désormais en charge Amazon Elastic VMware Service. Vous pouvez migrer manuellement vos charges de travail VMware sur site vers Amazon Elastic VMware Service, optimisant ainsi les coûts et permettant un meilleur contrôle sur votre environnement VMware sans avoir à refactoriser ou à re-plateformer vos applications.
@@ -209,10 +236,12 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 
 
+[[4-may-2025]]
 == 4 mai 2025
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Améliorations d'Amazon EC2 migration Advisor
 
 Cette version de BlueXP Workload Factory pour VMware présente l'amélioration suivante de l'expérience du conseiller de migration Amazon EC2 :
@@ -223,16 +252,19 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[updated-permissions-terminology]]
 === Mise à jour de la terminologie des autorisations
 
 L'interface utilisateur et la documentation de Workload Factory utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
 
 
 
+[[30-march-2025]]
 == 30 mars 2025
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Améliorations d'Amazon EC2 migration Advisor
 
 Cette version de BlueXP Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration Amazon EC2 :
@@ -245,10 +277,12 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[2-march-2025]]
 == 2 mars 2025
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Améliorations d'Amazon EC2 migration Advisor
 
 Cette version de BlueXP Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration Amazon EC2 :
@@ -262,10 +296,12 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[5-january-2025]]
 == 5 janvier 2025
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Améliorations d'Amazon EC2 migration Advisor
 
 Cette version de BlueXP Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration :
@@ -278,10 +314,12 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[1-december-2024]]
 == 1er décembre 2024
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Améliorations d'Amazon EC2 migration Advisor
 
 Cette version de NetApp Workload Factory pour VMware présente plusieurs améliorations de l'expérience du conseiller de migration :
@@ -295,10 +333,12 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[3-november-2024]]
 == 3 novembre 2024
 
 
 
+[[vmware-migration-advisor-data-reduction-ratio-help]]
 === Aide de VMware migration Advisor sur le taux de réduction des données
 
 Cette version de Workload Factory pour VMware est dotée d'un assistant de réduction des taux de données. L'assistant de réduction des taux de données vous aide à décider quel ratio convient le mieux à votre inventaire et à votre environnement de stockage VMware lors de la préparation de l'intégration au cloud AWS.
@@ -307,10 +347,12 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[19-september-2024]]
 == 19 septembre 2024
 
 
 
+[[vmware-migration-advisor-enhancements]]
 === Améliorations de VMware migration Advisor
 
 Cette version de Workload Factory pour VMware présente des améliorations de fonctionnalités et de stabilité, ainsi que la possibilité d'importer et d'exporter des plans de migration lors de l'utilisation du conseiller de migration VMware.
@@ -319,20 +361,24 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[1-september-2024]]
 == 1er septembre 2024
 
 
 
+[[migrate-to-amazon-ec2]]
 === Migrez vers Amazon EC2
 
 L'usine de workloads pour VMware prend désormais en charge la migration vers Amazon EC2 à l'aide de VMware migration Advisor.
 
 
 
+[[7-july-2024]]
 == 7 juillet 2024
 
 
 
+[[initial-release-of-workload-factory-for-vmware]]
 === Version initiale de Workload Factory pour VMware
 
 La version initiale permet d'utiliser VMware migration Advisor pour analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site, et de générer un plan de déploiement des infrastructures de serveurs virtuels recommandées dans VMware Cloud on AWS et d'utiliser des systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.

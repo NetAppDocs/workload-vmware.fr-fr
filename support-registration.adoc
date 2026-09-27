@@ -19,6 +19,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[support-registration-overview]]
 == Présentation de l'inscription au support
 
 L'enregistrement de votre abonnement au support d'ID de compte (votre numéro de série 960xxxxxxxxx à 20 chiffres situé sur la page Ressources de support de la console NetApp ) sert d'ID d'abonnement au support unique. Chaque abonnement de support au niveau du compte NetApp doit être enregistré.
@@ -27,12 +28,14 @@ L'inscription permet des fonctionnalités telles que l'ouverture de tickets d'as
 
 
 
+[[register-your-account-for-netapp-support]]
 == Enregistrez votre compte pour bénéficier du support NetApp
 
 Pour vous inscrire au support et activer le droit au support, un utilisateur de votre compte doit associer un compte de site de support NetApp à sa connexion à la console NetApp . La manière dont vous vous inscrivez au support NetApp dépend du fait que vous possédez déjà ou non un compte NetApp Support Site (NSS).
 
 
 
+[[existing-customer-with-an-nss-account]]
 === Client existant avec un compte NSS
 
 Si vous êtes un client NetApp avec un compte NSS, il vous suffit de vous inscrire pour bénéficier de l'assistance via la console NetApp .
@@ -59,6 +62,7 @@ Notez que les autres utilisateurs de la console NetApp ne verront pas ce même s
 
 
 
+[[existing-customer-but-no-nss-account]]
 === Client existant mais aucun compte NSS
 
 Si vous êtes un client NetApp existant avec des licences et des numéros de série existants mais pas de compte NSS, vous devez créer un compte NSS et l'associer à votre connexion à la console NetApp .
@@ -75,6 +79,7 @@ Si vous êtes un client NetApp existant avec des licences et des numéros de sé
 
 
 
+[[brand-new-to-netapp]]
 === Découvrez la toute nouvelle gamme NetApp
 
 Si vous êtes nouveau chez NetApp et que vous ne disposez pas d'un compte NSS, effectuez chacune des étapes ci-dessous.

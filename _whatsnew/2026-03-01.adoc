@@ -4,6 +4,7 @@
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Nouveau signet Ask Me disponible dans Workload Factory
 
 Nous avons ajouté un nouveau raccourci Ask Me sur chaque écran de la console Workload Factory. Cette amélioration vous permet d'accéder plus facilement et plus rapidement à Ask Me dès que vous avez besoin d'aide. Ask Me est notre assistant IA, qui vous permet de poser des questions sur vos propres environnements de charge de travail, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes.

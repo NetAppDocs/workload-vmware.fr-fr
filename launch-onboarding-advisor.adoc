@@ -19,6 +19,7 @@ Notez que vous devez disposer d'un nom d'utilisateur et d'un mot de passe pour a
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == Création d'un plan de déploiement basé sur un environnement vSphere sur site
 
 Vous pouvez migrer les configurations de serveurs virtuels actuelles dans les environnements vSphere sur site vers des machines virtuelles dans VMware Cloud on AWS et utiliser les systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.

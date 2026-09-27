@@ -17,6 +17,7 @@ Vous pouvez créer un plan de déploiement pour migrer des machines virtuelles v
 
 
 
+[[requirements]]
 == De formation
 
 * Vous devez avoirlink:upload-vm-inventory.html["téléchargé un inventaire de VM"] .
@@ -26,6 +27,7 @@ Vous pouvez créer un plan de déploiement pour migrer des machines virtuelles v
 
 
 
+[[steps]]
 == Étapes
 
 . Connectez-vous à Workload Factory en utilisant l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
@@ -43,6 +45,7 @@ L'assistant *Préparation à l'intégration à Google Cloud* s'affiche.
 
 
 
+[[configure-migration-preferences]]
 === Configurer les préférences de migration
 
 . Dans la section _Téléchargement de la configuration de la machine virtuelle_, examinez les informations sur l'ensemble de données que vous utilisez pour créer un plan de migration.  La section *Résumé de l'inventaire des machines virtuelles* est renseignée à partir du fichier d'inventaire pour refléter le nombre de machines virtuelles et la capacité de stockage totale.
@@ -96,6 +99,7 @@ NOTE: Si vous sélectionnez une marge de sécurité inférieure à 20%, la prote
 
 
 
+[[select-a-cluster-configuration]]
 === Sélectionnez une configuration de cluster
 
 . Sur la page *Select preferred Google Cloud VMware Engine cluster configuration*, configurez vos préférences de cluster Google Cloud VMware Engine et consultez les configurations recommandées.
@@ -128,6 +132,7 @@ La première configuration (la moins coûteuse) est sélectionnée par défaut.
 
 
 
+[[select-a-vm-layout]]
 === Sélectionnez une configuration de machine virtuelle
 
 . Sur la page *Sélection automatique de la machine virtuelle*, consultez la configuration optimale de la machine virtuelle sélectionnée automatiquement en fonction de votre capacité de stockage externe requise et de vos préférences.
@@ -172,6 +177,7 @@ NOTE: Si vous modifiez manuellement la sélection de la VM, vous pouvez revenir 
 
 
 
+[[review-nfs-datastore-assignments]]
 === Vérifiez les affectations de datastore NFS
 
 . Sur la page *Vérifier l'affectation du stockage d'instance*, examinez la configuration détaillée du datastore et les affectations de VM.
@@ -231,6 +237,7 @@ NOTE: Si vous modifiez manuellement la sélection de la VM, vous pouvez revenir 
 
 
 
+[[review-and-save-your-deployment-plan]]
 === Examinez et enregistrez votre plan de déploiement
 
 . Sur la page *Review your migration plan*, examinez et personnalisez votre plan de déploiement avant de l'enregistrer.

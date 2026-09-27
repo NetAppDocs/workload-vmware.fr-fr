@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Améliorations d'Amazon EC2 migration Advisor
 
 Cette version de BlueXP Workload Factory pour VMware présente l'amélioration suivante de l'expérience du conseiller de migration Amazon EC2 :
@@ -14,6 +15,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[updated-permissions-terminology]]
 === Mise à jour de la terminologie des autorisations
 
 L'interface utilisateur et la documentation de Workload Factory utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
