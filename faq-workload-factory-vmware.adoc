@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: faq-workload-factory-vmware.html 
+keywords: faq, frequently asked questions, frequently asked questions about netapp workload factory for vmware, workload factory for vmware, vmware migration advisors, amazon evs, amazon ec2, vmware cloud on aws, google cloud vmware engine, fsx for ontap, google cloud netapp volumes, evs well-architected analysis 
+summary: Questions fréquentes sur NetApp Workload Factory pour la planification de la migration VMware et l’analyse d’une architecture optimisée. 
+---
+= FAQ pour NetApp Workload Factory for VMware
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cette FAQ répond aux questions fréquentes concernant NetApp Workload Factory for VMware. Elle aborde les concepts de planification de la migration, l'inventaire, le stockage, les coûts, les régions prises en charge et l'analyse EVS, autant d'éléments utiles pour évaluer ou préparer les migrations de charges de travail VMware.
+
+
+
+[[migration-planning]]
+== Planification de la migration
+
+.Que me permet de faire NetApp Workload Factory for VMware?
+Il propose un centre de planification et des outils de conseil en migration pour analyser les configurations de machines virtuelles VMware sur site et créer des plans de migration vers les environnements cloud. Vous pouvez gérer les ensembles de données et les plans d'inventaire de machines virtuelles enregistrés dans le centre de planification.
+
+.Quelles cibles de migration et quelles options de stockage externe puis-je envisager ?
+Les conseillers apportent leur soutien à la planification pour :
+
+* *Amazon EVS, Amazon EC2 et VMware Cloud on AWS* : datastores externes Amazon FSx for NetApp ONTAP.
+* *Google Cloud VMware Engine* : magasins de données NFS externes Google Cloud NetApp Volumes.
+
+
+Pour plus de détails sur chaque cible, consultez les rubriques du conseiller en migration pour link:launch-migration-advisor-evs.html["Amazon EVS"], link:launch-onboarding-advisor-native.html["Amazon EC2"], link:launch-onboarding-advisor.html["VMware Cloud on AWS"] et link:launch-migration-advisor-gcve.html["Google Cloud VMware Engine"].
+
+.Quels sont les éléments pris en compte par un conseiller en migration lors de l’élaboration d’un plan ?
+Les conseillers analysent les configurations des machines virtuelles, aident à déterminer celles à migrer, estiment l'espace requis sur les datastores externes natifs du cloud et présentent un plan de déploiement. Les options spécifiques à la cible peuvent inclure la sélection des machines virtuelles, les préférences en matière de capacité et de protection, ainsi que l'affectation du stockage.
+
+.Workload Factory peut-il fournir les ressources recommandées pour chaque cible de migration ?
+Workload Factory prend en charge le déploiement sur Amazon EC2, Amazon EVS et VMware Cloud on AWS. Pour Google Cloud VMware Engine, le plan fournit le code Terraform généré pour provisionner des datastores NFS Google Cloud NetApp Volumes dans votre environnement Terraform. Consultez les rubriques du plan de déploiement pour link:deploy-fsx-file-system-native.html["Amazon EC2"], link:deploy-fsx-file-system-evs.html["Amazon EVS"] et link:deploy-fsx-file-system.html["VMware Cloud on AWS"].
+
+.Comment les datastores externes s’intègrent-ils au stockage VMware ?
+FSx for ONTAP ou Google Cloud NetApp Volumes fournissent des datastores NFS qui peuvent compléter le stockage vSAN. Ce stockage évolue indépendamment des ressources de calcul, ce qui vous permet d'augmenter la capacité de stockage sans ajouter d'hôtes.
+
+
+
+[[vm-inventory]]
+== Inventaire des VM
+
+.Quelles sources d'inventaire de machines virtuelles puis-je utiliser pour la planification de la migration ?
+Vous pouvez fournir l’inventaire à partir de RVTools, du script du collecteur de VM Workload Factory ou de NetApp Data Infrastructure Insights. RVTools capture les informations de configuration des VM ; le collecteur peut également capturer les données actuelles de performances des VM, et Data Infrastructure Insights fournit des informations sur l’infrastructure via une communication d’API. Pour plus de détails, consultez link:upload-vm-inventory.html["Télécharger les données d'inventaire de la machine virtuelle"].
+
+.Pourquoi choisir le collecteur de machines virtuelles plutôt que RVTools ?
+Le collecteur capture la configuration de la machine virtuelle ainsi que les statistiques actuelles d’IOPS et de débit en lecture et en écriture, ce qui permet une planification plus précise. RVTools capture les informations de configuration, mais ne fournit pas ces statistiques de performances. Consultez link:capture-vm-configurations.html["Capture des configurations de machines virtuelles"] pour plus d’informations.
+
+
+
+[[costs-and-availability]]
+== Coûts et disponibilité
+
+.Dois-je payer pour utiliser Workload Factory pour VMware, et ai-je besoin d’une licence NetApp ?
+L'utilisation de Workload Factory pour VMware est gratuite et aucune licence spéciale NetApp n'est requise. Vous payez les ressources AWS que vous déployez en fonction des recommandations du conseiller.
+
+.Quelles régions AWS puis-je utiliser avec Workload Factory pour VMware ?
+Workload Factory est pris en charge dans les régions commerciales où FSx for ONTAP est pris en charge. Les régions de Chine, Secret Cloud et Top Secret Cloud ne sont pas prises en charge. Pour connaître la disponibilité régionale actuelle d'AWS, consultez la https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["régions Amazon prises en charge"^].
+
+.Que puis-je apprendre du calculateur d'économies EVS ?
+Le calculateur compare les coûts potentiels d’EVS avec et sans FSx for ONTAP. Vous pouvez ajuster les estimations par région, processeur physique, mémoire physique, stockage des VM et plan de facturation EVS. Si FSx for ONTAP est identifié comme la solution de stockage la plus rentable, vous pouvez créer une évaluation détaillée. Voir link:calculate-evs-savings.html["Calculer les économies EVS"].
+
+
+
+[[evs-well-architected-analysis]]
+== Analyse bien architecturée d’EVS
+
+.Que vérifie l'analyse d'architecture EVS ?
+Il analyse les environnements EVS détectés afin d’identifier les problèmes de fiabilité et de sécurité. Les contrôles documentés évaluent la distribution des groupes de placement de partitions pour garantir la résilience, ainsi que la protection contre l’arrêt et la suppression des instances EC2 pour les nœuds du cluster. Les résultats comprennent l’état, la gravité, les ressources affectées et des recommandations de correction. Voir link:view-evs-well-architected.html["Mettez en œuvre des configurations EVS bien architecturées dans Workload Factory"].
+
+.À quelle fréquence l'analyse EVS bien architecturée s'exécute-t-elle, et de quel accès a-t-elle besoin ?
+Les configurations EVS détectées sont analysées automatiquement une fois par jour à l’aide des API AWS ; les informations d’identification vSphere et la connectivité à vCenter ne sont pas requises. Vous devez disposer d’identifiants AWS avec les autorisations de consultation, de planification et d’analyse pour les charges de travail VMware, ainsi que d’au moins un environnement EVS détecté. Pour plus d’informations, consultez link:view-evs-well-architected.html["les exigences de l’analyse bien architecturée d’EVS"].
