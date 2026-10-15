@@ -4,7 +4,7 @@ permalink: upload-vm-inventory.html
 keywords: vm workloads, capture vm details 
 summary: Vous pouvez utiliser le Centre de planification pour télécharger des informations sur votre environnement VMware actuel. 
 ---
-= Télécharger les données d'inventaire des machines virtuelles vers NetApp Workload Factory
+= Importez les données d'inventaire des machines virtuelles dans Workload Factory for VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

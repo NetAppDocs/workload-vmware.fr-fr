@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
 summary: Connectez-vous à NetApp Workload Factory pour accéder au conseiller de migration VMware.  Vous suivrez les étapes de l’assistant pour créer un plan de déploiement ou un plan de migration personnalisé en fonction de vos besoins. 
 ---
-= Créez un plan de déploiement pour VMware Cloud on AWS à l'aide de VMware workloads migration Advisor
+= Créez un plan de déploiement pour VMware Cloud on AWS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
