@@ -1107,4 +1107,8 @@
   <block id="53d93e9fac55ddfe7c501887d49a96ea" category="doc">Importez les données d'inventaire des machines virtuelles dans Workload Factory for VMware</block>
   <block id="ddff52126e082848348039b980fd1e5c" category="doc">Consultez les résultats Well-Architected d’EVS dans Workload Factory pour VMware</block>
   <block id="8ecb1fa68ebd7661685ea0dc78ce9cea" category="sidebar">Nouveautés de NetApp Workload Factory pour VMware</block>
+  <block id="d6ed55c5fa0490be9e9d07719ba741ce" category="doc">Prise en charge des instances i7i.metal-24xl et i7i.metal-48xl dans EVS TCO calculator</block>
+  <block id="b6c3bb340d0b13e009a53c6c8a2b9219" category="paragraph">Le calculateur de coût total de possession (TCO) d'EVS prend désormais en charge les instances EC2 AWS i7i.metal-24xl et i7i.metal-48xl comme hôtes de cluster. Par rapport aux configurations i4i.metal, les instances i7i.metal-24xl permettent de réduire le coût initial d'EVS d'environ 33 % pour le calcul et de 25 % pour le stockage vSAN.</block>
+  <block id="e50148793a31ae443693925cfda40d91" category="paragraph">Le calculateur compare tous les types d'instances et sélectionne automatiquement l'option la plus économique. Une nouvelle section de comparaison affiche les configurations hôtes EVS côte à côte, facilitant ainsi le choix de la configuration la mieux adaptée à vos besoins.</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">01 novembre 2026</block>
 </blocks>
